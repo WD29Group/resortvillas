@@ -8,6 +8,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;  
+  scroll-snap-align: start;
 }
 .one {
   background-color: #e63946;
@@ -20,4 +21,11 @@ section {
 }
 .four {
   background-color: #1d3557;
+}
+
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
