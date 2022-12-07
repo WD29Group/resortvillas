@@ -15,33 +15,7 @@
       /* position: fixed; */
 
     }
-    /* @include media-breakpoint-up(sm) { 
-        .landingpg{
-        margin: 0;
-        width: 10vw;
-     }
-    @include media-breakpoint-up(md) {
-      .landingpg{
-      margin: 0;
-      width: 25vw;
-    }
-    @include media-breakpoint-up(lg) {
-      .landingpg{
-      margin: 0;
-      width: 50vw;
-    }
-    @include media-breakpoint-up(xl) {
-      .landingpg{
-      margin: 0;
-      width: 75vw;
-    }
-    @include media-breakpoint-up(xxl) {
-      .landingpg{
-      margin: 0;
-      width: 100vw;
-    } */
-
-    nav{
+        nav{
       background: rgba(25, 0, 255, 0.171);
       backdrop-filter: blur(7px);
       width: var(--maxwidth);
