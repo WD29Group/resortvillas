@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.one {
+  background-color: #e63946;
+}
+.two {
+  background-color: #f1faee;
+}
+.three {
+  background-color: #a8dadc;
+}
+.four {
+  background-color: #1d3557;
+}
