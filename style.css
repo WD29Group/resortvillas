@@ -13,7 +13,7 @@
   position: fixed;
 }
 nav{
-  background: rgba(25, 0, 255, 0.171);
+  background: rgba(255, 255, 255, 0.178);
   color: rgba(163, 180, 255, 0.966);
   backdrop-filter: blur(7px);
   width: var(--maxwidth);
