@@ -1,8 +1,17 @@
 * {
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  /* background: black; */
 }
+
 :root {
   margin: 0 0px 0 -15px;
   --maxwidth: 105vw;
@@ -17,40 +26,92 @@
   z-index: 3;
   color: rgba(255, 255, 255, 0.966);
   font-size: 1.5rem;
-  top: 60px;
-  left: -155px;
-
+  top: -115px;
+  left: 20px;
 }
 .logo{
   z-index: 2;
   position: relative;
   margin: 0;
   padding: 0;
-  float: left;
   width: 175px;
   height: auto;
   top: -50px;
-  left: -5px;
+}
+
+@media (min-width: 700px) {
+  .navmenu2{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .navmenu{
+    display: none;
+  }
 }
 nav{
   background: rgba(255, 255, 255, 0.178);
   color: rgba(163, 180, 255, 0.966);
   backdrop-filter: blur(7px);
   width: var(--maxwidth);
-  min-height: 100px;
-  max-height: 120px;
+  height: 75px;
   z-index: 1;
   padding: 25px 10px 20px 100px;
   position: fixed;
   top: 0px;
-  font-size: 1rem;
   text-align: center;
 }
 nav a{
   text-decoration: none;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   color: rgb(131, 174, 255);
+}
+.menu{
+  position: relative;
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.966);
+  font-size: 2.5rem;
+  top: -200px;
+  left: -20px;
+  float: right;
+}
+
+.navmenu2{
+  background: rgba(255, 255, 255, 0.178);
+  backdrop-filter: blur(7px);
+  z-index: 1;
+  position: relative;
+  top: -137px;
+  left: calc(var(--maxwidth) - 215px);
+  list-style-type: none;  
+  width: 200px;
+}
+.navButton{
+  width: 155px;
+  padding: 7px 14px 7px 7px;
+}
+.navButton:hover{
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.navButton a, a:link{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.navButton a:hover{
+  color: rgba(0, 0, 0, 0.63);
+  font-weight: bold;
+}
+nav ul{
+  list-style-type: none;  
+}
+li{
+  text-align: end;
+  padding: 7px 30px 7px 0;
 }
 nav a:link {
   color: rgb(255, 255, 255);
@@ -71,7 +132,6 @@ color: rgb(182, 182, 182);
 padding: 25px;
 border-radius: 25px;
 border: solid 2px rgba(255, 255, 255, 0.137);
-/* box-shadow: 3px 3px 3px #0e0e0e6e; */
 box-shadow: -1px -1px 1px #ffffffd2;
 float: left;
 top: 300px;
@@ -90,7 +150,7 @@ opacity: 1;
 }
 .backgroundimg{
 z-index: -1;
-background: url("img\bkgnd.jpg");
+background: url('img/bkgnd.jpg');
 margin: 0;
 width: 1920px;
 position: relative;
