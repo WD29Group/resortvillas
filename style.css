@@ -19,7 +19,6 @@ nav{
   width: var(--maxwidth);
   z-index: 1;
   height: 70px;
-  text-align: center;
   padding: 20px;
   position: fixed;
   top: 0px;
