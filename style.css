@@ -12,8 +12,17 @@
   width: var(--maxwidth);
   position: fixed;
 }
+.siteName{
+  position: relative;
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.966);
+  font-size: 1.5rem;
+  top: 60px;
+  left: -155px;
+
+}
 .logo{
-  z-index: 23;
+  z-index: 2;
   position: relative;
   margin: 0;
   padding: 0;
@@ -21,13 +30,15 @@
   width: 175px;
   height: auto;
   top: -50px;
-  left: -10px;
+  left: -5px;
 }
 nav{
   background: rgba(255, 255, 255, 0.178);
   color: rgba(163, 180, 255, 0.966);
   backdrop-filter: blur(7px);
   width: var(--maxwidth);
+  min-height: 100px;
+  max-height: 120px;
   z-index: 1;
   padding: 25px 10px 20px 100px;
   position: fixed;
