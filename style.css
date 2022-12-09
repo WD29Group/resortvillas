@@ -14,24 +14,26 @@
 
 :root {
   margin: 0 0px 0 -15px;
-  --maxwidth: 105vw;
+  --maxwidth: 100vw;
+  --navbckg: rgba(0, 0, 0, 0.514)
 }
 .landingpg{
   margin: 0;
-  width: var(--maxwidth);
-  position: fixed;
+  /* width: var(--maxwidth); */
+  width: 100vw;
+  position: relative;
 }
 .siteName{
-  position: relative;
+  position: fixed;
   z-index: 3;
   color: rgba(255, 255, 255, 0.966);
   font-size: 1.5rem;
-  top: -125px;
-  left: 20px;
+  top: 45px;
+  left: 5px;
 }
 .logo{
   z-index: 2;
-  position: relative;
+  position: fixed;
   margin: 0;
   padding: 0;
   width: 175px;
@@ -59,7 +61,7 @@
   }
 }
 nav{
-  background: rgba(255, 255, 255, 0.178);
+  background: var(--navbckg);
   color: rgba(163, 180, 255, 0.966);
   backdrop-filter: blur(7px);
   width: var(--maxwidth);
@@ -77,41 +79,60 @@ nav a{
   color: rgb(131, 174, 255);
 }
 .menu{
-  position: relative;
+  position: fixed;
   z-index: 3;
   color: rgba(255, 255, 255, 0.966);
   font-size: 2.5rem;
-  top: -200px;
-  left: -20px;
-  float: right;
+  top: 20px;
+  left: calc(var(--maxwidth) - 100px);
+  /* float: right; */
 }
 
 .navmenu2{
-  background: rgba(255, 255, 255, 0.178);
-  backdrop-filter: blur(7px);
   z-index: 1;
-  position: relative;
-  top: -137px;
-  left: calc(var(--maxwidth) - 215px);
+  position: fixed;
+  top: 82px;
+  left: calc(var(--maxwidth) - 245px);
   list-style-type: none;  
   width: 200px;
+  appearance: button;
 }
 .navButton{
+  border-radius: 3px;
+  transition-duration: 1s;
   width: 155px;
-  padding: 7px 14px 7px 7px;
+  padding: 7px 14px 7px 14px;
+  margin: 0 5px 0 5px;
+  appearance: button;
+  border: none;
+  background: rgba(0, 0, 0, 0.01);
+  justify-content: space-around;
+  padding: 10px;
+  text-decoration: none;
+  transition-duration: 0.7s;
+  color: white;
+  width: 120px;
 }
+
 .navButton:hover{
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.116);
+  color: rgba(251, 255, 0, 0.596);
+  border-radius: 15px;
+  font-weight: bold;
 }
+
 .navButton a, a:link{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-.navButton a:hover{
-  color: rgba(0, 0, 0, 0.63);
+
+a:hover{
+  background: rgba(0, 0, 0, 0.116);
+  color: rgb(251, 255, 0);
+  border-radius: 15px;
   font-weight: bold;
 }
+
 nav ul{
   list-style-type: none;  
 }
@@ -119,33 +140,62 @@ li{
   text-align: end;
   padding: 7px 30px 7px 0;
 }
-nav a:link {
+
+nav a:link, a:visited{
   color: rgb(255, 255, 255);
-}
-nav a:visited {
-  color: rgb(255, 255, 255);
-}
-nav a:hover {
-  color: rgb(95, 151, 255);
-}
-nav a:active {
-  color: rgb(0, 68, 255);
 }
 
+nav a:active {
+  color: rgb(0, 68, 255);
+  color: rgb(251, 255, 0);
+}
+
+.bkg2 {
+  display: flex;
+  background: url('img/bkg2.jpg');
+  position: relative;
+  background-repeat: no-repeat;
+  height: 100vh;
+  justify-content: center;
+
+}
 .frostedglass {
 background: rgba(255, 255, 255, 1);
 color: rgb(182, 182, 182);
 padding: 25px;
-border-radius: 25px;
+margin: 25px;
+border-radius: 20px;
 border: solid 2px rgba(255, 255, 255, 0.137);
 box-shadow: -1px -1px 1px #ffffffd2;
-float: left;
-top: 300px;
+/* float: left; */
+/* text-align: center; */
+/* top: 300px; */
 left: 50px;
-position: absolute;
+/* position: relative; */
+height: 300px;
 }
 .crd{
-border-radius: 20px 20px 0 0;
+border-radius: 100px;
+width: 65px;
+position: relative;
+top: -10px;
+left: -10px;
+}
+.cardName{
+  position:relative;
+  top: -80px;
+  left: 55px;
+  padding: 0 25px 0 0;
+  font-weight: bold;
+}
+.cardNBody{
+  position:relative;
+  top: -80px;
+  left: 0px;
+  margin: 30px -20px 0 -20px;
+  text-align: justify;
+  font-style: oblique;
+  font-weight: lighter;
 }
 .xtransp {
 background-color: transparent;
@@ -154,14 +204,14 @@ color: rgb(255, 255, 255);
 backdrop-filter: blur(12px);
 opacity: 1;
 }
-.backgroundimg{
+/* .backgroundimg{
 z-index: -1;
 background: url('img/bkgnd.jpg');
 margin: 0;
 width: 1920px;
 position: relative;
 top: 1082px;
-}
+} */
 /* section {
   height: 100vh;
   display: flex;
