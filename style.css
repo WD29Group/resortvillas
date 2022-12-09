@@ -19,10 +19,19 @@
 }
 .landingpg{
   margin: 0;
+  background: url('img/bkg2.jpg');
   /* width: var(--maxwidth); */
   width: 100vw;
   position: relative;
 }
+/* .bkg1 {
+  display: flex;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 100vh;
+  justify-content: center;
+
+} */
 .siteName{
   position: fixed;
   z-index: 3;
@@ -158,8 +167,8 @@ nav a:active {
   justify-content: center;
 
 }
+
 .frostedglass {
-background: rgba(255, 255, 255, 1);
 color: rgb(182, 182, 182);
 padding: 25px;
 margin: 25px;
@@ -173,6 +182,13 @@ left: 50px;
 /* position: relative; */
 height: 300px;
 }
+.xtransp {
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.24);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(12px);
+  opacity: 1;
+  }
 .crd{
 border-radius: 100px;
 width: 65px;
@@ -196,13 +212,7 @@ left: -10px;
   font-style: oblique;
   font-weight: lighter;
 }
-.xtransp {
-background-color: transparent;
-background: rgba(81, 102, 141, 0.26);
-color: rgb(255, 255, 255);
-backdrop-filter: blur(12px);
-opacity: 1;
-}
+
 /* .backgroundimg{
 z-index: -1;
 background: url('img/bkgnd.jpg');
