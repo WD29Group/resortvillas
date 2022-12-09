@@ -99,7 +99,6 @@ nav a{
 }
 .navButton{
   border-radius: 3px;
-  transition-duration: 1s;
   width: 155px;
   padding: 7px 14px 7px 14px;
   margin: 0 5px 0 5px;
@@ -109,7 +108,7 @@ nav a{
   justify-content: space-around;
   padding: 10px;
   text-decoration: none;
-  transition-duration: 0.7s;
+  transition-duration: 0.3s;
   color: white;
   width: 120px;
 }
