@@ -83,20 +83,12 @@ nav{
   font-size: 0.9rem
 }
 
-/* 
-nav a{
-  text-decoration: none;
-  text-align: center;
-  padding: 25px;
-  color: rgb(131, 174, 255);
-} */
 .menu{
   position: fixed;
   z-index: 3;
   color: rgba(255, 255, 255, 0.966);
   top: 20px;
   left: calc(var(--maxwidth) - 100px);
-  /* float: right; */
 }
 
 .navmenu2{
@@ -118,6 +110,9 @@ nav a{
   border: none;
   background: rgba(0, 0, 0, 0.01);
   padding: 7px;
+  border: none;
+  background: rgba(0, 0, 0, 0.01);
+  padding: 10px;
   transition-duration: 0.3s;
   color: white;
   width: 120px;
@@ -246,6 +241,7 @@ nav a:link, a:visited{
   font-style: oblique;
   font-weight: lighter;
 }
+
 /* section {
   height: 100vh;
   display: flex;
@@ -273,10 +269,10 @@ nav a:link, a:visited{
   height: 100vh;
 } */
 
-
 /* width */
 ::-webkit-scrollbar {
   width: 16px;
+
 }
 
 /* Track */
@@ -296,3 +292,4 @@ nav a:link, a:visited{
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.521); 
 }
+
