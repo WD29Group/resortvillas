@@ -14,7 +14,7 @@
 }
 
 :root {
-  margin: 0 0px 0 -15px;
+  margin: 0;
   --maxwidth: 100vw;
   --navbckg: rgba(0, 0, 0, 0.514);
   --boxshadow: -1px -1px 1px #ffffffd2;
@@ -301,27 +301,23 @@ nav a:link, a:visited{
   height: 100vh;
 } */
 
-/* width */
 ::-webkit-scrollbar {
-  width: 16px;
-
+  width: 10px;
+  background: #00000052; 
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #0000003f; 
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.349); 
-  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.308); 
+  border-radius: 100px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #00000098; 
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.521); 
+  background: rgba(0, 0, 0, 0.808); 
 }
 
