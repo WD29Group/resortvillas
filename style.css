@@ -37,7 +37,7 @@
 }
 
 .logo{
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   margin: 0;
   padding: 0;
@@ -53,6 +53,13 @@
   .menu{
     display: none;
   }
+  .Title1{
+    font-size: 5rem;
+  }
+  .Title2{
+    font-size: 5rem;
+  }
+  
 }
 @media (max-width: 700px) {
   .navmenu{
@@ -72,7 +79,7 @@ nav{
   backdrop-filter: blur(7px);
   width: var(--maxwidth);
   height: 82px;
-  z-index: 1;
+  z-index: 2;
   padding: 25px 10px 20px 100px;
   position: fixed;
   top: 0px;
@@ -184,7 +191,7 @@ nav a:link, a:visited{
   z-index: 1;
   color: var(--BigTextcolor);
   max-width: 550px;
-  font-size: 5rem;
+  /* font-size: 5rem; */
   top: calc((100% * 1) - 70% );
   left: 50px;
 }
@@ -194,7 +201,7 @@ nav a:link, a:visited{
   z-index: 1;
   color: var(--BigTextcolor);
   max-width: 550px;
-  font-size: 5rem;
+  /* font-size: 5rem; */
   top: calc((100% * 2.5) - 70% );
   left: 50px;
 }
