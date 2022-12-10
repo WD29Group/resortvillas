@@ -17,6 +17,7 @@
   --maxwidth: 100vw;
   --navbckg: rgba(0, 0, 0, 0.514);
   --boxshadow: -1px -1px 1px #ffffffd2;
+  --BigTextcolor: rgba(255, 255, 0, 0.8)
 }
 .landingpg{
   margin: 0;
@@ -76,6 +77,10 @@ nav{
   position: fixed;
   top: 0px;
   text-align: center;
+  border: solid 0.25px rgba(255, 255, 255, 0.137);
+  box-shadow: var(--boxshadow);
+  /* margin: 0 auto; */
+  font-size: 0.9rem
 }
 
 /* 
@@ -89,7 +94,6 @@ nav a{
   position: fixed;
   z-index: 3;
   color: rgba(255, 255, 255, 0.966);
-  font-size: 2.5rem;
   top: 20px;
   left: calc(var(--maxwidth) - 100px);
   /* float: right; */
@@ -98,21 +102,22 @@ nav a{
 .navmenu2{
   z-index: 1;
   position: fixed;
-  top: 82px;
+  top: 84px;
   left: calc(var(--maxwidth) - 220px);
   list-style-type: none;  
   width: 200px;
   appearance: button;
+  border: solid 0.25px rgba(255, 255, 255, 0.137);
+  box-shadow: var(--boxshadow);
 }
 
 .navButton{
   appearance: button;
   border-radius: 3px;
-  /* padding: 7px 14px 7px 14px; */
+  padding: 7px 25px 7px 25px;
   border: none;
   background: rgba(0, 0, 0, 0.01);
-  padding: 10px;
-  /* text-decoration: none; */
+  padding: 7px;
   transition-duration: 0.3s;
   color: white;
   width: 120px;
@@ -165,7 +170,7 @@ nav a:link, a:visited{
 
 .testimonials{
   background: var(--navbckg);
-  color:white;
+  color:rgb(255, 240, 102);
   position: relative;
   width: 340px;
   text-align: center;
@@ -178,7 +183,26 @@ nav a:link, a:visited{
   padding: 5px 0 10px 0;
   border-radius: 20px;
 }
-
+.Title1{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  color: var(--BigTextcolor);
+  max-width: 550px;
+  font-size: 5rem;
+  top: calc((100% * 1) - 70% );
+  left: 50px;
+}
+.Title2{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  color: var(--BigTextcolor);
+  max-width: 550px;
+  font-size: 5rem;
+  top: calc((100% * 2.5) - 70% );
+  left: 50px;
+}
 .frostedglass {
   color: rgb(182, 182, 182);
   padding: 25px;
@@ -252,7 +276,7 @@ nav a:link, a:visited{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 16px;
 }
 
 /* Track */
