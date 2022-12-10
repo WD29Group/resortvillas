@@ -77,13 +77,6 @@ nav{
   text-align: center;
 }
 
-/* 
-nav a{
-  text-decoration: none;
-  text-align: center;
-  padding: 25px;
-  color: rgb(131, 174, 255);
-} */
 .menu{
   position: fixed;
   z-index: 3;
@@ -103,7 +96,6 @@ nav a{
   width: 200px;
   appearance: button;
 }
-
 .navButton{
   appearance: button;
   border-radius: 3px;
@@ -210,6 +202,16 @@ left: -10px;
   font-weight: lighter;
 }
 
+
+/* .backgroundimg{
+z-index: -1;
+background: url('img/bkgnd.jpg');
+margin: 0;
+width: 1920px;
+position: relative;
+top: 1082px;
+} */
+
 /* section {
   height: 100vh;
   display: flex;
@@ -236,8 +238,6 @@ left: -10px;
   overflow-y: scroll;
   height: 100vh;
 } */
-
-
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
