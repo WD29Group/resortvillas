@@ -24,14 +24,7 @@
   width: 100vw;
   position: relative;
 }
-/* .bkg1 {
-  display: flex;
-  position: relative;
-  background-repeat: no-repeat;
-  height: 100vh;
-  justify-content: center;
 
-} */
 .siteName{
   position: fixed;
   z-index: 3;
@@ -40,6 +33,7 @@
   top: 45px;
   left: 5px;
 }
+
 .logo{
   z-index: 2;
   position: fixed;
@@ -69,6 +63,7 @@
     left: 17px;
   }
 }
+
 nav{
   background: var(--navbckg);
   color: rgba(163, 180, 255, 0.966);
@@ -81,12 +76,7 @@ nav{
   top: 0px;
   text-align: center;
 }
-nav a{
-  text-decoration: none;
-  text-align: center;
-  padding: 25px;
-  color: rgb(131, 174, 255);
-}
+
 .menu{
   position: fixed;
   z-index: 3;
@@ -101,22 +91,19 @@ nav a{
   z-index: 1;
   position: fixed;
   top: 82px;
-  left: calc(var(--maxwidth) - 245px);
+  left: calc(var(--maxwidth) - 220px);
   list-style-type: none;  
   width: 200px;
   appearance: button;
 }
 .navButton{
-  border-radius: 3px;
-  width: 155px;
-  padding: 7px 14px 7px 14px;
-  margin: 0 5px 0 5px;
   appearance: button;
+  border-radius: 3px;
+  /* padding: 7px 14px 7px 14px; */
   border: none;
   background: rgba(0, 0, 0, 0.01);
-  justify-content: space-around;
   padding: 10px;
-  text-decoration: none;
+  /* text-decoration: none; */
   transition-duration: 0.3s;
   color: white;
   width: 120px;
@@ -124,28 +111,17 @@ nav a{
 
 .navButton:hover{
   background: rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+  font-weight: bold;
   color: rgba(251, 255, 0, 0.596);
-  border-radius: 15px;
-  font-weight: bold;
 }
 
-.navButton a, a:link{
+.navButton a, a:link, nav ul{
   text-decoration: none;
-  color: rgb(255, 255, 255);
 }
 
-a:hover{
-  background: rgba(0, 0, 0, 0.116);
-  color: rgb(251, 255, 0);
-  border-radius: 15px;
-  font-weight: bold;
-}
-
-nav ul{
-  list-style-type: none;  
-}
 li{
-  text-align: end;
+  text-align: center;
   padding: 7px 30px 7px 0;
 }
 
@@ -153,19 +129,29 @@ nav a:link, a:visited{
   color: rgb(255, 255, 255);
 }
 
-nav a:active {
-  color: rgb(0, 68, 255);
-  color: rgb(251, 255, 0);
-}
-
 .bkg2 {
-  display: flex;
+  margin: -7px 0 0 0; 
+  display:grid;
   background: url('img/bkg2.jpg');
   position: relative;
   background-repeat: no-repeat;
-  height: 100vh;
-  justify-content: center;
+  width: var(--maxwidth);
+  height: 127vh;
+  justify-content: right;
+  align-items:flex-end;
+}
 
+.lowerdivCommentaries{
+  position: relative;
+  width: 390px;
+  height: 340px;
+  top: 10px;
+  margin: 0 20px 30px 0; 
+  overflow-y: scroll;
+  /* position: relative;
+  top: calc(100% - (45%));;
+  left: calc(100vw - 65%);; */
+  /* margin: 0 100px 0 100px; */
 }
 
 .frostedglass {
@@ -182,6 +168,7 @@ left: 50px;
 /* position: relative; */
 height: 300px;
 }
+
 .xtransp {
   background-color: transparent;
   background: rgba(0, 0, 0, 0.24);
@@ -189,6 +176,7 @@ height: 300px;
   backdrop-filter: blur(12px);
   opacity: 1;
   }
+
 .crd{
 border-radius: 100px;
 width: 65px;
@@ -196,6 +184,7 @@ position: relative;
 top: -10px;
 left: -10px;
 }
+
 .cardName{
   position:relative;
   top: -80px;
@@ -213,6 +202,7 @@ left: -10px;
   font-weight: lighter;
 }
 
+
 /* .backgroundimg{
 z-index: -1;
 background: url('img/bkgnd.jpg');
@@ -221,6 +211,7 @@ width: 1920px;
 position: relative;
 top: 1082px;
 } */
+
 /* section {
   height: 100vh;
   display: flex;
@@ -247,3 +238,25 @@ top: 1082px;
   overflow-y: scroll;
   height: 100vh;
 } */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0000003f; 
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.349); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00000049; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.521); 
+}
