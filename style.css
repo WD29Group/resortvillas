@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 * {
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -17,7 +18,10 @@
   --maxwidth: 100vw;
   --navbckg: rgba(0, 0, 0, 0.514);
   --boxshadow: -1px -1px 1px #ffffffd2;
-  --BigTextcolor: rgba(255, 255, 0, 0.8)
+  --BigTextcolor: rgba(255, 255, 255, 0.8);
+  /* --BigTextcolor: rgba(255, 255, 0, 0.8); */
+  --fontfam: 'Nothing You Could Do', cursive;
+  
 }
 .landingpg{
   margin: 0;
@@ -34,6 +38,7 @@
   font-size: 1.5rem;
   top: 45px;
   left: 5px;
+  font-family: var(--fontfam);
 }
 
 .logo{
@@ -46,7 +51,7 @@
   top: -55px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 901px) {
   .navmenu2{
     display: none;
   }
@@ -61,7 +66,7 @@
   }
   
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .navmenu{
     display: none;
   }
@@ -70,6 +75,14 @@
   }
   .logo{
     left: 17px;
+  }
+  .Title1{
+    font-size: 2rem;
+    top: calc((50% * 1) - 50% );
+  }
+  .Title2{
+    font-size: 2rem;
+    top: 25px;
   }
 }
 
@@ -87,7 +100,8 @@ nav{
   border: solid 0.25px rgba(255, 255, 255, 0.137);
   box-shadow: var(--boxshadow);
   /* margin: 0 auto; */
-  font-size: 0.9rem
+  font-size: 1.2rem;
+  font-family: var(--fontfam);
 }
 
 .menu{
@@ -96,33 +110,38 @@ nav{
   color: rgba(255, 255, 255, 0.966);
   top: 20px;
   left: calc(var(--maxwidth) - 100px);
+  font-size: 2.5em;
 }
 
 .navmenu2{
   z-index: 1;
   position: fixed;
   top: 84px;
-  left: calc(var(--maxwidth) - 220px);
+  left: calc(var(--maxwidth) - 167px);
   list-style-type: none;  
-  width: 200px;
-  appearance: button;
+  width: 150px;
   border: solid 0.25px rgba(255, 255, 255, 0.137);
   box-shadow: var(--boxshadow);
 }
-
-.navButton{
+.nvbtn{
   appearance: button;
+  margin: -2px;
+  max-width: 88px;
+  text-align: center;
+}
+.navButton{
   border-radius: 3px;
-  padding: 7px 25px 7px 25px;
+  /* padding: 7px 25px 7px 25px; */
   border: none;
   background: rgba(0, 0, 0, 0.01);
   padding: 7px;
   border: none;
   background: rgba(0, 0, 0, 0.01);
-  padding: 10px;
+  /* padding: 10px; */
   transition-duration: 0.3s;
   color: white;
   width: 120px;
+  font-family: var(--fontfam);
 }
 
 .navButton:hover{
@@ -184,6 +203,8 @@ nav a:link, a:visited{
   box-shadow: var(--boxshadow);
   padding: 5px 0 10px 0;
   border-radius: 20px;
+  font-family: var(--fontfam);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
 }
 .Title1{
   display: flex;
@@ -194,6 +215,8 @@ nav a:link, a:visited{
   /* font-size: 5rem; */
   top: calc((100% * 1) - 70% );
   left: 50px;
+  font-family: var(--fontfam);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
 }
 .Title2{
   display: flex;
@@ -204,6 +227,8 @@ nav a:link, a:visited{
   /* font-size: 5rem; */
   top: calc((100% * 2.5) - 70% );
   left: 50px;
+  font-family: var(--fontfam);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
 }
 .frostedglass {
   color: rgb(182, 182, 182);
