@@ -94,6 +94,9 @@
     font-size: 2rem;
     top: 25px;
   }
+  .treebranches{
+    display: none;
+  }
 }
 
 nav {
@@ -127,7 +130,7 @@ nav {
   z-index: 1;
   position: fixed;
   top: 84px;
-  left: calc(var(--maxwidth) - 167px);
+  left: calc(var(--maxwidth) - 160px);
   list-style-type: none;
   width: 150px;
   border: solid 0.25px rgba(255, 255, 255, 0.137);
@@ -239,7 +242,20 @@ a:visited {
   left: calc(100vw - 65%);; */
   /* margin: 0 100px 0 100px; */
 }
-
+.treebranches{
+  --brnchwid: 180px;
+    background: url('branches/branches.png');
+    background-repeat: no-repeat;
+    background-position: right top bottom;
+    background-size: 200px;
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    z-index: 21;
+    outline: 2px red;
+    top: -5px;
+    left: calc(var(--maxwidth) - var(--brnchwid));
+}
 .testimonials {
   background: var(--navbckg);
   color: rgb(255, 240, 102);
