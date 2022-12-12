@@ -11,7 +11,7 @@
   </head>
   
   <body>
-    <video class="landingpg fluid" src="vid/elnido.webm" type="video/mp4" muted loop autoplay></video>
+    <video class="landingpg fluid" src="vid\Elnido.webm" type="video/mp4" muted loop autoplay></video>
    <div class-="container">
     <span><img class="logo" src="img/logo.png">
     <h1 class="siteName">Resort Villas</h1></span>
@@ -55,7 +55,7 @@
       fetch('https://jsonplaceholder.typicode.com/comments')
       .then(response => response.json())
       .then(json => {
-        let comments = json.slice(0, 20);
+        let comments = json.slice(0, 30);
         comments.map(json => {
               document.getElementById("postsArea").innerHTML += `
               <div class="col-md-4 card frostedglass xtransp" style="width: 17rem;">
