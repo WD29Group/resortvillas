@@ -164,16 +164,52 @@ nav a:link, a:visited{
   color: rgb(255, 255, 255);
 }
 
-.bkg2 {
-  margin: -7px 0 0 0; 
-  display:grid;
+.bkg1 {
+  margin: -7px 0 0 0;
+  display: grid;
   background: url('img/bkg2.jpg');
   position: relative;
   background-repeat: no-repeat;
   width: var(--maxwidth);
   height: 127vh;
   justify-content: right;
-  align-items:flex-end;
+  align-items: flex-end;
+}
+
+.bkg2 {
+  margin: -7px 0 0 0;
+  display: grid;
+  background: url('img/bkg2.webp');
+  position: relative;
+  background-repeat: no-repeat;
+  width: var(--maxwidth);
+  height: 127vh;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.bkg3 {
+  margin: -7px 0 0 0;
+  display: grid;
+  background: url('img/bkg3.webp');
+  position: relative;
+  background-repeat: no-repeat;
+  width: var(--maxwidth);
+  height: 127vh;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.bkg4 {
+  margin: -7px 0 0 0;
+  display: grid;
+  background: url('img/bkg4.webp');
+  position: relative;
+  background-repeat: no-repeat;
+  width: var(--maxwidth);
+  height: 127vh;
+  justify-content: right;
+  align-items: flex-end;
 }
 
 .lowerdivCommentaries{
