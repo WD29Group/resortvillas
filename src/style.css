@@ -15,6 +15,7 @@
 
 :root {
   margin: 0 0 0 -9px;
+  background: rgb(129, 129, 129);
   --maxwidth: 100vw;
   --navbckg: rgba(0, 0, 0, 0.514);
   --boxshadow: -1px -1px 1px #ffffffd2;
@@ -25,7 +26,7 @@
 }
 .landingpg{
   margin: 0;
-  background: url('img/bkg2.jpg');
+  background: url('./img/bkg2.jpg');
   /* width: var(--maxwidth); */
   width: 100vw;
   position: relative;
@@ -167,7 +168,7 @@ nav a:link, a:visited{
 .bkg1 {
   margin: -7px 0 0 0;
   display: grid;
-  background: url('img/bkg2.jpg');
+  background: url('./img/bkg2.jpg');
   position: relative;
   background-repeat: no-repeat;
   width: var(--maxwidth);
@@ -179,7 +180,7 @@ nav a:link, a:visited{
 .bkg2 {
   margin: -7px 0 0 0;
   display: grid;
-  background: url('img/bkg2.webp');
+  background: url('./img/bkg2.webp');
   position: relative;
   background-repeat: no-repeat;
   width: var(--maxwidth);
