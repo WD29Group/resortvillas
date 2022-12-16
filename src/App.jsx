@@ -7,6 +7,7 @@ import News from "./pages/News";
 import Services from "./pages/Services";
 import Weather from "./pages/Weather";
 import Resorts from "./pages/Resorts";
+import ChangeBackgroundOnScroll from "./pages/ChangeBackgroundOnScroll";
 import "./css/style.css";
 
 function App() {

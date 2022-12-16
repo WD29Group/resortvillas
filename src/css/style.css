@@ -90,9 +90,9 @@
 }
 
 nav{
-  background: var(--navbckg);
+  /* background: var(--navbckg); */
   color: rgba(163, 180, 255, 0.966);
-  backdrop-filter: blur(7px);
+  /* backdrop-filter: blur(7px); */
   width: var(--maxwidth);
   height: 82px;
   z-index: 2;
@@ -100,7 +100,7 @@ nav{
   position: fixed;
   top: 0px;
   text-align: center;
-  border: solid 0.25px rgba(255, 255, 255, 0.137);
+  /* border: solid 0.25px rgba(255, 255, 255, 0.137); */
   box-shadow: var(--boxshadow);
   /* margin: 0 auto; */
   font-size: 1.27rem;

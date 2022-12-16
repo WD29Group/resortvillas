@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-
+import React, { useEffect, useState } from 'react';
+import ChangeBackgroundOnScroll from "./pages/ChangeBackgroundOnScroll";
 function Navigation({ children }) {
   return (
     <>
@@ -86,9 +87,12 @@ function Navigation({ children }) {
           </Link>
         </li>
       </ul>
+      <ChangeBackgroundOnScroll />
       {children}
     </>
   );
 }
+
+
 
 export default Navigation;

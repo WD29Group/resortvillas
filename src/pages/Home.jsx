@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import elnido from "../vid/elnido.webm"
 
 function Home() {
