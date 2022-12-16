@@ -1,29 +1,20 @@
 import { Link } from "react-router-dom";
+import elnido from "./elnido.webm"
 
 function Home() {
   return (
-    <div>
+    <>
       <video
         className="landingpg"
-        src="elnido.webm"
+        src={elnido}
         type="video/mp4"
         muted
         loop
-        autoplay
+        autoPlay
       />
-      <video
-        className="landingpg"
-        src="/src/beach.mp4"
-        type="video/mp4"
-        controls
-        width="640"
-        height="360"
-        muted
-        loop
-        autoplay
-      />
-    </div>
+      <div className="bkg3"></div>
+    </>
+      
   );
 }
-
 export default Home;

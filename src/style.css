@@ -28,7 +28,7 @@
   margin: 0;
   background: url('./img/bkg2.jpg');
   /* width: var(--maxwidth); */
-  width: 100vw;
+  height: 100%;
   position: relative;
 }
 
@@ -356,5 +356,5 @@ nav a:link, a:visited{
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.808); 
-}
 
+}

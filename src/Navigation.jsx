@@ -12,7 +12,7 @@ function Navigation({ children }) {
           <div className="navmenu">
             <Link to="/" className="navButton nvbtn"> Home </Link>
             <Link to="/Resorts" className="navButton nvbtn"> Resorts </Link>
-            <Link to="/Galery" className="navButton nvbtn"> Galery </Link>
+            <Link to="/Galery" className="navButton nvbtn"> Gallery </Link>
             <Link to="/Services" className="navButton nvbtn"> Services </Link>
             <Link to="/Booking" className="navButton nvbtn"> Booking </Link>
             <Link to="/News" className="navButton nvbtn"> News </Link>
@@ -36,7 +36,7 @@ function Navigation({ children }) {
             <Link to="/Resorts" className="navButton nvbtn"> Resorts </Link>
         </li>
         <li>
-            <Link to="/Galery" className="navButton nvbtn"> Galery </Link>
+            <Link to="/Galery" className="navButton nvbtn"> Gallery </Link>
         </li>
         <li>
             <Link to="/Services" className="navButton nvbtn"> Services </Link>
