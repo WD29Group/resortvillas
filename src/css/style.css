@@ -158,7 +158,15 @@ nav{
   text-align: center;
   font-size: 1.29rem;
 }
-
+.navButton:active {
+  background: rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+  /* font-weight: bold; */
+  margin: 0 -12px 0 -12px;
+  color: rgba(255, 230, 90, 0.452);
+  text-shadow: 0px 0px 0px black;
+  font-size: 1.25rem;
+}
 .navButton a, a:link, nav ul{
   text-decoration: none;
 }
