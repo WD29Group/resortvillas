@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navigation from "./Navigation";
-import Home from "./Home";
-import Galery from "./Galery";
-import Booking from "./Booking";
-import News from "./News";
-import Services from "./Services";
-import Weather from "./Weather";
-import Resorts from "./Resorts";
-import "./style.css";
+import Home from "./pages/Home";
+import Galery from "./pages/Galery";
+import Booking from "./pages/Booking";
+import News from "./pages/News";
+import Services from "./pages/Services";
+import Weather from "./pages/Weather";
+import Resorts from "./pages/Resorts";
+import "./css/style.css";
 
 function App() {
   return (

@@ -11,32 +11,25 @@ function Navigation({ children }) {
         <nav className="text-decoration-none">
           <div className="navmenu">
             <Link to="/" className="navButton nvbtn">
-              {" "}
-              Home{" "}
+              Home
             </Link>
             <Link to="/Resorts" className="navButton nvbtn">
-              {" "}
-              Resorts{" "}
+              Resorts
             </Link>
             <Link to="/Galery" className="navButton nvbtn">
-              {" "}
-              Gallery{" "}
+              Gallery
             </Link>
             <Link to="/Services" className="navButton nvbtn">
-              {" "}
-              Services{" "}
+              Services
             </Link>
             <Link to="/Booking" className="navButton nvbtn">
-              {" "}
-              Booking{" "}
+              Booking
             </Link>
             <Link to="/News" className="navButton nvbtn">
-              {" "}
-              News{" "}
+              News
             </Link>
             <Link to="/Weather" className="navButton nvbtn">
-              {" "}
-              Weather{" "}
+              Weather
             </Link>
           </div>
         </nav>
@@ -52,44 +45,44 @@ function Navigation({ children }) {
       <ul className="navmenu2 collapse navbar-collapse xtransp" id="navbar">
         <li>
           <Link to="/" className="navButton nvbtn">
-            {" "}
-            Home{" "}
+            
+            Home
           </Link>
         </li>
         <li>
           <Link to="/Resorts" className="navButton nvbtn">
-            {" "}
-            Resorts{" "}
+            
+            Resorts
           </Link>
         </li>
         <li>
           <Link to="/Galery" className="navButton nvbtn">
-            {" "}
-            Gallery{" "}
+            
+            Gallery
           </Link>
         </li>
         <li>
           <Link to="/Services" className="navButton nvbtn">
-            {" "}
-            Services{" "}
+            
+            Services
           </Link>
         </li>
         <li>
           <Link to="/Booking" className="navButton nvbtn">
-            {" "}
-            Booking{" "}
+            
+            Booking
           </Link>
         </li>
         <li>
           <Link to="/News" className="navButton nvbtn">
-            {" "}
-            News{" "}
+            
+            News
           </Link>
         </li>
         <li>
           <Link to="/Weather" className="navButton nvbtn">
-            {" "}
-            Weather{" "}
+            
+            Weather
           </Link>
         </li>
       </ul>
