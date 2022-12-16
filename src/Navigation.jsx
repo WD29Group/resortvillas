@@ -10,39 +10,34 @@ function Navigation({ children }) {
         </span>
         <nav className="text-decoration-none">
           <div className="navmenu">
-            <div class="row">
-              <div className="col">
-                
-              </div>
-              <div className="col">
-            <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <Link to="/" className="navButton nvbtn"> Home </Link>
-              </div>
-              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <Link to="/Resorts" className="navButton nvbtn"> Resorts </Link>
-              </div>
-              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <Link to="/Galery" className="navButton nvbtn"> Gallery </Link>
-              </div>
-              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <Link to="/Services" className="navButton nvbtn"> Services </Link>
-              </div>
-              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <Link to="/Booking" className="navButton nvbtn"> Booking </Link>
-              </div>
-              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <Link to="/News" className="navButton nvbtn"> News </Link>
-              </div>
-              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <Link to="/Weather" className="navButton nvbtn"> Weather </Link>
-              </div>
-              </div>
-              <div className="col">
-                
-              </div>
-              
-
-            </div> 
+            <Link to="/" className="navButton nvbtn">
+              {" "}
+              Home{" "}
+            </Link>
+            <Link to="/Resorts" className="navButton nvbtn">
+              {" "}
+              Resorts{" "}
+            </Link>
+            <Link to="/Galery" className="navButton nvbtn">
+              {" "}
+              Gallery{" "}
+            </Link>
+            <Link to="/Services" className="navButton nvbtn">
+              {" "}
+              Services{" "}
+            </Link>
+            <Link to="/Booking" className="navButton nvbtn">
+              {" "}
+              Booking{" "}
+            </Link>
+            <Link to="/News" className="navButton nvbtn">
+              {" "}
+              News{" "}
+            </Link>
+            <Link to="/Weather" className="navButton nvbtn">
+              {" "}
+              Weather{" "}
+            </Link>
           </div>
         </nav>
       </div>
@@ -56,28 +51,49 @@ function Navigation({ children }) {
       </button>
       <ul className="navmenu2 collapse navbar-collapse xtransp" id="navbar">
         <li>
-        <Link to="/" className="navButton nvbtn"> Home </Link>
+          <Link to="/" className="navButton nvbtn">
+            {" "}
+            Home{" "}
+          </Link>
         </li>
         <li>
-            <Link to="/Resorts" className="navButton nvbtn"> Resorts </Link>
+          <Link to="/Resorts" className="navButton nvbtn">
+            {" "}
+            Resorts{" "}
+          </Link>
         </li>
         <li>
-            <Link to="/Galery" className="navButton nvbtn"> Gallery </Link>
+          <Link to="/Galery" className="navButton nvbtn">
+            {" "}
+            Gallery{" "}
+          </Link>
         </li>
         <li>
-            <Link to="/Services" className="navButton nvbtn"> Services </Link>
+          <Link to="/Services" className="navButton nvbtn">
+            {" "}
+            Services{" "}
+          </Link>
         </li>
         <li>
-            <Link to="/Booking" className="navButton nvbtn"> Booking </Link>
+          <Link to="/Booking" className="navButton nvbtn">
+            {" "}
+            Booking{" "}
+          </Link>
         </li>
         <li>
-            <Link to="/News" className="navButton nvbtn"> News </Link>
+          <Link to="/News" className="navButton nvbtn">
+            {" "}
+            News{" "}
+          </Link>
         </li>
         <li>
-            <Link to="/Weather" className="navButton nvbtn"> Weather </Link>
+          <Link to="/Weather" className="navButton nvbtn">
+            {" "}
+            Weather{" "}
+          </Link>
         </li>
       </ul>
-      { children }
+      {children}
     </>
   );
 }
