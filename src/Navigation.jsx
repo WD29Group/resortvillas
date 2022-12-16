@@ -10,13 +10,39 @@ function Navigation({ children }) {
         </span>
         <nav className="text-decoration-none">
           <div className="navmenu">
-            <Link to="/" className="navButton nvbtn"> Home </Link>
-            <Link to="/Resorts" className="navButton nvbtn"> Resorts </Link>
-            <Link to="/Galery" className="navButton nvbtn"> Gallery </Link>
-            <Link to="/Services" className="navButton nvbtn"> Services </Link>
-            <Link to="/Booking" className="navButton nvbtn"> Booking </Link>
-            <Link to="/News" className="navButton nvbtn"> News </Link>
-            <Link to="/Weather" className="navButton nvbtn"> Weather </Link>
+            <div class="row">
+              <div className="col">
+                
+              </div>
+              <div className="col">
+            <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <Link to="/" className="navButton nvbtn"> Home </Link>
+              </div>
+              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <Link to="/Resorts" className="navButton nvbtn"> Resorts </Link>
+              </div>
+              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <Link to="/Galery" className="navButton nvbtn"> Gallery </Link>
+              </div>
+              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <Link to="/Services" className="navButton nvbtn"> Services </Link>
+              </div>
+              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <Link to="/Booking" className="navButton nvbtn"> Booking </Link>
+              </div>
+              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <Link to="/News" className="navButton nvbtn"> News </Link>
+              </div>
+              <div class="col-xxl-l col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <Link to="/Weather" className="navButton nvbtn"> Weather </Link>
+              </div>
+              </div>
+              <div className="col">
+                
+              </div>
+              
+
+            </div> 
           </div>
         </nav>
       </div>
