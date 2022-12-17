@@ -24,7 +24,7 @@ function ChangeTopBG() {
     };
   }, []);
 
-  return <div style={{ backgroundColor: bgColor, height: "80px", width: "110%", position: "fixed", top: 0, zIndex: 1, backdropFilter: backdropFilter,transitionDuration: "3s" }}>
+  return <div style={{ backgroundColor: bgColor, height: "80px", width: "110%", position: "fixed", top: 0, zIndex: 2, backdropFilter: backdropFilter,transitionDuration: "3s" }}>
   </div>;
 }
 export default ChangeTopBG;

@@ -37,6 +37,7 @@ function Footer() {
                     transitionDuration: "3s"
                 }
             }>
+            <small className='text-muted'>Copyright (c) 2022 WD29 Group-IV</small>
         </footer>
     );
 }
