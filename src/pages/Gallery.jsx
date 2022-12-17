@@ -1,4 +1,4 @@
-function Galery() {
+function Gallery() {
   return (
     <>
     <div className="bkg3"></div>
@@ -10,4 +10,4 @@ function Galery() {
   );
 }
 
-export default Galery;
+export default Gallery;

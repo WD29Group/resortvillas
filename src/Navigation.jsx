@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import ChangeTopBG from "./pages/ChangeTopBG";
+import ScrollToTopButton from './pages/ScrollToTopButton';
 import Footer from "./pages/Footer";
 function Navigation({ children }) {
   const [selected, setSelected] = useState('Home');
@@ -84,11 +85,9 @@ function Navigation({ children }) {
       </ul>
       <ChangeTopBG />
       {children}
+      <ScrollToTopButton />
       <Footer />
     </>
   );
 }
-
-
-
 export default Navigation;

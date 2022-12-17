@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navigation from "./Navigation";
 import Home from "./pages/Home";
-import Galery from "./pages/Galery";
+import Gallery from "./pages/Gallery";
 import Booking from "./pages/Booking";
 import News from "./pages/News";
 import Services from "./pages/Services";
@@ -17,7 +17,7 @@ function App() {
       <Navigation>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Galery" element={<Galery />} />
+          <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Booking" element={<Booking />} />
           <Route path="/News" element={<News />} />
           <Route path="/Services" element={<Services />} />
