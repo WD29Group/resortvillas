@@ -399,7 +399,7 @@ iframe{
   background: var(--navbckg);
   border-radius: 20px;
   border: solid 2px rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(3px);
   border-radius: 7px;
   position: absolute;
   top: 50%;
