@@ -53,7 +53,7 @@ function ScrollToTopButton() {
                   right: "50px",
                   fontSize: "3em",
                   backdropFilter: backdropFilter,
-                  transitionDuration: "2s"
+                  transitionDuration: "0.7s"
                 }
             }
         onClick={handleClick}>
