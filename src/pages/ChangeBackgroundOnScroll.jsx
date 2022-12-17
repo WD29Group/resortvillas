@@ -8,10 +8,9 @@ function ChangeBackgroundOnScroll() {
     function handleScroll() {
       const scroll = window.scrollY;
 
-      bckDropFilter('blur('+ {scroll} +'px)');
       if (scroll > 600) {
-         setBgColor('rgba(0, 0, 0, 0.5)');
-        bckDropFilter('blur(75px)');
+        setBgColor('rgba(0, 0, 0, 0.5)');
+        bckDropFilter('blur(12px)');
 
       } else {
         setBgColor('rgba(0, 0, 0, 0)');

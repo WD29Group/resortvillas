@@ -12,6 +12,8 @@ function Home() {
         autoPlay
       />
       <div className="bkg3"></div>
+      <div className="bkg2"></div>
+      <div className="bkg1"></div>
     </>
       
   );
