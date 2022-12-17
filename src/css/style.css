@@ -41,7 +41,7 @@
   top: 45px;
   left: 5px;
   font-family: var(--fontfam);
-  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 }
 
 .logo{
@@ -94,7 +94,7 @@ nav{
   /* backdrop-filter: blur(7px); */
   width: var(--maxwidth);
   height: 82px;
-  z-index: 2;
+  z-index: 3;
   padding: 25px 10px 20px 100px;
   position: fixed;
   top: 0px;
@@ -121,9 +121,9 @@ nav{
   z-index: 1;
   position: fixed;
   top: 84px;
-  left: calc(var(--maxwidth) - 159px);
+  left: calc(var(--maxwidth) - 164px);
   list-style-type: none;  
-  width: 150px;
+  width: 155px;
   border: solid 0.25px rgba(255, 255, 255, 0.137);
   /* transition-duration: 0.3s; */
   /* box-shadow: var(--boxshadow); */
@@ -131,7 +131,7 @@ nav{
 .nvbtn{
   appearance: button;
   margin: -2px;
-  max-width: 88px;
+  max-width: 98px;
   text-align: center;
 }
 .navButton{
