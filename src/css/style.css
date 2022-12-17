@@ -384,22 +384,25 @@ footer {
 }
 
 footer:hover {
-  z-index: 1;
   height: 120px;
   backdrop-filter: blur(14px);
 }
-/* .scrollToTopBtn{
-  z-index: 5;
-  appearance: button;
-  color: rgba(255, 255, 0, 0.75);
-  position: fixed;
-  border-radius: 100px;
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  transition-duration: 0.3s;
-  bottom: 75px;
-  right: 50px;
-  font-size: 3em;
-  width: 75px;
-  height: 75px;
-} */
+.parent{
+  text-align: center;
+}
+iframe{
+  display: inline-block;
+  z-index: 1;
+  padding: 25px;
+  margin: 0 auto;
+  box-shadow: var(--boxshadow);
+  background: var(--navbckg);
+  border-radius: 20px;
+  border: solid 2px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
