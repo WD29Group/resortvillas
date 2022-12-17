@@ -10,7 +10,7 @@ function ChangeBackgroundOnScroll() {
 
       bckDropFilter('blur('+ {scroll} +'px)');
       if (scroll > 600) {
-         setBgColor('rgba(0, 0, 0, 0.75)');
+         setBgColor('rgba(0, 0, 0, 0.5)');
         bckDropFilter('blur(75px)');
 
       } else {
