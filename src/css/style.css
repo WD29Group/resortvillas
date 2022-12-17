@@ -136,24 +136,24 @@ nav{
 }
 .navButton{
   border-radius: 3px;
-  /* padding: 7px 25px 7px 25px; */
-  margin: 0 7px 0 5px;
+  padding: 7px 25px 7px 15px;
+  margin: 0 12px 0 0px;
   border: none;
   background: rgba(0, 0, 0, 0.01);
-  padding: 7px;
+  /* padding: 7px; */
   border: none;
-  /* padding: 10px; */
   transition-duration: 0.3s;
   color: white;
   width: 120px;
   font-family: var(--fontfam);
+  text-align: center;
 }
 
 .navButton:hover{
   /* background: rgba(0, 0, 0, 0.116); */
   /* border-radius: 15px; */
   font-weight: bold;
-  margin: -3px 10px 0 2px;
+  margin: -3px 12px 0 0px;
   color: rgb(255, 230, 90);
   text-shadow: 3px 3px 3px black;
   text-align: center;
@@ -164,7 +164,7 @@ nav{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   font-weight:lighter;
-  margin: 0 5px 0 7px;
+  margin: 0 12px 0 0px;
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
   font-size: 1.25rem;
