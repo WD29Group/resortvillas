@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from 'react';
-import ChangeBackgroundOnScroll from "./pages/ChangeBackgroundOnScroll";
+import React, { useState } from 'react';
+import ChangeTopBG from "./pages/ChangeTopBG";
+import Footer from "./pages/Footer";
 function Navigation({ children }) {
+  const [selected, setSelected] = useState('Home');
   return (
     <>
       <div class-="container">
@@ -11,25 +13,25 @@ function Navigation({ children }) {
         </span>
         <nav className="text-decoration-none">
           <div className="navmenu">
-            <Link to="/" className="navButton nvbtn">
+            <Link to="/" className={selected === 'Home' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Home')}>
               Home
             </Link>
-            <Link to="/Resorts" className="navButton nvbtn">
+            <Link to="/Resorts" className={selected === 'Resorts' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Resorts')}>
               Resorts
             </Link>
-            <Link to="/Galery" className="navButton nvbtn">
+            <Link to="/Gallery" className={selected === 'Gallery' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Gallery')}>
               Gallery
             </Link>
-            <Link to="/Services" className="navButton nvbtn">
+            <Link to="/Services" className={selected === 'Services' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Services')}>
               Services
             </Link>
-            <Link to="/Booking" className="navButton nvbtn">
+            <Link to="/Booking" className={selected === 'Booking' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Booking')}>
               Booking
             </Link>
-            <Link to="/News" className="navButton nvbtn">
+            <Link to="/News" className={selected === 'News' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('News')}>
               News
             </Link>
-            <Link to="/Weather" className="navButton nvbtn">
+            <Link to="/Weather" className={selected === 'Weather' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Weather')}>
               Weather
             </Link>
           </div>
@@ -45,50 +47,44 @@ function Navigation({ children }) {
       </button>
       <ul className="navmenu2 collapse navbar-collapse xtransp" id="navbar">
         <li>
-          <Link to="/" className="navButton nvbtn">
-            
+         <Link to="/" className={selected === 'Home' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Home')}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="/Resorts" className="navButton nvbtn">
-            
+          <Link to="/Resorts" className={selected === 'Resorts' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Resorts')}>
             Resorts
           </Link>
         </li>
         <li>
-          <Link to="/Galery" className="navButton nvbtn">
-            
+          <Link to="/Gallery" className={selected === 'Gallery' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Gallery')}>
             Gallery
           </Link>
         </li>
         <li>
-          <Link to="/Services" className="navButton nvbtn">
-            
+          <Link to="/Services" className={selected === 'Services' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Services')}>
             Services
           </Link>
         </li>
         <li>
-          <Link to="/Booking" className="navButton nvbtn">
-            
+          <Link to="/Booking" className={selected === 'Booking' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Booking')}>
             Booking
           </Link>
         </li>
         <li>
-          <Link to="/News" className="navButton nvbtn">
-            
+          <Link to="/News" className={selected === 'News' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('News')}>
             News
           </Link>
         </li>
         <li>
-          <Link to="/Weather" className="navButton nvbtn">
-            
+          <Link to="/Weather" className={selected === 'Weather' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Weather')}>
             Weather
           </Link>
         </li>
       </ul>
-      <ChangeBackgroundOnScroll />
+      <ChangeTopBG />
       {children}
+      <Footer />
     </>
   );
 }

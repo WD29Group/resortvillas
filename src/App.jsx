@@ -7,10 +7,11 @@ import News from "./pages/News";
 import Services from "./pages/Services";
 import Weather from "./pages/Weather";
 import Resorts from "./pages/Resorts";
-import ChangeBackgroundOnScroll from "./pages/ChangeBackgroundOnScroll";
+import ChangeBackgroundOnScroll from "./pages/ChangeTopBG";
 import "./css/style.css";
-
+import React, { useState } from 'react';
 function App() {
+  const [selected, setSelected] = useState('Home');
   return (
     <BrowserRouter>
       <Navigation>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Services" element={<Services />} />
           <Route path="/Weather" element={<Weather />} />
           <Route path="/Resorts" element={<Resorts />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </Navigation>
     </BrowserRouter>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function ChangeBackgroundOnScroll() {
+function ChangeTopBG() {
   const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
   const [backdropFilter, bckDropFilter] = useState('blur(0px)');
 
@@ -27,4 +27,4 @@ function ChangeBackgroundOnScroll() {
   return <div style={{ backgroundColor: bgColor, height: "80px", width: "110%", position: "fixed", top: 0, zIndex: 1, backdropFilter: backdropFilter,transitionDuration: "3s" }}>
   </div>;
 }
-export default ChangeBackgroundOnScroll;
+export default ChangeTopBG;
