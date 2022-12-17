@@ -19,7 +19,7 @@
   --maxwidth: 100vw;
   --navbckg: rgba(0, 0, 0, 0.5);
   --boxshadow: -1px -1px 1px #ffffffd2;
-  --BigTextcolor: rgba(255, 255, 255, 0.8);
+  /* --BigTextcolor: rgba(255, 255, 255, 0.8); */
   --BigTextcolor: rgba(255, 255, 0, 0.8);
   --fontfam: 'Nothing You Could Do', cursive;
   
@@ -90,7 +90,6 @@
 }
 
 nav{
-  /* background: var(--navbckg); */
   color: rgba(163, 180, 255, 0.966);
   /* backdrop-filter: blur(7px); */
   width: var(--maxwidth);
@@ -118,7 +117,7 @@ nav{
 }
 
 .navmenu2{/* Menu when small */
-  background: black;
+  background: var(--navbckg);
   z-index: 1;
   position: fixed;
   top: 84px;
@@ -138,7 +137,7 @@ nav{
 .navButton{
   border-radius: 3px;
   /* padding: 7px 25px 7px 25px; */
-  margin: 0 5px 0 5px;
+  margin: 0 7px 0 5px;
   border: none;
   background: rgba(0, 0, 0, 0.01);
   padding: 7px;
@@ -154,7 +153,7 @@ nav{
   /* background: rgba(0, 0, 0, 0.116); */
   /* border-radius: 15px; */
   font-weight: bold;
-  margin: -3px 10px 0 10px;
+  margin: -3px 10px 0 2px;
   color: rgb(255, 230, 90);
   text-shadow: 3px 3px 3px black;
   text-align: center;
@@ -162,9 +161,10 @@ nav{
 }
 .navButton:active {
   background: rgba(0, 0, 0, 0.116);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   font-weight:lighter;
-  margin: 0 5px 0 5px;
+  margin: 0 5px 0 7px;
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
   font-size: 1.25rem;
@@ -296,11 +296,12 @@ nav a:link, a:visited{
 }
 
 .xtransp {
-  background-color: transparent;
+  /* background-color: transparent; */
   background: var(--navbckg);
   color: rgb(255, 255, 255);
   backdrop-filter: blur(12px);
   opacity: 1;
+  border-radius: 7px;
   }
 
 .crd{
