@@ -47,7 +47,6 @@ function ScrollToTopButton() {
                   height: "75px",
                   width: "75px",
                   position: "fixed",
-                  bottom: 0,
                   zIndex: "3",
                   bottom: "75px",
                   right: "50px",

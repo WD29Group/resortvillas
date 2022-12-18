@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import React, { useState } from 'react';
-import ChangeTopBG from "./pages/ChangeTopBG";
-import ScrollToTopButton from './pages/ScrollToTopButton';
-import Footer from "./pages/Footer";
+import ChangeTopBG from "./ReUse/ChangeTopBG";
+import ScrollToTopButton from './ReUse/ScrollToTopButton';
+import Footer from "./ReUse/Footer";
 function Navigation({ children }) {
   const [selected, setSelected] = useState('Home');
   return (
     <>
       <div class-="container">
         <span>
-          <img className="logo" src="./logo.png" />
+          <img className="logo" alt="Logo" src="./logo.png" />
           <h1 className="siteName">Resort Villas</h1>
         </span>
         <nav className="text-decoration-none">
