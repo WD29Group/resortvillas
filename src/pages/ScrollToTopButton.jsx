@@ -11,7 +11,7 @@ function ScrollToTopButton() {
     function handleScroll() {
       const scroll = window.scrollY;
 
-      if (scroll > 600) {
+      if (scroll > 800) {
         setBgColor('rgba(0, 0, 0, 0.5)');
         bckDropFilter('blur(12px)');
         DisplayUpBtn("1");

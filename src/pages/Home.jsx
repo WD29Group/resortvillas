@@ -1,5 +1,4 @@
 import elnido from "../vid/elnido.webm"
-
 function Home() {
   return (
     <>
@@ -15,7 +14,6 @@ function Home() {
       <div className="bkg2"></div>
       <div className="bkg1"></div>
     </>
-      
   );
 }
 export default Home;
