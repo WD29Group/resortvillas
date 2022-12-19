@@ -5,15 +5,18 @@ function Footer() {
   const [backdropFilter, bckDropFilter] = useState('blur(0px)');
   const [bgHeight, setbgHeight] = React.useState('50px');
   const [DisplayBtn, DisplayUpBtn] = useState('0.7');
+  const [borderRadius, getBorderRadius] = useState('120px 120px 0 0');
 
   function handleMouseEnter() {
     setbgHeight('120px');
     DisplayUpBtn("1");
+    getBorderRadius('80px 80px 0 0');
   }
 
   function handleMouseLeave() {
     setbgHeight('50px');
     DisplayUpBtn("0.7");
+    getBorderRadius('20px 20px 0 0');
   }
 
   useEffect(() => {
@@ -53,7 +56,7 @@ function Footer() {
                     textAlign: "center",
                     alignSelf: "center",
                     left: "50%",
-                    borderRadius: "20px 20px 0 0",
+                    borderRadius: borderRadius,
                     transform: "translate(-50%, 0)",
                 }
             }

@@ -13,7 +13,7 @@ function Home() {
         loop
         autoPlay
       />
-           <div className="pararelax"></div>  
+      <div className="pararelax"></div>  
       <Parallax />
       
       <div className="bkg2"></div>

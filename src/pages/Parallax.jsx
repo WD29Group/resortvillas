@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
-import beachresort from "../img/beachresort.jpeg"
+import beachresort from "../img/beachresort.jpeg";
+
 const Parallax = () => {
   const parallaxRef = useRef(null);
-
   useEffect(() => {
     const handleScroll = () => {
       const yPos = -(window.scrollY / parallaxRef.current.dataset.speed);
@@ -31,7 +31,6 @@ const Parallax = () => {
                 <img className="border border-5 border-light mt-3" src={beachresort} alt="resort" height="350"></img>
               </div>
               <div className="col-md-6 ps-5 pt-5 ms-5 pb-5 mb-5 mt-5 justify-content-center" id="resortDescript">
-                <br/>
                 <br/>
                 Nestled within a secluded forest and overlooking the crystal-clear waters of Bacuit Bay,
                 Paraiso is a luxurious retreat that offers an unparalleled escape into the natural beauty of El Nido.
