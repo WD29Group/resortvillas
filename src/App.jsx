@@ -8,9 +8,9 @@ import Services from "./pages/Services";
 import Weather from "./pages/Weather";
 import Resorts from "./pages/Resorts";
 import "./css/style.css";
-// import React, { useState } from 'react';
+
+
 function App() {
-  // const [selected, setSelected] = useState('Home');
   return (
     <BrowserRouter>
       <Navigation>
@@ -28,5 +28,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;

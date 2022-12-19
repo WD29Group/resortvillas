@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 
 function Footer() {
- const [bgHeight, setbgHeight] = React.useState('50px');
- const [DisplayBtn, DisplayUpBtn] = useState('0.75');
+  const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
+  const [backdropFilter, bckDropFilter] = useState('blur(0px)');
+  const [bgHeight, setbgHeight] = React.useState('50px');
+  const [DisplayBtn, DisplayUpBtn] = useState('0.7');
+
   function handleMouseEnter() {
-    setbgHeight('100px');
+    setbgHeight('120px');
     DisplayUpBtn("1");
   }
 
   function handleMouseLeave() {
     setbgHeight('50px');
-    DisplayUpBtn("0.75");
+    DisplayUpBtn("0.7");
   }
-  const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
-  const [backdropFilter, bckDropFilter] = useState('blur(0px)');
 
   useEffect(() => {
     function handleScroll() {
@@ -42,12 +43,13 @@ function Footer() {
                     backgroundColor: bgColor,
                     height: bgHeight,
                     opacity: DisplayBtn,
-                    width: "98%",
+                    color: "white",
+                    width: "99.5%",
                     position: "fixed",
                     bottom: 0,
                     zIndex: 1,
                     backdropFilter: backdropFilter,
-                    transitionDuration: "1s",
+                    transitionDuration: "1.5s",
                     textAlign: "center",
                     alignSelf: "center",
                     left: "50%",
@@ -58,7 +60,7 @@ function Footer() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
       >
-            <small className='text-muted'>Copyright (c) 2022 WD29 Group-IV</small>
+            <small>Copyright (c) 2022 WD29 Group-IV</small>
         </footer>
     );
 }

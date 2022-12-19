@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 
 function ScrollToTopButton() {
 
-  const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
-  const [backdropFilter, bckDropFilter] = useState('blur(0px)');
   const [DisplayBtn, DisplayUpBtn] = useState('0');
 
   useEffect(() => {
@@ -12,13 +10,9 @@ function ScrollToTopButton() {
       const scroll = window.scrollY;
 
       if (scroll > 800) {
-        setBgColor('rgba(0, 0, 0, 0.5)');
-        bckDropFilter('blur(12px)');
         DisplayUpBtn("1");
 
       } else {
-        setBgColor('rgba(0, 0, 0, 0)');
-        bckDropFilter('blur(0px)');
         DisplayUpBtn("0");
       }
     }
@@ -30,28 +24,26 @@ function ScrollToTopButton() {
   }, []);
 
     const handleClick = () => {
-    window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
   };
 
     return (
-        <button
+        <button id='Button2Top'
             style={
                 {
                   opacity: DisplayBtn,
-                  backgroundColor: bgColor,
                   borderRadius: "100px",
                   appearance: "button",
-                  color: "rgba(255, 255, 0, 0.75)",
-                  background: "rgba(0, 0, 0, 0.5)",
+                  background: "rgba(255, 180, 75, 0.6)",
+                  color: "rgba(0, 0, 0, 0.8)",
                   border: "none",
-                  height: "75px",
-                  width: "75px",
+                  height: "70px",
+                  width: "70px",
                   position: "fixed",
                   zIndex: "3",
-                  bottom: "75px",
-                  right: "50px",
+                  bottom: "20px",
+                  right: "20px",
                   fontSize: "3em",
-                  backdropFilter: backdropFilter,
                   transitionDuration: "0.7s"
                 }
             }
