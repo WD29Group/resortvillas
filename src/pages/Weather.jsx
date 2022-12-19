@@ -3,5 +3,4 @@ function Weather() {
     <div className="bkg1"></div>
   );
 }
-
 export default Weather;
