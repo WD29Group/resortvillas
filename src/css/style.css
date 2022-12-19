@@ -40,6 +40,7 @@ code {
 }
 
 .landingpg{
+  z-index: 1;
   margin: 0;
   background: url('../img/bkg2.jpg');
   /* width: var(--maxwidth); */
@@ -205,7 +206,7 @@ nav a:link, a:visited{
 }
 
 .bkg1 {
-  z-index: 0;
+  z-index: 1;
   margin: -7px 0 0 0;
   background: url('../img/bkg1.webp');
   position: relative;
@@ -217,7 +218,7 @@ nav a:link, a:visited{
 }
 
 .bkg2 {
-  z-index: 0;
+  z-index: 1;
   margin: -7px 0 0 0;
   background: url('../img/bkg2.webp');
   position: relative;
@@ -227,11 +228,20 @@ nav a:link, a:visited{
   justify-content: right;
   align-items: flex-end;
 }
-
-
+.bkg3{
+  z-index: 1;
+  margin: -7px 0 0 0;
+  background: url('../img/bkg3.webp');
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  justify-content: right;
+  align-items: flex-end;
+}
 
 .bkg4 {
-  z-index: 0;
+  z-index: 1;
   margin: -7px 0 0 0;
   background: url('../img/bkg4.webp');
   position: relative;
@@ -242,7 +252,7 @@ nav a:link, a:visited{
   align-items: flex-end;
 }
 .bkg5 {
-  z-index: 0;
+  z-index: 1;
   margin: -7px 0 0 0;
   background: url('../img/bkg5.webp');
   position: relative;
@@ -495,3 +505,27 @@ iframe{
   color: #a9e100;
   text-decoration: none;
 }
+
+/* PARALAX AREA */
+.pararelax{
+  z-index: -1;
+
+  margin: -7px 0 0 0;
+  background: url('../img/bkg4.webp');
+  /* position: relative; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45vh;
+  justify-content: right;
+  align-items: flex-end;
+  }
+
+.parallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+/* PARALAX AREA */
