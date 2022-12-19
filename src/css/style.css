@@ -229,17 +229,7 @@ nav a:link, a:visited{
   align-items: flex-end;
 }
 
-.bkg3 {
-  z-index: 0;
-  margin: -7px 0 0 0;
-  background: url('../img/bkg3.webp');
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  justify-content: right;
-  align-items: flex-end;
-}
+
 
 .bkg4 {
   z-index: 0;

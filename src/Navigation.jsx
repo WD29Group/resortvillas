@@ -10,7 +10,7 @@ function Navigation({ children }) {
       <div class-="container">
         <span>
           <img className="logo" alt="Logo" src="./logo.png" />
-          <h1 className="siteName">Resort Villas</h1>
+          <h1 className="siteName ps-3">Resort Villas</h1>
         </span>
         <nav className="text-decoration-none">
           <div className="navmenu">
