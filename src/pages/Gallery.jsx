@@ -1,15 +1,8 @@
-import beach from "../vid/beach.mp4";
+import Elnidovid2 from "../ReUse/Elnidovid2.jsx"
 function Gallery() {
   return (
     <>
-      <video
-        className="landingpg"
-        src={beach}
-        type="video/mp4"
-        muted
-        loop
-        autoPlay
-      />
+      <Elnidovid2 />
       <div className="bkg3">
     </div>
     </>

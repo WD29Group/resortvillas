@@ -1,4 +1,4 @@
-import MapLoc from "./MapLoc";
+import MapLoc from "../ReUse/MapLoc";
 function Resorts() {
   return (
     <>
@@ -6,7 +6,6 @@ function Resorts() {
       </div>
       <div class="bkg3">
       </div>
-      
       <div class="bkg4">
         <MapLoc />
       </div>
