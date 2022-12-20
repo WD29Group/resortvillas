@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function Footer() {
   const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
-  const [backdropFilter, bckDropFilter] = useState('blur(0px)');
+  const [backdropFilter, bckDropFilter] = useState('blur(3px)');
   const [bgHeight, setbgHeight] = React.useState('50px');
   const [DisplayBtn, DisplayUpBtn] = useState('0.7');
   const [borderRadius, getBorderRadius] = useState('120px 120px 0 0');
@@ -29,7 +29,7 @@ function Footer() {
 
       } else {
         setBgColor('rgba(0, 0, 0, 0)');
-        bckDropFilter('blur(0px)');
+        bckDropFilter('blur(3px)');
       }
     }
 

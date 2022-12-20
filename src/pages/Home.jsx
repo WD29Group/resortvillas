@@ -14,7 +14,6 @@ function Home() {
         autoPlay
       />
       <Parallax />
-      <div className="bkg2"></div>
     </>
   );
 }

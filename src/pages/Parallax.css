@@ -4,18 +4,17 @@
   --fontfam: 'Nothing You Could Do', cursive;
 }
 body, html {
-  height: 100%;
-  margin: 0;
-  font-size: 1.2em;
-  font-family: var(--fontfam);
+  /* height: 100%;
+  margin: 0; */
   color: #777;
   /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
+  /* font-size: ; */
 }
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
   position: relative;
-  opacity: 0.65;
+  /* opacity: 0.77; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,12 +47,14 @@ body, html {
   color: #000;
 }
 
-.caption span.border {
-  background-color: #111;
+.caption span.borders {
+  background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+  font-family: var(--fontfam);
+  letter-spacing: 7px;
 }
 
 h3 {
@@ -61,17 +62,18 @@ h3 {
   text-transform: uppercase;
   font-family: var(--fontfam);
   color: #111;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+/* @media only screen and (max-device-width: 1024px) {
 
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
     background-attachment: scroll;
   }
-}
+} */
 .style1{
   color: #777;
   background-color:white;
@@ -92,7 +94,4 @@ h3 {
   text-align:center;
   padding:50px 80px;
   text-align: justify;
-}
-.posrelative{
-  position: relative;
 }
