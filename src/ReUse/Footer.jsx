@@ -63,7 +63,7 @@ function Footer() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
       >
-            <small>Copyright (c) 2022 WD29 Group-IV</small>
+            <small>Copyright (c) 2022 WD29 Group-VI</small>
         </footer>
     );
 }

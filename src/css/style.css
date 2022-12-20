@@ -7,7 +7,7 @@
   -webkit-user-drag: none;
   -webkit-user-select: none;
   user-select: none;
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
   box-sizing: 0;
   /* background: black; */
@@ -15,7 +15,7 @@
 
 :root {
   /* margin: 0 0 0 -9px; */
-  background: rgb(129, 129, 129);
+  /* background: rgb(129, 129, 129); */
   --maxwidth: 100vw;
   --navbckg: rgba(0, 0, 0, 0.5);
   --boxshadow: -1px -1px 1px #ffffffd2;
