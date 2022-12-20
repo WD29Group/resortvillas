@@ -42,23 +42,23 @@ function Footer() {
     return (
         <footer
             style={
-                {
-                    backgroundColor: bgColor,
-                    height: bgHeight,
-                    opacity: DisplayBtn,
-                    color: "white",
-                    width: "99.5%",
-                    position: "fixed",
-                    bottom: 0,
-                    zIndex: 1,
-                    backdropFilter: backdropFilter,
-                    transitionDuration: "1.5s",
-                    textAlign: "center",
-                    alignSelf: "center",
-                    left: "50%",
-                    borderRadius: borderRadius,
-                    transform: "translate(-50%, 0)",
-                }
+                    {
+                        backgroundColor: bgColor,
+                        height: bgHeight,
+                        opacity: DisplayBtn,
+                        color: "white",
+                        width: "99.5%",
+                        position: "fixed",
+                        bottom: 0,
+                        zIndex: 1,
+                        backdropFilter: backdropFilter,
+                        transitionDuration: "1.5s",
+                        textAlign: "center",
+                        alignSelf: "center",
+                        left: "50%",
+                        borderRadius: borderRadius,
+                        transform: "translate(-50%, 0)",
+                    }
             }
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
