@@ -4,9 +4,9 @@ function Rooms() {
       <div className="container-fluid mt-5">
         <div className="row">
 
-        {/*carousel 1 */}
-          <div className="col-md-4 mx-5">
-            <h1 className="m-5">Superior Room</h1>
+          {/*carousel 1 */}
+          <div className="col-md-4 m-5">
+            <h1 className="ms-5 text-center mt-5">Superior Room</h1>
             <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator, in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, slippers. Hot and cold shower, bathroom amenities and towels.</p>
             <button className="btn btn-primary"> BOOK NOW</button>
           </div>
@@ -39,8 +39,8 @@ function Rooms() {
             </div>
           </div>
 
-     {/*carousel 2 */}
-          <div className="col-md-7">
+          {/*carousel 2 */}
+          <div className="col-md-7 mx-5">
             <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,16 +68,15 @@ function Rooms() {
               </button>
             </div>
           </div>
-          <div className="col-md-4 mx-5">
-            <h1 className="m-5">Superior Room</h1>
-            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator, in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, slippers. Hot and cold shower, bathroom amenities and towels.</p>
+          <div className="col-md-4 mt-5">
+            <h1 className="text-center mt-5">Deluxe Room</h1>
+            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator,in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, robe, slippers, balcony, Hot and cold shower, bathroom amenities and towels.</p>
             <button className="btn btn-primary"> BOOK NOW</button>
           </div>
-
            {/*carousel 3 */}
-           <div className="col-md-4 mx-5">
-            <h1 className="m-5">Superior Room</h1>
-            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator, in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, slippers. Hot and cold shower, bathroom amenities and towels.</p>
+           <div className="col-md-4 m-5">
+            <h1 className="ms-5 text-center mt-5">Junior Suite</h1>
+            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator,in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, robe, slippers, balcony, bathtub, Hot and cold shower, bathroom amenities and towels, Seating area.</p>
             <button className="btn btn-primary"> BOOK NOW</button>
           </div>
           <div className="col-md-7">
@@ -109,8 +108,8 @@ function Rooms() {
             </div>
           </div>
 
-         {/*carousel 4 */}
-         <div className="col-md-7">
+          {/*carousel 4 */}
+          <div className="col-md-7 mx-5">
             <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -138,16 +137,15 @@ function Rooms() {
               </button>
             </div>
           </div>
-          <div className="col-md-4 mx-5">
-            <h1 className="m-5">Superior Room</h1>
-            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator, in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, slippers. Hot and cold shower, bathroom amenities and towels.</p>
+          <div className="col-md-4 mt-5">
+            <h1 className="text-center mt-5">Premier Suite</h1>
+            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator,in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, robe, slippers, balcony, bathtub, Hot and cold shower, bathroom amenities and towels, seating area, with seaview.</p>
             <button className="btn btn-primary"> BOOK NOW</button>
           </div>
-
-          {/*carousel 5 */}
-          <div className="col-md-4 mx-5">
-            <h1 className="m-5">Superior Room</h1>
-            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator, in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, slippers. Hot and cold shower, bathroom amenities and towels.</p>
+           {/*carousel 5 */}
+           <div className="col-md-4 m-5">
+            <h1 className="ms-5 text-center mt-5">Sky Suite</h1>
+            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator,in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, robe, slippers, balcony, sunbeds, jacuzzi, Hot and cold shower, bathroom amenities and towels, seating area, with seaview.</p>
             <button className="btn btn-primary"> BOOK NOW</button>
           </div>
           <div className="col-md-7">
@@ -179,8 +177,8 @@ function Rooms() {
             </div>
           </div>
 
-           {/*carousel 4 */}
-         <div className="col-md-7">
+          {/*carousel 6 */}
+          <div className="col-md-7 mx-5">
             <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -208,16 +206,16 @@ function Rooms() {
               </button>
             </div>
           </div>
-          <div className="col-md-4 mx-5">
-            <h1 className="m-5">Superior Room</h1>
-            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator, in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, slippers. Hot and cold shower, bathroom amenities and towels.</p>
+          <div className="col-md-4 mt-5">
+            <h1 className="text-center mt-5">Sky Villa</h1>
+            <p>Air-conditioned, 42-inch Smart cabled TV, Wi-Fi, coffee and tea facility, mini-refrigerator,in-room safe, writing desk, bath and toilet separate, bidet, hair dryer, robe, slippers, balcony, sunbeds, jacuzzi, Hot and cold shower, bathroom amenities and towels, seating area, with seaview.</p>
             <button className="btn btn-primary"> BOOK NOW</button>
           </div>
-          
+
         </div>
       </div>
 
-      
+
 
 
 
