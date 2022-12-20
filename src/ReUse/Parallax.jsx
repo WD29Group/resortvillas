@@ -1,3 +1,4 @@
+import Carousel from "../Carousel.jsx";
 import "../css/Parallax.css";
 function Parallax() {
   return (
@@ -19,8 +20,8 @@ function Parallax() {
                 selection of drinks to complement every meal. In addition, the property is home to a variety of hidden gems
                 and secret spots for guests to discover and explore during their stay. From the moment they arrive, guests
                 at Paraiso are enveloped in an oasis of tranquility and rejuvenation.</p>
+        <Carousel />
         </div>
-
         <div class="bgimg-2">
           <div class="caption">
           <span class="borders" style={{backgroundColor: "transparent", fontSize: "35px", color: "#f7f7f7", textShadow: "2px 2px 2px rgba(0, 0, 0, 0.75)"}}>El Nido Beach Hotels</span>
@@ -47,7 +48,7 @@ function Parallax() {
 
         <div class="bgimg-1">
           <div class="caption">
-          <span class="borders">Resort Villas at your service</span>
+          <span class="borders">Resort Villas <br/>at your service</span>
           </div>
         </div>
     </>

@@ -1,0 +1,21 @@
+.slide,
+.slide1,
+.slide2,
+.slide3 {
+    height: 50vh;
+    width: auto;
+    background-color: gray;
+    background-size: cover;
+}
+
+.slide1 {
+    background-image: url("../carouseldata/1.jpg");
+}
+
+.slide2 {
+    background-image: url("../carouseldata/2.jpg");
+}
+
+.slide3 {
+    background-image: url("../carouseldata/3.jpg");
+}
