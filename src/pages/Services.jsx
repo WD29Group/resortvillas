@@ -1,7 +1,5 @@
 import Cards from '../Cards';
 
-
-
 function Services() {
   return (
     <>
