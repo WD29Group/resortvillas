@@ -1,4 +1,5 @@
-import CardItems from '../CardItems.jsx';
+import CardItems from './CardItems.jsx';
+import './Cards.css';
 
 function Cards() {
   return(
