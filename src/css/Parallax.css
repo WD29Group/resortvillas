@@ -81,20 +81,21 @@ h3 {
   color: #777;
   background-color:white;
   text-align:center;
-  padding:50px 80px;
+  padding:30px 30px;
   text-align: justify;
 }
 .style2 {
   color:#ddd;
   background-color: rgba(0, 0, 0, 0.75);
   text-align:center;
-  padding:50px 80px;
+  /* padding:50px 80px; */
+padding: 30px 30px;
   text-align: justify;
 }
 .style3{
   color:#ddd;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color:#282E34;
   text-align:center;
-  padding:50px 80px;
+  padding:30px 30px;
   text-align: justify;
 }

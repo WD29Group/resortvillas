@@ -7,7 +7,10 @@
     background-color: gray;
     background-size: cover;
 }
-
+.carouselfonts{
+    color: white;
+    font-size: 1.5em;
+}
 .slide1 {
     background-image: url("../carouseldata/1.jpg");
 }
