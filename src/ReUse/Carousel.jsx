@@ -1,4 +1,4 @@
-import "./css/Carousel.css";
+import "../css/Carousel.css";
 function Carousel() {
     return (
         <>
@@ -10,7 +10,7 @@ function Carousel() {
                 </div>
 
                 <div className="carousel-inner">
-                    <div className="carousel-item" data-bs-interval="2500">
+                    <div className="carousel-item" data-bs-interval="3000">
                         <div className="slide1"></div>
                         <div className="carousel-caption d-none d-md-block">
                             <h3 className="">First slide label</h3>
@@ -18,7 +18,7 @@ function Carousel() {
                         </div>
                     </div>
 
-                    <div className="carousel-item" data-bs-interval="2500">
+                    <div className="carousel-item" data-bs-interval="3000">
                         <div className="slide2"></div>
                         <div className="carousel-caption d-none d-md-block">
                             <h3 className="">Second slide label</h3>
@@ -26,7 +26,7 @@ function Carousel() {
                         </div>
                     </div>
 
-                    <div className="carousel-item active" data-bs-interval="2500">
+                    <div className="carousel-item active" data-bs-interval="3000">
                         <div className="slide3"></div>
                         <div className="carousel-caption d-none d-md-block">
                             <h3 className="">Third slide label</h3>

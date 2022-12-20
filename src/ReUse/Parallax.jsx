@@ -1,4 +1,4 @@
-import Carousel from "../Carousel.jsx";
+import Carousel from "./Carousel.jsx";
 import "../css/Parallax.css";
 function Parallax() {
   return (

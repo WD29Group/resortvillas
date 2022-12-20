@@ -98,6 +98,7 @@ h3 {
   padding:30px 30px;
   text-align: justify;
 }
+
 @media (min-width: 901px) {
   .style1 {
     padding: 50px 80px;
@@ -112,6 +113,19 @@ h3 {
   }
 }
 
+@media (max-width: 500px) {
+  .style1 {
+    padding: 20px 10px;
+  }
+
+  .style2 {
+    padding: 20px 10px;
+  }
+
+  .style3 {
+    padding: 20px 10px;
+  }
+}
 /* @media (max-width: 900px) {
 
 } */

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 function Footer() {
   const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
   const [backdropFilter, bckDropFilter] = useState('blur(3px)');
-  const [bgHeight, setbgHeight] = React.useState('50px');
+  const [bgHeight, setbgHeight] = React.useState('25px');
   const [DisplayBtn, DisplayUpBtn] = useState('0.7');
   const [borderRadius, getBorderRadius] = useState('120px 120px 0 0');
 
@@ -14,7 +14,7 @@ function Footer() {
   }
 
   function handleMouseLeave() {
-    setbgHeight('50px');
+    setbgHeight('25px');
     DisplayUpBtn("0.7");
     getBorderRadius('20px 20px 0 0');
   }
