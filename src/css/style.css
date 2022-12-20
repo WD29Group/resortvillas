@@ -42,7 +42,7 @@ code {
 .landingpg{
   z-index: 1;
   margin: 0;
-  background: url('../img/bkg2.jpg');
+  background: url('../img/bkg.webp');
   /* width: var(--maxwidth); */
   width: 100%;
   height: 100%;
