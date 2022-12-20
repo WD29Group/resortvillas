@@ -529,3 +529,19 @@ iframe{
   z-index: 0;
 }
 /* PARALAX AREA */
+
+/* ROOMS AREA */
+.box {
+  padding: 0px;
+  margin: 0px;
+}
+
+@media(max-width: 768px){
+  .box{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+/* ROOMS AREA */
