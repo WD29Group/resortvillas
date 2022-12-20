@@ -1,0 +1,57 @@
+[
+  {
+    "number" : 1,
+    "icon": "Hello",
+    "title": " Butler Service",
+    "body": "Indulge in tailored-to-fit services from Lihim Butlers who ensure all your requests are catered to with efficiency, excellent standards, and always with a personal touch."
+  },
+  {
+    "number" : 2,
+    "icon": "Hello",
+    "title": " Opulence of Experience",
+    "body": " A host of invigorating experiences await you – from adrenaline pumping to laidback activities. Bicycles are available upon request."
+  },
+  {
+    "number" : 3,
+    "icon": "Hello",
+    "title": " Privacy is Priority",
+    "body": " Tucked away in the forests of Caalan, you can delight in peace and solace here at your private sanctuary. Designed for quiet solitude, each of our villas were made to be your hideaway that promises supreme comfort and seclusion."
+  },
+  {
+    "number" : 4,
+    "icon": "Hello",
+    "title": "  Contactless Check-In",
+    "body": " Comfortably check-in upon arrival and let your Lihim Butler handle everything for you."
+  },
+  {
+    "number" : 5,
+    "icon": "Hello",
+    "title": "Culinary Treats",
+    "body": "A dining destination that features locally-caught seafood, Filipino heritage fares, and curated global cuisines."
+  },
+  {
+    "number" : 6,
+    "icon": "Hello",
+    "title": "Transport Service",
+    "body": "Shuttle services are provided for you, including speedboat and tuktuk."
+  },
+  {
+    "number" : 7,
+    "icon": "Hello",
+    "title": " Coffee, Tea, & Minibar",
+    "body": "Every suite is equipped with a Nespresso coffee machine and a tea kettle with a selection of fine teas. A complimentary bar on your first night for you to enjoy."
+  },
+  {
+    "number" : 8,
+    "icon": "Hello",
+    "title": "Fitness Studio",
+    "body": "Equipped with the latest exercise machines and fitness props for functional movement, the studio is available for guests 18 years old and above."
+  },
+  {
+    "number" : 9,
+    "icon": "Hello",
+    "title": "Guest Safety",
+    "body": "The health and safety of our guests and staff are our top priority. The Lihim Team has undergone training on COVID-19 safety and sanitation protocols."
+  }
+
+]

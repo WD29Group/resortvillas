@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Weather from "./pages/Weather";
 import Resorts from "./pages/Resorts";
 import "./css/style.css";
+import Rooms from "./pages/Rooms";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Weather" element={<Weather />} />
           <Route path="/Resorts" element={<Resorts />} />
           <Route path="*" element={<Home />} />
+          <Route path="/Rooms" element={<Rooms />} />
         </Routes>
       </Navigation>
     </BrowserRouter>
