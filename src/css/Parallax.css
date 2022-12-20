@@ -99,3 +99,20 @@ padding: 30px 30px;
   padding:30px 30px;
   text-align: justify;
 }
+@media (min-width: 901px) {
+  .style1 {
+    padding: 50px 80px;
+  }
+
+  .style2 {
+    padding: 50px 80px;
+  }
+
+  .style3 {
+    padding: 50px 80px;
+  }
+}
+
+/* @media (max-width: 900px) {
+
+} */
