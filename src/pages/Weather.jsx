@@ -1,4 +1,7 @@
-import Carousel from "../ReUse/Carousel.jsx"
+import Carousel from "../ReUse/Carousel.jsx";
+import "../css/weather.css";
+
+
 function Weather() {
   return (
     <>
