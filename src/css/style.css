@@ -10,12 +10,9 @@
   margin: 0 0 0 0;
   padding: 0;
   box-sizing: 0;
-  /* background: black; */
 }
 
 :root {
-  /* margin: 0 0 0 -9px; */
-  /* background: rgb(129, 129, 129); */
   --maxwidth: 100vw;
   --navbckg: rgba(0, 0, 0, 0.5);
   --boxshadow: -1px -1px 1px #ffffffd2;
@@ -139,8 +136,6 @@ nav{
   list-style-type: none;  
   width: 155px;
   border: solid 0.25px rgba(255, 255, 255, 0.137);
-  /* transition-duration: 0.3s; */
-  /* box-shadow: var(--boxshadow); */
 }
 .nvbtn{
   appearance: button;
@@ -159,16 +154,15 @@ nav{
   width: 120px;
   font-family: var(--fontfam);
   text-align: center;
+  font-weight: lighter;
 }
 .navButton.selected {
-  /* background: rgba(255, 255, 0, 0.05); */
-  /* box-shadow: 0px 0px 7px rgba(255, 255, 0, 0.15); */
   border-radius: 15px;
   font-weight:lighter;
   margin: 0 12px 0 0px;
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 7px rgb(255, 255, 255);
-  font-size: 1.25rem;
+  font-size: 1.27rem;
   text-decoration: underline;
 }
 .navButton:hover{
