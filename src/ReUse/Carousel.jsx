@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css/Carousel.css";
 function Carousel() {
     return (
@@ -33,10 +33,6 @@ function Carousel() {
                             <h3 className="carouselfonts">Third slide label</h3>
                             <p className="carouselfonts">Some representative placeholder content for the third slide.</p>
                             <a href="Resorts">more . . .</a>
-                            {/* <Link to="/Resorts">
-                            Resorts
-                            </Link> */}
-                            
                         </div>
                     </div>
 
