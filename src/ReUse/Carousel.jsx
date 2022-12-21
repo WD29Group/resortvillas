@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../css/Carousel.css";
 function Carousel() {
     return (

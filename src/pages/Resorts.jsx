@@ -5,8 +5,6 @@ function Resorts() {
       <div class="bkg2">
       </div>
       <div class="bkg3">
-      </div>
-      <div class="bkg4">
         <MapLoc />
       </div>
     </>
