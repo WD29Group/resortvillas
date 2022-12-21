@@ -7,7 +7,7 @@ function Cards() {
       <h1>Special Offers & Packages</h1>
       <h2 className="wow fadeInUp" data-wow-delay=".5s">What we offer</h2>
       <article>
-					<p>For a taste of luxury, a relaxing getaway in Acuatico is always something to ponder and look
+					<p>For a taste of luxury, a relaxing getaway in Resort Villas is always something to ponder and look
 						forward to. Experience the height of comfort and leisure with our exclusive offers.</p>
 				</article>
       <div className="cards__container">
@@ -16,7 +16,19 @@ function Cards() {
             <CardItems 
             src="images/1.png"
             text="Explore the hidden rejuvenating spa"
-            label='Adventure'
+            label='Book Now'
+            path='Services'
+            />
+            <CardItems 
+            src="images/2.png"
+            text="LA PRIMA EXCLUSIVE GETAWAY"
+            label='Book Now'
+            path='Services'
+            />
+            <CardItems 
+            src="images/3.png"
+            text="PRENUPTIAL PHOTO SHOOT PACKAGE"
+            label='Book Now'
             path='Services'
             />
           </ul>

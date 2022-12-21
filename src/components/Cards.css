@@ -23,6 +23,7 @@
   
   .cards__items {
     margin-bottom: 24px;
+    flex: auto;
   }
   
   .cards__item {
@@ -53,7 +54,7 @@
   
   .fade-img {
     animation-name: fade-img;
-    animation-duration: 2s;
+    animation-duration: 3s;
   }
   
   .cards__item__pic-wrap::after {
