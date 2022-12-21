@@ -1,5 +1,5 @@
 import "../css/Carousel.css";
-function Carousel() {
+function Carousel(props) {
   return (
     <>
       <div
@@ -36,47 +36,27 @@ function Carousel() {
           <div className="carousel-item" data-bs-interval="3000">
             <div className="slide1"></div>
             <div className="carousel-caption d-none d-md-block">
-              <h3 className="carouselHfonts">El Nido Garden Resort</h3>
-              <p className="carouselfonts">
-                Situated among the lagoons of El Nido, the tropical landscape
-                captures a breathtaking view of the island. El Nido Garden
-                Resort boasts its scenic atmosphere combined with contemporary
-              </p>
-              <a className="carouselfonts" href="Resorts">
-                . . . See more
-              </a>
+              <h3 className="carouselHfonts">{props.Title1}</h3>
+              <p className="carouselfonts">{props.Body1}</p>
+              {props.Link1}
             </div>
           </div>
 
           <div className="carousel-item" data-bs-interval="3000">
             <div className="slide2"></div>
             <div className="carousel-caption d-none d-md-block">
-              <h3 className="carouselHfonts">El Nido Beach Hotel</h3>
-              <p className="carouselfonts">
-                Situated in El Nido Town Proper on a beachfront location, El
-                Nido Beach Hotel gives its guests easy access to the majestic
-                Bacuit Bay and the surrounding pristine islands. Guests will
-                enjoy the stunning
-              </p>
-              <a className="carouselfonts" href="Resorts">
-                . . . See more
-              </a>
+              <h3 className="carouselHfonts">{props.Title2}</h3>
+              <p className="carouselfonts">{props.Body2}</p>
+               {props.Link2}
             </div>
           </div>
 
           <div className="carousel-item active" data-bs-interval="3000">
             <div className="slide3"></div>
             <div className="carousel-caption d-none d-md-block">
-              <h3 className="carouselHfonts">Frendz Hostel El Nido</h3>
-              <p className="carouselfonts">
-                Frendz Resort & Hostels has been famous for creating amazing
-                backbacker experiences over the years. We have been voted 2018
-                as the best hostel in the philippines by Hostelworld based on
-                real 
-              </p>
-              <a className="carouselfonts" href="Resorts">
-                . . . See more
-              </a>
+              <h3 className="carouselHfonts">{props.Title3}</h3>
+              <p className="carouselfonts">{props.Body3}</p>
+              {props.Link3}
             </div>
           </div>
         </div>
