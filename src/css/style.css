@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
 * {
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -39,7 +40,7 @@ code {
     monospace;
 }
 
-.landingpg{
+.landingpg {
   z-index: 1;
   margin: 0;
   background: url('../img/bkg.webp');
@@ -49,7 +50,7 @@ code {
   position: relative;
 }
 
-.siteName{
+.siteName {
   position: fixed;
   z-index: 5;
   color: rgba(255, 255, 255, 0.966);
@@ -60,7 +61,7 @@ code {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 }
 
-.logo{
+.logo {
   z-index: 5;
   position: fixed;
   margin: 0;
@@ -71,41 +72,49 @@ code {
 }
 
 @media (min-width: 901px) {
-  .navmenu2{
+  .navmenu2 {
     display: none;
   }
-  .menu{
+
+  .menu {
     display: none;
   }
-  .Title1{
+
+  .Title1 {
     font-size: 5rem;
   }
-  .Title2{
+
+  .Title2 {
     font-size: 5rem;
   }
-  
+
 }
+
 @media (max-width: 900px) {
-  .navmenu{
+  .navmenu {
     display: none;
   }
-  .siteName{
+
+  .siteName {
     left: 37px;
   }
-  .logo{
+
+  .logo {
     left: 17px;
   }
-  .Title1{
+
+  .Title1 {
     font-size: 2rem;
-    top: calc((50% * 1) - 50% );
+    top: calc((50% * 1) - 50%);
   }
-  .Title2{
+
+  .Title2 {
     font-size: 2rem;
     top: 25px;
   }
 }
 
-nav{
+nav {
   color: rgba(163, 180, 255, 0.966);
   width: var(--maxwidth);
   height: 82px;
@@ -121,7 +130,8 @@ nav{
   text-shadow: 1px 1px 3px black;
 }
 
-.menu{/* burger menu */
+.menu {
+  /* burger menu */
   position: fixed;
   z-index: 7;
   color: rgba(255, 255, 255, 0.966);
@@ -130,25 +140,28 @@ nav{
   font-size: 2.5em;
 }
 
-.navmenu2{/* Menu when small */
+.navmenu2 {
+  /* Menu when small */
   background: var(--navbckg);
   z-index: 1;
   position: fixed;
   top: 84px;
   left: calc(var(--maxwidth) - 164px);
-  list-style-type: none;  
+  list-style-type: none;
   width: 155px;
   border: solid 0.25px rgba(255, 255, 255, 0.137);
   /* transition-duration: 0.3s; */
   /* box-shadow: var(--boxshadow); */
 }
-.nvbtn{
+
+.nvbtn {
   appearance: button;
   margin: -2px;
   max-width: 98px;
   text-align: center;
 }
-.navButton{
+
+.navButton {
   border-radius: 3px;
   padding: 7px 25px 7px 15px;
   margin: 0 12px 0 0px;
@@ -160,18 +173,20 @@ nav{
   font-family: var(--fontfam);
   text-align: center;
 }
+
 .navButton.selected {
   /* background: rgba(255, 255, 0, 0.05); */
   /* box-shadow: 0px 0px 7px rgba(255, 255, 0, 0.15); */
   border-radius: 15px;
-  font-weight:lighter;
+  font-weight: lighter;
   margin: 0 12px 0 0px;
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 7px rgb(255, 255, 255);
   font-size: 1.25rem;
   text-decoration: underline;
 }
-.navButton:hover{
+
+.navButton:hover {
   background: rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -182,27 +197,41 @@ nav{
   text-align: center;
   font-size: 1.29rem;
 }
+
 .navButton:active {
   background: rgba(0, 0, 0, 0.116);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  font-weight:lighter;
+  font-weight: lighter;
   margin: 0 12px 0 0px;
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 7px rgb(255, 255, 255);
   font-size: 1.25rem;
 }
-.navButton a, a:link, nav ul{
+
+.navButton a,
+a:link,
+nav ul {
   text-decoration: none;
 }
 
-li{
+li {
   text-align: center;
   padding: 7px 30px 7px 0;
 }
 
-nav a:link, a:visited{
+nav a:link,
+a:visited {
   color: rgb(255, 255, 255);
+}
+
+.wBody {
+  z-index: -1;
+  background-image: url('../img/weatherbg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
 }
 
 .bkg1 {
@@ -228,7 +257,8 @@ nav a:link, a:visited{
   justify-content: right;
   align-items: flex-end;
 }
-.bkg3{
+
+.bkg3 {
   z-index: 1;
   margin: -7px 0 0 0;
   background: url('../img/bkg3.webp');
@@ -251,6 +281,7 @@ nav a:link, a:visited{
   justify-content: right;
   align-items: flex-end;
 }
+
 .bkg5 {
   z-index: 1;
   margin: -7px 0 0 0;
@@ -262,12 +293,13 @@ nav a:link, a:visited{
   justify-content: right;
   align-items: flex-end;
 }
-.lowerdivCommentaries{
+
+.lowerdivCommentaries {
   position: relative;
   width: 390px;
   height: 340px;
   top: 10px;
-  margin: 0 20px 30px 0; 
+  margin: 0 20px 30px 0;
   overflow-y: scroll;
   /* position: relative;
   top: calc(100% - (45%));;
@@ -275,9 +307,9 @@ nav a:link, a:visited{
   /* margin: 0 100px 0 100px; */
 }
 
-.testimonials{
+.testimonials {
   background: var(--navbckg);
-  color:rgb(255, 240, 102);
+  color: rgb(255, 240, 102);
   position: relative;
   width: 340px;
   text-align: center;
@@ -292,30 +324,33 @@ nav a:link, a:visited{
   font-family: var(--fontfam);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
 }
-.Title1{
+
+.Title1 {
   display: flex;
   position: absolute;
   z-index: 1;
   color: var(--BigTextcolor);
   max-width: 550px;
   /* font-size: 5rem; */
-  top: calc((100% * 1) - 70% );
+  top: calc((100% * 1) - 70%);
   left: 50px;
   font-family: var(--fontfam);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
 }
-.Title2{
+
+.Title2 {
   display: flex;
   position: absolute;
   z-index: 1;
   color: var(--BigTextcolor);
   max-width: 550px;
   /* font-size: 5rem; */
-  top: calc((100% * 2.5) - 70% );
+  top: calc((100% * 2.5) - 70%);
   left: 50px;
   font-family: var(--fontfam);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
 }
+
 .frostedglass {
   color: rgb(182, 182, 182);
   padding: 25px;
@@ -334,9 +369,9 @@ nav a:link, a:visited{
   backdrop-filter: blur(12px);
   opacity: 1;
   border-radius: 7px;
-  }
+}
 
-.crd{
+.crd {
   border-radius: 100px;
   width: 65px;
   position: relative;
@@ -344,15 +379,16 @@ nav a:link, a:visited{
   left: -10px;
 }
 
-.cardName{
-  position:relative;
+.cardName {
+  position: relative;
   top: -80px;
   left: 55px;
   padding: 0 25px 0 0;
   font-weight: bold;
 }
-.cardNBody{
-  position:relative;
+
+.cardNBody {
+  position: relative;
   top: -80px;
   left: 0px;
   margin: 30px -20px 0 -20px;
@@ -363,26 +399,26 @@ nav a:link, a:visited{
 
 ::-webkit-scrollbar {
   width: 9px;
-  background: #00000052; 
+  background: #00000052;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0000003f; 
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.308); 
+  background: #0000003f;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.308);
   border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #00000098; 
+  background: #00000098;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.808); 
+  background: rgba(0, 0, 0, 0.808);
 
 }
 
-iframe{
+iframe {
   display: inline-block;
   z-index: 1;
   padding: 25px;
@@ -400,8 +436,9 @@ iframe{
   left: 50%;
   transform: translate(-50%, 50%);
 }
+
 /* PARALAX AREA */
-.pararelax{
+.pararelax {
   z-index: -1;
   margin: -7px 0 0 0;
   background: url('../img/bkg4.webp');
@@ -410,7 +447,7 @@ iframe{
   height: 75vh;
   justify-content: right;
   align-items: flex-end;
-  }
+}
 
 .parallax {
   position: fixed;
@@ -425,4 +462,22 @@ iframe{
   font-size: 1.7em;
   font-family: var(--fontfam);
 }
+
 /* PARALAX AREA */
+
+#weather1 {
+  padding-top: 15vh;
+}
+
+.weatherbod {
+  background: rgba(74, 74, 74, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(201, 202, 215, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 75vh;
+  padding-top: 4vh;
+  padding-left: 3vh;
+  color:white;
+}
