@@ -132,7 +132,7 @@ nav{
 
 .navmenu2{/* Menu when small */
   background: var(--navbckg);
-  z-index: 1;
+  z-index: 7;
   position: fixed;
   top: 84px;
   left: calc(var(--maxwidth) - 164px);
@@ -426,3 +426,52 @@ iframe{
   font-family: var(--fontfam);
 }
 /* PARALAX AREA */
+
+#home.active {
+  /* styles for the home nav item when it is active */
+  background-color: blue;
+  color: white;
+  font-size: 3em;
+}
+
+#resorts.active {
+  /* styles for the about nav item when it is active */
+  background-color: green;
+  color: white;
+  font-size: 3em;
+}
+
+#gallery.active {
+  /* styles for the contact nav item when it is active */
+  background-color: purple;
+  color: white;
+  font-size: 3em;
+}
+#services.active {
+  /* styles for the home nav item when it is active */
+  background-color: blue;
+  color: white;
+  font-size: 3em;
+}
+
+#booking.active {
+  /* styles for the about nav item when it is active */
+  background-color: green;
+  color: white;
+  font-size: 3em;
+}
+
+#new.active {
+  /* styles for the contact nav item when it is active */
+  background-color: purple;
+  color: white;
+  font-size: 3em;
+}
+#weather.active {
+  /* styles for the home nav item when it is active */
+  background-color: blue;
+  color: white;
+  font-size: 3em;
+}
+
+
