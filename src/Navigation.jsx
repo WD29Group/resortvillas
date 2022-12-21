@@ -5,6 +5,7 @@ import ScrollToTopButton from './ReUse/ScrollToTopButton';
 import Footer from "./ReUse/Footer";
 function Navigation({ children }) {
   const [selected, setSelected] = useState('*');
+  console.log(selected);
   // alert(window.location.href)
   return (
     <>
@@ -16,7 +17,7 @@ function Navigation({ children }) {
         <nav className="text-decoration-none">
           <div className="navmenu">
             <Link to="/Home" className={
-              window.location.href.includes('/Home')?
+              window.location.href.includes('Home')?
                 'navButton selected nvbtn'
                 :
                 'navButton nvbtn'
@@ -84,37 +85,72 @@ function Navigation({ children }) {
       </button>
       <ul className="navmenu2 collapse navbar-collapse xtransp" id="navbar">
         <li>
-         <Link to="/" className={selected === 'Home' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Home')}>
+          <Link to="/Home" className={
+                window.location.href.includes('Home')?
+                'navButton selected nvbtn'
+                :
+                'navButton nvbtn'
+            } onClick={() => setSelected('Home')}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="/Resorts" className={selected === 'Resorts' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Resorts')}>
+          <Link to="/Resorts" className={
+                window.location.href.includes('Resorts')?
+                'navButton selected nvbtn'
+                :
+                'navButton nvbtn'
+            } onClick={() => setSelected('Resorts')}>
             Resorts
           </Link>
         </li>
         <li>
-          <Link to="/Gallery" className={selected === 'Gallery' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Gallery')}>
+          <Link to="/Gallery" className={
+                window.location.href.includes('Gallery')?
+                'navButton selected nvbtn'
+                :
+                'navButton nvbtn'
+            } onClick={() => setSelected('Gallery')}>
             Gallery
           </Link>
         </li>
         <li>
-          <Link to="/Services" className={selected === 'Services' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Services')}>
+          <Link to="/Services" className={
+                window.location.href.includes('Services')?
+                'navButton selected nvbtn'
+                :
+                'navButton nvbtn'
+            } onClick={() => setSelected('Services')}>
             Services
           </Link>
         </li>
         <li>
-          <Link to="/Booking" className={selected === 'Booking' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Booking')}>
+          <Link to="/Booking" className={
+                window.location.href.includes('Booking')?
+                'navButton selected nvbtn'
+                :
+                'navButton nvbtn'
+            } onClick={() => setSelected('Booking')}>
             Booking
           </Link>
         </li>
         <li>
-          <Link to="/News" className={selected === 'News' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('News')}>
+          <Link to="/News" className={
+                window.location.href.includes('News')?
+                'navButton selected nvbtn'
+                :
+                'navButton nvbtn'
+            } onClick={() => setSelected('News')}>
             News
           </Link>
         </li>
         <li>
-          <Link to="/Weather" className={selected === 'Weather' ? 'navButton selected nvbtn' : 'navButton nvbtn'} onClick={() => setSelected('Weather')}>
+          <Link to="/Weather" className={
+                window.location.href.includes('Weather')?
+                'navButton selected nvbtn'
+                :
+                'navButton nvbtn'
+            } onClick={() => setSelected('Weather')}>
             Weather
           </Link>
         </li>
