@@ -13,7 +13,12 @@ function Cards() {
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
-            <CardItems />
+            <CardItems 
+            src="images/1.png"
+            text="Explore the hidden rejuvenating spa"
+            label='Adventure'
+            path='Services'
+            />
           </ul>
         </div>
       </div>
