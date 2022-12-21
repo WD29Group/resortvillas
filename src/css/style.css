@@ -71,7 +71,7 @@ code {
 }
 
 @media (min-width: 901px) {
-  .navmenu2{
+  .navmenu2 {
     display: none;
   }
   .menu{
@@ -199,10 +199,6 @@ nav{
 li{
   text-align: center;
   padding: 7px 30px 7px 0;
-}
-
-nav a:link, a:visited{
-  color: rgb(255, 255, 255);
 }
 
 .bkg1 {

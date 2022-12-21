@@ -4,7 +4,7 @@ import ChangeTopBG from "./ReUse/ChangeTopBG";
 import ScrollToTopButton from './ReUse/ScrollToTopButton';
 import Footer from "./ReUse/Footer";
 function Navigation({ children }) {
-  const [selected, setSelected] = useState('Home');
+  const [selected, setSelected] = useState('*');
   return (
     <>
       <div class-="container">
