@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 function Footer() {
   const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
-  const [backdropFilter, bckDropFilter] = useState('blur(0px)');
-  const [bgHeight, setbgHeight] = React.useState('50px');
+  const [backdropFilter, bckDropFilter] = useState('blur(3px)');
+  const [bgHeight, setbgHeight] = React.useState('25px');
   const [DisplayBtn, DisplayUpBtn] = useState('0.7');
   const [borderRadius, getBorderRadius] = useState('120px 120px 0 0');
 
@@ -14,7 +14,7 @@ function Footer() {
   }
 
   function handleMouseLeave() {
-    setbgHeight('50px');
+    setbgHeight('25px');
     DisplayUpBtn("0.7");
     getBorderRadius('20px 20px 0 0');
   }
@@ -29,7 +29,7 @@ function Footer() {
 
       } else {
         setBgColor('rgba(0, 0, 0, 0)');
-        bckDropFilter('blur(0px)');
+        bckDropFilter('blur(3px)');
       }
     }
 
@@ -42,28 +42,28 @@ function Footer() {
     return (
         <footer
             style={
-                {
-                    backgroundColor: bgColor,
-                    height: bgHeight,
-                    opacity: DisplayBtn,
-                    color: "white",
-                    width: "99.5%",
-                    position: "fixed",
-                    bottom: 0,
-                    zIndex: 1,
-                    backdropFilter: backdropFilter,
-                    transitionDuration: "1.5s",
-                    textAlign: "center",
-                    alignSelf: "center",
-                    left: "50%",
-                    borderRadius: borderRadius,
-                    transform: "translate(-50%, 0)",
-                }
+                    {
+                        backgroundColor: bgColor,
+                        height: bgHeight,
+                        opacity: DisplayBtn,
+                        color: "white",
+                        width: "99.5%",
+                        position: "fixed",
+                        bottom: 0,
+                        zIndex: 1,
+                        backdropFilter: backdropFilter,
+                        transitionDuration: "1.5s",
+                        textAlign: "center",
+                        alignSelf: "center",
+                        left: "50%",
+                        borderRadius: borderRadius,
+                        transform: "translate(-50%, 0)",
+                    }
             }
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
       >
-            <small>Copyright (c) 2022 WD29 Group-IV</small>
+            <small>Copyright (c) 2022 WD29 Group-VI</small>
         </footer>
     );
 }

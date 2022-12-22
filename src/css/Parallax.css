@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+:root {
+  --fontfam: 'Nothing You Could Do', cursive;
+}
+body, html {
+  /* height: 100%; */
+  /* margin: 0; */
+  color: #777;
+  background: rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
+  /* font-size: ; */
+}
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  /* opacity: 0.77; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  background-image: url("../img/prlx-1.webp");
+  min-height: 100%;
+  height: 100vh;
+}
+
+.bgimg-2 {
+  background-image: url("../img/prlx-2.webp");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../img/prlx-3.webp");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.75);
+  font-weight: bold;
+} 
+
+.caption span.borders {
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  color: #fff;
+  padding: 18px;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
+  font-family: var(--fontfam);
+  letter-spacing: 7px;
+  border-radius: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: var(--fontfam);
+  color: #111;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+/* @media only screen and (max-device-width: 1024px) {
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+} */
+.style1{
+  color: #777;
+  background-color:white;
+  text-align:center;
+  padding:30px 30px;
+  text-align: justify;
+}
+.style2 {
+  color:#ddd;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align:center;
+  padding: 30px 30px;
+  text-align: justify;
+}
+.style3{
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
+  padding:30px 30px;
+  text-align: justify;
+}
+
+@media (min-width: 901px) {
+  .style1 {
+    padding: 70px 200px;
+  }
+
+  .style2 {
+    padding: 70px 200px;
+  }
+
+  .style3 {
+    padding: 70px 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .style1 {
+    padding: 20px 10px;
+  }
+
+  .style2 {
+    padding: 20px 10px;
+  }
+
+  .style3 {
+    padding: 20px 10px;
+  }
+}
+/* @media (max-width: 900px) {
+
+} */
