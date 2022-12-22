@@ -9,15 +9,14 @@ function Weather() {
         async function fetchData() {
             const response = await fetch(
                 'https://api.weatherbit.io/v2.0/current?city=El-Nido&key=0f2c78fe24d04bc8969b4c9cbb0b72c5&include=minutely',
-                { mode: 'no-cors' }
                 
             );
             const json = await response.json();
             setData(json);
             icon.current = require(`../img/icons/${data.data[0].weather.icon}.png`);
         }
-        fetchData();
-    },[data.data]);
+        fetchData()
+    },[data]);
 
     return (
         <>
