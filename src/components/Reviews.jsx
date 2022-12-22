@@ -15,7 +15,7 @@ function Reviews() {
                             <div class="item-post">
                                 <div class="user-holder">
                                     <div class="img-block">
-                                        <img src="https://acuaticoresort.com.ph/wp-content/uploads/2021/11/d0ctrine.jpg" />
+                                        <img src="https://images.pexels.com/photos/8123883/pexels-photo-8123883.jpeg?auto=compress&cs=tinysrgb&w=1600" />
                                     </div>
                                     <h1>d0ctrine</h1>
                                 </div>
@@ -37,7 +37,7 @@ function Reviews() {
                             <div class="item-post">
                                 <div class="user-holder">
                                     <div class="img-block">
-                                        <img src="https://acuaticoresort.com.ph/wp-content/uploads/2021/11/noelle-o.jpg" />
+                                        <img src="https://www.pexels.com/photo/a-happy-woman-in-corporate-attire-8424486/" />
                                     </div>
                                     <h1>Noelle O</h1>
                                 </div>
@@ -62,7 +62,7 @@ function Reviews() {
                             <div class="item-post">
                                 <div class="user-holder">
                                     <div class="img-block">
-                                        <img src="https://acuaticoresort.com.ph/wp-content/uploads/2021/11/caption.jpg" />
+                                        <img src="https://images.pexels.com/photos/9634520/pexels-photo-9634520.jpeg?auto=compress&cs=tinysrgb&w=1600" />
                                     </div>
                                     <h1>Josh G. </h1>
                                 </div>

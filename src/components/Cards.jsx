@@ -14,7 +14,7 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItems 
-            src="img/1.jpg"
+            img src="/img/1.jpg"
             text="EXPLORE THE HIDDEN REJUVENATING SPA"
             label='Book Now'
             path='Services'
