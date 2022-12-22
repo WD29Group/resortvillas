@@ -14,13 +14,13 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItems 
-            src="img/reju.jpg"
-            text="Explore the hidden rejuvenating spa"
+            src="img/1.jpg"
+            text="EXPLORE THE HIDDEN REJUVENATING SPA"
             label='Book Now'
             path='Services'
             />
             <CardItems 
-            src="img/2.png"
+            Link to="img/2.png"
             text="LA PRIMA EXCLUSIVE GETAWAY"
             label='Book Now'
             path='Services'
