@@ -16,7 +16,7 @@ function ContentsHomeParallax() {
                 and secret spots for guests to discover and explore during their stay. From the moment they arrive, guests
                 at Paraiso are enveloped in an oasis of tranquility and rejuvenation.
             </p>'
-      Carousel1={<ContentResortsCarousel2 />}
+      Carousel1={<ContentResortsCarousel />}
       Title2="El Nido Beach Hotels"
       Body2="<p> 
                 There are many hotels in El Nido that offer a variety of amenities and activities for travelers, such as swimming, 
@@ -25,7 +25,7 @@ function ContentsHomeParallax() {
                 enjoyable and relaxing. Some of the hotels in El Nido also offer beachfront cottages, bungalows, and villas, 
                 providing a more private and intimate setting for travelers.
             </p>"
-      Carousel2={<ContentResortsCarousel />}
+      Carousel2={<ContentResortsCarousel2 />}
       Title3="Visit new places you've never been before"
       Body3="<p> 
                 El Nido is a popular tourist destination in the Palawan
