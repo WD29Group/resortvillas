@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function ChangeTopBG() {
+function ChangeTopBG(props) {
   const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
   const [backdropFilter, bckDropFilter] = useState('blur(0px)');
 
@@ -8,7 +8,7 @@ function ChangeTopBG() {
     function handleScroll() {
       const scroll = window.scrollY;
 
-      if (scroll > 700) {
+      if (scroll > props.scrollAmount) {
         setBgColor('rgba(0, 0, 0, 0.5)');
         bckDropFilter('blur(12px)');
 
@@ -22,9 +22,9 @@ function ChangeTopBG() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [props.scrollAmount]);
 
-  return <div style={{ backgroundColor: bgColor, height: "80px", width: "110%", position: "fixed", top: 0, zIndex: 2, backdropFilter: backdropFilter,transitionDuration: "3s" }}>
+  return <div style={{ backgroundColor: bgColor, height: "80px", width: "110%", position: "fixed", top: 0, zIndex: 2, backdropFilter: backdropFilter,transitionDuration: props.transitionDuration }}>
   </div>;
 }
 export default ChangeTopBG;

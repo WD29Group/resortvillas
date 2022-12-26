@@ -5,7 +5,12 @@ function Elnidovid2() {
   return (
     <>
       <video
-        className="landingpg"
+        // className="landingpg"
+        style={{
+          position: "fixed",
+          minWidth: "100vw",
+          minHeight: "100vh",
+        }}
         src={elnido2}
         type="video/mp4"
         muted

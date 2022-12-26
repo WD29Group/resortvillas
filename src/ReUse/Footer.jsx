@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-function Footer() {
-  const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
+function Footer(props) {
+  const [bgColor, setBgColor] = useState(props.setBGcolor);
   const [backdropFilter, bckDropFilter] = useState('blur(3px)');
   const [bgHeight, setbgHeight] = React.useState('25px');
   const [DisplayBtn, DisplayUpBtn] = useState('0.7');
@@ -23,41 +23,39 @@ function Footer() {
     function handleScroll() {
       const scroll = window.scrollY;
 
-      if (scroll > 700) {
-        setBgColor('rgba(0, 0, 0, 0.5)');
-        bckDropFilter('blur(12px)');
-
+      if (scroll > props.scrollAmount) {
+        setBgColor("rgba(0, 0, 0, 0.5)");
+        bckDropFilter("blur(12px)");
       } else {
-        setBgColor('rgba(0, 0, 0, 0)');
-        bckDropFilter('blur(3px)');
+        setBgColor("rgba(0, 0, 0, 0)");
+        bckDropFilter("blur(3px)");
       }
     }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-    
-  }, []);
+  }, [props.scrollAmount, props.setBGcolor]);
     return (
         <footer
             style={
                     {
-                        backgroundColor: bgColor,
-                        height: bgHeight,
-                        opacity: DisplayBtn,
-                        color: "white",
-                        width: "99.5%",
-                        position: "fixed",
-                        bottom: 0,
-                        zIndex: 1,
-                        backdropFilter: backdropFilter,
-                        transitionDuration: "1.5s",
-                        textAlign: "center",
-                        alignSelf: "center",
-                        left: "50%",
-                        borderRadius: borderRadius,
-                        transform: "translate(-50%, 0)",
+                      backgroundColor: bgColor,
+                      height: bgHeight,
+                      opacity: DisplayBtn,
+                      color: "white",
+                      width: "99.5%",
+                      position: "fixed",
+                      bottom: 0,
+                      zIndex: 1,
+                      backdropFilter: backdropFilter,
+                      transitionDuration: "1.5s",
+                      textAlign: "center",
+                      alignSelf: "center",
+                      left: "50%",
+                      borderRadius: borderRadius,
+                      transform: "translate(-50%, 0)",
                     }
             }
               onMouseEnter={handleMouseEnter}

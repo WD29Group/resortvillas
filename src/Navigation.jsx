@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import ChangeTopBG from "./ReUse/ChangeTopBG";
 import ScrollToTopButton from './ReUse/ScrollToTopButton';
-import Footer from "./ReUse/Footer";
+
 function Navigation({ children }) {
   const [selected, setSelected] = useState('*');
   console.log(selected);
@@ -16,60 +15,81 @@ function Navigation({ children }) {
         </span>
         <nav className="text-decoration-none">
           <div className="navmenu">
-            <Link to="/Home" className={
-              window.location.href.includes('Home')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('Home')}>
+            <Link
+              to="/Home"
+              className={
+                window.location.href.includes("Home")
+                  ? "navButton selected nvbtn"
+                  : "navButton nvbtn"
+              }
+              onClick={() => setSelected("Home")}
+            >
               Home
             </Link>
-            <Link to="/Resorts" className={
-                window.location.href.includes('Resorts')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('Resorts')}>
+            <Link
+              to="/Resorts"
+              className={
+                window.location.href.includes("Resorts")
+                  ? "navButton selected nvbtn"
+                  : "navButton nvbtn"
+              }
+              onClick={() => setSelected("Resorts")}
+            >
               Resorts
             </Link>
-            <Link to="/Gallery" className={
-              window.location.href.includes('Gallery')?
-              'navButton selected nvbtn'
-              :
-              'navButton nvbtn'
-            } onClick={() => setSelected('Gallery')}>
+            <Link
+              to="/Gallery"
+              className={
+                window.location.href.includes("Gallery")
+                  ? "navButton selected nvbtn"
+                  : "navButton nvbtn"
+              }
+              onClick={() => setSelected("Gallery")}
+            >
               Gallery
             </Link>
-            <Link to="/Services" className={
-              window.location.href.includes('Services')?
-              'navButton selected nvbtn'
-              :
-              'navButton nvbtn'
-            } onClick={() => setSelected('Services')}>
+            <Link
+              to="/Services"
+              className={
+                window.location.href.includes("Services")
+                  ? "navButton selected nvbtn"
+                  : "navButton nvbtn"
+              }
+              onClick={() => setSelected("Services")}
+            >
               Services
             </Link>
-            <Link to="/Booking" className={
-              window.location.href.includes('Booking')?
-              'navButton selected nvbtn'
-              :
-              'navButton nvbtn'
-            } onClick={() => setSelected('Booking')}>
+            <Link
+              to="/Booking"
+              className={
+                window.location.href.includes("Booking")
+                  ? "navButton selected nvbtn"
+                  : "navButton nvbtn"
+              }
+              onClick={() => setSelected("Booking")}
+            >
               Booking
             </Link>
-            <Link to="/News" className={
-              window.location.href.includes('News')?
-              'navButton selected nvbtn'
-              :
-              'navButton nvbtn'
-            } onClick={() => setSelected('News')}>
+            <Link
+              to="/News"
+              className={
+                window.location.href.includes("News")
+                  ? "navButton selected nvbtn"
+                  : "navButton nvbtn"
+              }
+              onClick={() => setSelected("News")}
+            >
               News
             </Link>
-            <Link to="/Weather" className={
-              window.location.href.includes('Weather')?
-              'navButton selected nvbtn'
-              :
-              'navButton nvbtn'
-            } onClick={() => setSelected('Weather')}>
+            <Link
+              to="/Weather"
+              className={
+                window.location.href.includes("Weather")
+                  ? "navButton selected nvbtn"
+                  : "navButton nvbtn"
+              }
+              onClick={() => setSelected("Weather")}
+            >
               Weather
             </Link>
           </div>
@@ -85,80 +105,99 @@ function Navigation({ children }) {
       </button>
       <ul className="navmenu2 collapse navbar-collapse xtransp" id="navbar">
         <li>
-          <Link to="/Home" className={
-                window.location.href.includes('Home')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('Home')}>
+          <Link
+            to="/Home"
+            className={
+              window.location.href.includes("Home")
+                ? "navButton selected nvbtn"
+                : "navButton nvbtn"
+            }
+            onClick={() => setSelected("Home")}
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link to="/Resorts" className={
-                window.location.href.includes('Resorts')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('Resorts')}>
+          <Link
+            to="/Resorts"
+            className={
+              window.location.href.includes("Resorts")
+                ? "navButton selected nvbtn"
+                : "navButton nvbtn"
+            }
+            onClick={() => setSelected("Resorts")}
+          >
             Resorts
           </Link>
         </li>
         <li>
-          <Link to="/Gallery" className={
-                window.location.href.includes('Gallery')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('Gallery')}>
+          <Link
+            to="/Gallery"
+            className={
+              window.location.href.includes("Gallery")
+                ? "navButton selected nvbtn"
+                : "navButton nvbtn"
+            }
+            onClick={() => setSelected("Gallery")}
+          >
             Gallery
           </Link>
         </li>
         <li>
-          <Link to="/Services" className={
-                window.location.href.includes('Services')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('Services')}>
+          <Link
+            to="/Services"
+            className={
+              window.location.href.includes("Services")
+                ? "navButton selected nvbtn"
+                : "navButton nvbtn"
+            }
+            onClick={() => setSelected("Services")}
+          >
             Services
           </Link>
         </li>
         <li>
-          <Link to="/Booking" className={
-                window.location.href.includes('Booking')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('Booking')}>
+          <Link
+            to="/Booking"
+            className={
+              window.location.href.includes("Booking")
+                ? "navButton selected nvbtn"
+                : "navButton nvbtn"
+            }
+            onClick={() => setSelected("Booking")}
+          >
             Booking
           </Link>
         </li>
         <li>
-          <Link to="/News" className={
-                window.location.href.includes('News')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('News')}>
+          <Link
+            to="/News"
+            className={
+              window.location.href.includes("News")
+                ? "navButton selected nvbtn"
+                : "navButton nvbtn"
+            }
+            onClick={() => setSelected("News")}
+          >
             News
           </Link>
         </li>
         <li>
-          <Link to="/Weather" className={
-                window.location.href.includes('Weather')?
-                'navButton selected nvbtn'
-                :
-                'navButton nvbtn'
-            } onClick={() => setSelected('Weather')}>
+          <Link
+            to="/Weather"
+            className={
+              window.location.href.includes("Weather")
+                ? "navButton selected nvbtn"
+                : "navButton nvbtn"
+            }
+            onClick={() => setSelected("Weather")}
+          >
             Weather
           </Link>
         </li>
       </ul>
-      <ChangeTopBG />
       {children}
       <ScrollToTopButton />
-      <Footer />
     </>
   );
 }

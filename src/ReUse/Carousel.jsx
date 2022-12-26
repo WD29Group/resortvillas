@@ -3,17 +3,9 @@ function Carousel(props) {
   return (
     <>
       <div
-        id="carouselExampleDark"
-        className="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
+        id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            className=""
-            aria-label="Slide 1"
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="" aria-label="Slide 1"
             style={{
               border: "solid white",
               background: "rgba(255,255,255,0.5)",
@@ -21,12 +13,7 @@ function Carousel(props) {
               borderRadius: "20px",
             }}
           ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-            className=""
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" className=""
             style={{
               border: "solid white",
               background: "rgba(255,255,255,0.5)",
@@ -34,13 +21,7 @@ function Carousel(props) {
               borderRadius: "20px",
             }}
           ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-            className="active"
-            aria-current="true"
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" className="active" aria-current="true"
             style={{
               border: "solid white",
               background: "rgba(255,255,255,0.5)",
