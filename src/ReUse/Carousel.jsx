@@ -14,6 +14,12 @@ function Carousel(props) {
             data-bs-slide-to="0"
             className=""
             aria-label="Slide 1"
+            style={{
+              border: "solid white",
+              background: "rgba(255,255,255,0.5)",
+              height: "0px",
+              borderRadius: "20px",
+            }}
           ></button>
           <button
             type="button"
@@ -21,6 +27,12 @@ function Carousel(props) {
             data-bs-slide-to="1"
             aria-label="Slide 2"
             className=""
+            style={{
+              border: "solid white",
+              background: "rgba(255,255,255,0.5)",
+              height: "0px",
+              borderRadius: "20px",
+            }}
           ></button>
           <button
             type="button"
@@ -29,6 +41,12 @@ function Carousel(props) {
             aria-label="Slide 3"
             className="active"
             aria-current="true"
+            style={{
+              border: "solid white",
+              background: "rgba(255,255,255,0.5)",
+              height: "0px",
+              borderRadius: "20px",
+            }}
           ></button>
         </div>
 
