@@ -2,11 +2,11 @@ import Carousel from "../ReUse/Carousel";
 import CarouselImg1 from "../carouseldata/1.jpg";
 import CarouselImg2 from "../carouseldata/2.jpg";
 import CarouselImg3 from "../carouseldata/3.jpg";
-function ContentResortsCarousel() {
+function ContentResortsCarousel2() {
   return (
     <>
       <Carousel
-        CarouselID="ResortCarousel"
+        CarouselID="ResorCarousel"
         Title1="El Nido Garden Resort"
         SlideImg1={CarouselImg1}
         Body1="
@@ -47,4 +47,4 @@ function ContentResortsCarousel() {
   );
 }
 
-export default ContentResortsCarousel;
+export default ContentResortsCarousel2;

@@ -1,11 +1,20 @@
 import "../css/Carousel.css";
 function Carousel(props) {
+  const CarouID = "#" + props.CarouselID;
   return (
     <>
       <div
-        id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
+        id={props.CarouselID}
+        className="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
         <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="" aria-label="Slide 1"
+          <button
+            type="button"
+            data-bs-target={CarouID}
+            data-bs-slide-to="0"
+            className=""
+            aria-label="Slide 1"
             style={{
               border: "solid white",
               background: "rgba(255,255,255,0.5)",
@@ -13,7 +22,12 @@ function Carousel(props) {
               borderRadius: "20px",
             }}
           ></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" className=""
+          <button
+            type="button"
+            data-bs-target={CarouID}
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            className=""
             style={{
               border: "solid white",
               background: "rgba(255,255,255,0.5)",
@@ -21,7 +35,13 @@ function Carousel(props) {
               borderRadius: "20px",
             }}
           ></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" className="active" aria-current="true"
+          <button
+            type="button"
+            data-bs-target={CarouID}
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            className="active"
+            aria-current="true"
             style={{
               border: "solid white",
               background: "rgba(255,255,255,0.5)",
@@ -33,7 +53,9 @@ function Carousel(props) {
 
         <div className="carousel-inner">
           <div className="carousel-item" data-bs-interval="3000">
-            <div className="slide1"></div>
+            <div className="slide1">
+              <img src={props.SlideImg1} alt="carouseldata" />
+            </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title1}</h3>
               <p className="carouselfonts">{props.Body1}</p>
@@ -42,16 +64,20 @@ function Carousel(props) {
           </div>
 
           <div className="carousel-item" data-bs-interval="3000">
-            <div className="slide2"></div>
+            <div className="slide2">
+              <img src={props.SlideImg2} alt="carouseldata" />
+            </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title2}</h3>
               <p className="carouselfonts">{props.Body2}</p>
-               {props.Link2}
+              {props.Link2}
             </div>
           </div>
 
           <div className="carousel-item active" data-bs-interval="3000">
-            <div className="slide3"></div>
+            <div className="slide3">
+              <img src={props.SlideImg3} alt="carouseldata" />
+            </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title3}</h3>
               <p className="carouselfonts">{props.Body3}</p>
@@ -62,7 +88,7 @@ function Carousel(props) {
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target={CarouID}
           data-bs-slide="prev"
         >
           <span
@@ -74,7 +100,7 @@ function Carousel(props) {
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target={CarouID}
           data-bs-slide="next"
         >
           <span

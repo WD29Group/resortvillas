@@ -1,4 +1,5 @@
 import ContentResortsCarousel from "../contents/ContentResortsCarousel";
+import ContentResortsCarousel2 from "../contents/ContentResortsCarousel2";
 import Parallax from "../ReUse/Parallax.jsx";
 function ContentsHomeParallax() {
   return (
@@ -15,7 +16,7 @@ function ContentsHomeParallax() {
                 and secret spots for guests to discover and explore during their stay. From the moment they arrive, guests
                 at Paraiso are enveloped in an oasis of tranquility and rejuvenation.
             </p>'
-      Carousel1=""
+      Carousel1={<ContentResortsCarousel2 />}
       Title2="El Nido Beach Hotels"
       Body2="<p> 
                 There are many hotels in El Nido that offer a variety of amenities and activities for travelers, such as swimming, 
