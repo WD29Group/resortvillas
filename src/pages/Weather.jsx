@@ -16,7 +16,12 @@ function Weather() {
             icon.current = require(`../img/icons/${data.data[0].weather.icon}.png`);
         }
         fetchData()
-    },[data]);
+    },[]);
+
+    const temp = data ? data.data[0].app_temp : '35';
+    const description = data ? data.data[0].weather.description : 'Cloudy';
+    const city = data ? data.data[0].city_name : 'El nido';
+    const country = data ? data.data[0].country_code : 'PH';
 
     return (
         <>
@@ -25,9 +30,9 @@ function Weather() {
                     <div className="row">
                         <div className="weatherbod">
                             <div className="col-md-3">
-                                <span className="fw-bold h1 text-center pt-5 ps-5">{data ? data.data[0].app_temp : 'Loading...'} °C </span>
+                                <span className="fw-bold h1 text-center pt-5 ps-5">{temp} °C </span>
                                 <br />
-                                <span className="ps-5">{data ? data.data[0].weather.description : 'Loading...'} at {data ? data.data[0].city_name : '...'}, Palawan</span>
+                                <span className="ps-5">{description} at {city}, {country}</span>
                             </div>
                             <div className="col-md-3">
                                 <img src={icon.current} alt="..." />
