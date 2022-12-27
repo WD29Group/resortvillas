@@ -13,7 +13,7 @@ function Cardx(props) {
           <Card.Body>
             <Card.Title>{props.CardTitle1}</Card.Title>
             <Card.Text>{props.Body1}</Card.Text>
-            <button className="buttonFrosted Cardtransp">{props.Button1}</button>
+            <a className="buttonFrosted Cardtransp" href={props.ButtonLink1}>{props.ButtonName1}</a> 
           </Card.Body>
         </Card>
 
@@ -25,7 +25,7 @@ function Cardx(props) {
           <Card.Body>
             <Card.Title>{props.CardTitle2}</Card.Title>
             <Card.Text>{props.Body2}</Card.Text>
-            <button className="buttonFrosted Cardtransp">{props.Button2}</button>
+            <a className="buttonFrosted Cardtransp" href={props.ButtonLink2}>{props.ButtonName2}</a> 
           </Card.Body>
         </Card>
 
@@ -37,7 +37,7 @@ function Cardx(props) {
           <Card.Body>
             <Card.Title>{props.CardTitle3}</Card.Title>
             <Card.Text>{props.Body3}</Card.Text>
-            <button className="buttonFrosted Cardtransp">{props.Button3}</button>
+            <a className="buttonFrosted Cardtransp" href={props.ButtonLink3}>{props.ButtonName3}</a> 
           </Card.Body>
         </Card>
 
@@ -49,7 +49,7 @@ function Cardx(props) {
           <Card.Body>
             <Card.Title>{props.CardTitle4}</Card.Title>
             <Card.Text>{props.Body4}</Card.Text>
-            <button className="buttonFrosted Cardtransp">{props.Button4}</button>
+            <a className="buttonFrosted Cardtransp" href={props.ButtonLink4}>{props.ButtonName4}</a> 
           </Card.Body>
         </Card>
 
@@ -61,7 +61,7 @@ function Cardx(props) {
           <Card.Body>
             <Card.Title>{props.CardTitle5}</Card.Title>
             <Card.Text>{props.Body5}</Card.Text>
-            <button className="buttonFrosted Cardtransp">{props.Button5}</button>
+            <a className="buttonFrosted Cardtransp" href={props.ButtonLink5}>{props.ButtonName5}</a> 
           </Card.Body>
         </Card>
       </div>

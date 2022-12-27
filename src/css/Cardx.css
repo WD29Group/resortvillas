@@ -16,8 +16,10 @@
     border-radius: 7px;
     }
 .buttonFrosted{
+    appearance: button;
     color: rgb(0, 0, 0);
-    padding: 0;
+    padding: 14px 0 14px 0;
+    text-align: center;
     border-radius: 10px;
     border: solid 2px rgba(255, 255, 255, 0.15);
     /* box-shadow: var(--boxshadow); */
