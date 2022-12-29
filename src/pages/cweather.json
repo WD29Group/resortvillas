@@ -1,0 +1,55 @@
+
+
+
+
+{
+    "count": 1,
+    "data": [
+        {
+            "app_temp": 25.9,
+            "aqi": 11,
+            "city_name": "El Nido",
+            "clouds": 59,
+            "country_code": "PH",
+            "datetime": "2022-12-29:09",
+            "dewpt": 23,
+            "dhi": 0,
+            "dni": 0,
+            "elev_angle": -4.34,
+            "ghi": 0,
+            "gust": 5.3085938,
+            "h_angle": -90,
+            "lat": 11.18583,
+            "lon": 119.39556,
+            "ob_time": "2022-12-29 10:05",
+            "pod": "n",
+            "precip": 0,
+            "pres": 1003,
+            "rh": 88,
+            "slp": 1009.5,
+            "snow": 0,
+            "solar_rad": 0,
+            "sources": [
+                "analysis"
+            ],
+            "state_code": "41",
+            "station": "RPVP",
+            "sunrise": "22:20",
+            "sunset": "09:54",
+            "temp": 25.1,
+            "timezone": "Asia/Manila",
+            "ts": 1672308331,
+            "uv": 0,
+            "vis": 10,
+            "weather": {
+                "description": "Scattered clouds",
+                "code": 802,
+                "icon": "c02n"
+            },
+            "wind_cdir": "NNE",
+            "wind_cdir_full": "north-northeast",
+            "wind_dir": 25,
+            "wind_spd": 3.5908
+        }
+    ]
+}
