@@ -1,4 +1,5 @@
 import MapLoc from "./MapLoc";
+import Rooms from "./Rooms";
 function Resorts() {
   return (
     <>
@@ -6,8 +7,8 @@ function Resorts() {
       </div>
       <div class="bkg3">
       </div>
-      
       <div class="bkg4">
+      <Rooms />
         <MapLoc />
       </div>
     </>
