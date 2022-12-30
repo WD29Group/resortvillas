@@ -9,7 +9,11 @@ function Navigation({ children }) {
   // alert(window.location.href)
   return (
     <>
-      <SpecialOffer />
+      <SpecialOffer
+        month="0"
+        day="30"
+        year="2023"
+      />
       <div class-="container">
         <span>
           <img className="logo" alt="Logo" src="./logo.png" />
