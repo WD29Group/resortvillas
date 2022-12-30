@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import ScrollToTopButton from './ReUse/ScrollToTopButton';
+import SpecialOffer from './ReUse/SpecialOffer';
 
 function Navigation({ children }) {
   const [selected, setSelected] = useState('*');
@@ -8,6 +9,7 @@ function Navigation({ children }) {
   // alert(window.location.href)
   return (
     <>
+      <SpecialOffer />
       <div class-="container">
         <span>
           <img className="logo" alt="Logo" src="./logo.png" />

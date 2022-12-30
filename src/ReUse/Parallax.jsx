@@ -4,7 +4,7 @@ function Parallax(props) {
     <>
       <div class="bgimg-1">
         <div class="caption">
-          <span class="borders">Resort Villas</span>
+          <span class="borders">{props.Title}</span>
         </div>
       </div>
 

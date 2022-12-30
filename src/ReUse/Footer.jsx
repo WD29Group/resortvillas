@@ -6,41 +6,7 @@ function Footer(props) {
   const [bgHeight, setbgHeight] = React.useState('25px');
   const [DisplayBtn, DisplayUpBtn] = useState('0.7');
   const [borderRadius, getBorderRadius] = useState('120px 120px 0 0');
-
-  function handleMouseEnter() {
-    setbgHeight('120px');
-    DisplayUpBtn("1");
-    getBorderRadius('80px 80px 0 0');
-  }
-
-  function handleMouseLeave() {
-    setbgHeight('25px');
-    DisplayUpBtn("0.7");
-    getBorderRadius('20px 20px 0 0');
-  }
-
-  useEffect(() => {
-    function handleScroll() {
-      const scroll = window.scrollY;
-
-      if (scroll > props.scrollAmount) {
-        setBgColor("rgba(0, 0, 0, 0.5)");
-        bckDropFilter("blur(12px)");
-      } else {
-        setBgColor("rgba(0, 0, 0, 0)");
-        bckDropFilter("blur(3px)");
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [props.scrollAmount, props.setBGcolor]);
-    return (
-        <footer
-            style={
-                    {
+  const footerStyle = {
                       backgroundColor: bgColor,
                       height: bgHeight,
                       opacity: DisplayBtn,
@@ -56,8 +22,40 @@ function Footer(props) {
                       left: "50%",
                       borderRadius: borderRadius,
                       transform: "translate(-50%, 0)",
-                    }
-            }
+  }
+  
+  function handleMouseEnter() {
+    setbgHeight(window.scrollY > props.scrollAmount ? '120px' : '25px');
+    DisplayUpBtn("1");
+    getBorderRadius('80px 80px 0 0');
+  }
+
+  function handleMouseLeave() {
+    setbgHeight('25px');
+    DisplayUpBtn("0.7");
+    getBorderRadius('20px 20px 0 0');
+  }
+
+  useEffect(() => {
+    function handleScroll() {
+
+      if (window.scrollY > props.scrollAmount) {
+        setBgColor("rgba(0, 0, 0, 0.5)");
+        bckDropFilter("blur(12px)");
+      } else {
+        setBgColor("rgba(0, 0, 0, 0)");
+        bckDropFilter("blur(3px)");
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [props.scrollAmount, props.setBGcolor]);
+    return (
+        <footer
+            style={footerStyle}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
       >
