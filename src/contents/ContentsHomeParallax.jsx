@@ -4,6 +4,7 @@ import Parallax from "../ReUse/Parallax.jsx";
 function ContentsHomeParallax() {
   return (
     <Parallax
+      Title="Resort Villas"
       Title1="El Nido's Finest Resort"
       Body1=' 
                 Nestled within a secluded forest and overlooking the crystal-clear waters of Bacuit Bay,

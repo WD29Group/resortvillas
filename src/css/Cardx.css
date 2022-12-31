@@ -34,7 +34,7 @@
   background: rgba(255, 0, 0, 0.90);
   color: yellow;
   padding: 0 0 0 0;
-  margin: -10px;
+  margin: -10px 0 0 -6px;
   border-radius: 0 0 20px 20px;
 }
 .SPbuttonFrosted:hover,
@@ -50,6 +50,7 @@
   background: rgba(255, 230, 0, 0.75);
   border-radius: 10px;
   border-radius: 0 0 20px 20px;
+  margin: -10px;
 }
 .buttonFrosted:active{
     background: rgba(0, 0, 0, 0.116);
