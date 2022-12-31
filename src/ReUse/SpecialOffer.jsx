@@ -34,13 +34,31 @@ function SpecialOffer(props) {
   const specialPromo = () => {
     document.getElementById("specialPromo").style.display = "none"
   }
+
+  const [shaking, setShaking] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShaking(!shaking);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [shaking]);
+  
   return (
     <>
       <div style={{
         opacity: window.scrollY > props.scrollAmount ? '1' : '0',
       }}>
-      <div id="specialPromo" className={
-        days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0 ? "unshow" : "show SpecialPromoStyling"}>
+        <div id="specialPromo"
+          style={{
+          bottom: Math.round(window.scrollY / 10),
+          transitionDuration: "3s",
+          animation: `${shaking ? "shake" : "none"} 0.82s cubic-bezier(.36,.07,.19,.97) both`
+      }}
+          className={
+          days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0 ? "unshow" : "show SpecialPromoStyling"}
+      >
       <button style={spCloseBtn} onClick={specialPromo}>X</button>
       <div style={{background:"rgba(255, 0, 0, 0.75)", margin: "-7px -7px -5px -7px", padding: "7px", borderRadius:" 20px 20px 0 0"}}><strong className='h5'>Holiday Special Promo</strong></div><hr/>
         <p> Ends on <br /><i>January 30, 2023</i> remaining time offer: <br />

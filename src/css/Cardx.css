@@ -18,7 +18,8 @@
 .SPbuttonFrosted,
 .buttonFrosted{
     appearance: button;
-    color: rgb(0, 0, 0);
+    background: rgba(255, 0, 0, 0.90);
+    color: yellow;
     padding: 14px 0 14px 0;
     text-align: center;
     border-radius: 10px;
@@ -26,7 +27,7 @@
     /* box-shadow: var(--boxshadow); */
     box-shadow:  -1px -1px 1px #ffffff;
     height: 35px;
-    width: 95px;
+    width: 105px;
     font-size: 17px;
 }
 .SPbuttonFrosted{
@@ -39,12 +40,12 @@
 }
 .SPbuttonFrosted:hover,
 .buttonFrosted:hover{
-    color: rgb(0, 0, 0);
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 10px;
-    border: solid 2px rgba(255, 255, 255, 0.15);
-    /* box-shadow: var(--boxshadow); */
-    box-shadow:  -1px -1px 1px #ffffff;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 230, 0, 0.75);
+  border-radius: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.15);
+  /* box-shadow: var(--boxshadow); */
+  box-shadow:  -1px -1px 1px #ffffff;
 }
 .SPbuttonFrosted:hover{
   background: rgba(255, 230, 0, 0.75);
@@ -53,13 +54,13 @@
   margin: -10px;
 }
 .buttonFrosted:active{
-    background: rgba(0, 0, 0, 0.116);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    font-weight:lighter;
-    margin: 0 12px 0 0px;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.116);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-weight:lighter;
+  margin: 0 12px 0 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
 }
 hr{
   margin: 5px -7px 2px -7px;
@@ -73,7 +74,7 @@ hr{
   position: fixed;
   bottom: 100px;
   right: 15px;
-  z-index: 7;
+  z-index: 2;
   width: 150px;
   height: 255px;
   text-align: center;
@@ -82,4 +83,27 @@ hr{
   text-shadow: 2px 2px 3px rgb(0, 0, 0);
   box-shadow: 1px 4px 3px rgb(0, 0, 0);
   backdrop-filter: blur(3px);
+}
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, -2px, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 3px, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, -3px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 3px, 0);
+  }
 }
