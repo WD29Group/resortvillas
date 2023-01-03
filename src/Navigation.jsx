@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import ScrollToTopButton from './ReUse/ScrollToTopButton';
-// import SpecialOffer from './ReUse/SpecialOffer';
+import SpecialOffer from './ReUse/SpecialOffer';
 function Navigation({ children }) {
   const [selected, setSelected] = useState('*');
   console.log(selected);
   // alert(window.location.href)
   return (
     <>
-      {/* <SpecialOffer scrollAmount="150"/> */}
+      <SpecialOffer scrollAmount="150"/>
       <div class-="container">
         <span>
           <img className="logo" alt="Logo" src="./logo.png" />
