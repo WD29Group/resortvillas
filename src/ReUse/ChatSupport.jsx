@@ -6,6 +6,7 @@ function ChatSupport() {
     <MessengerCustomerChat
       pageId="112254835081759"
       appId="6449264861753855"
+      htmlRef="http://192.168.0.113:3000/"
     />
   );
 }

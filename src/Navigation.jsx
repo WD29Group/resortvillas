@@ -199,40 +199,6 @@ function Navigation({ children }) {
         </li>
       </ul>
       <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-            <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-            <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-            <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-            <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-            <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-            <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
       {children}
       <ScrollToTopButton />
     </>
