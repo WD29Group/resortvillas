@@ -208,7 +208,6 @@ function Navigation({ children }) {
       <ChatSupport />
       <ChatSupport />
       <ChatSupport />
-      <ChatSupport />
       {children}
       <ScrollToTopButton />
     </>
