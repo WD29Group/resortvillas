@@ -2,14 +2,12 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import ScrollToTopButton from './ReUse/ScrollToTopButton';
 // import SpecialOffer from './ReUse/SpecialOffer';
-import ChatSupport from './ReUse/ChatSupport';
 function Navigation({ children }) {
   const [selected, setSelected] = useState('*');
   console.log(selected);
   // alert(window.location.href)
   return (
     <>
-      <ChatSupport />
       {/* <SpecialOffer scrollAmount="150"/> */}
       <div class-="container">
         <span>
@@ -199,15 +197,6 @@ function Navigation({ children }) {
           </Link>
         </li>
       </ul>
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
-      <ChatSupport />
       {children}
       <ScrollToTopButton />
     </>
