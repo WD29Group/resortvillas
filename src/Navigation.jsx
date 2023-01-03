@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import ScrollToTopButton from './ReUse/ScrollToTopButton';
 import SpecialOffer from './ReUse/SpecialOffer';
+import ChatSupport from './ReUse/ChatSupport';
 function Navigation({ children }) {
   const [selected, setSelected] = useState('*');
   console.log(selected);
@@ -197,6 +198,7 @@ function Navigation({ children }) {
           </Link>
         </li>
       </ul>
+      <ChatSupport />
       {children}
       <ScrollToTopButton />
     </>
