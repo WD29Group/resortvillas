@@ -29,7 +29,6 @@ function SpecialOffer(props) {
     top: "3px",
     right: "12px",
   }
-
     
   const specialPromo = () => {
     document.getElementById("specialPromo").style.display = "none"

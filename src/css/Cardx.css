@@ -1,4 +1,6 @@
-  .Cardfrostedglass {
+.chat-support,
+.SVModalBorder,
+.Cardfrostedglass {
     /* color: rgb(182, 182, 182); */
     padding: 0;
     border-radius: 20px;
@@ -6,15 +8,24 @@
     box-shadow: var(--boxshadow);
     height: 400px;
   }
-  
-  .Cardtransp {
-    /* background-color: transparent; */
-    background: rgba(255, 255, 255, 0.35);
-    color: rgb(0, 0, 0);
-    backdrop-filter: blur(3px);
-    opacity: 1;
-    border-radius: 7px;
-    }
+.chat-support{
+  position: fixed;
+  width: 359px;
+  height: 520px;
+  padding: 7px;
+  bottom: 50px;
+  right: 180px;
+  z-index: 7;
+}
+.Cardtransp{
+  /* background-color: transparent; */
+  background: rgba(255, 255, 255, 0.35);
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  border-radius: 7px;
+  }
+.SubscribedBtn,
 .SPbuttonFrosted,
 .buttonFrosted{
     appearance: button;
@@ -30,6 +41,8 @@
     width: 105px;
     font-size: 17px;
 }
+
+.SubscribedBtn,
 .SPbuttonFrosted{
   width: 150px;
   background: rgba(255, 0, 0, 0.90);
@@ -38,6 +51,16 @@
   margin: -10px 0 0 -6px;
   border-radius: 0 0 20px 20px;
 }
+.SubscribedBtn {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.50);
+  color: yellow;
+  width: 150px;
+  padding: 0 0 0 0;
+  margin: -10px 0 0 -6px;
+  border-radius: 10px 10px 10px 10px;
+}
+.SubscribedBtn:hover,
 .SPbuttonFrosted:hover,
 .buttonFrosted:hover{
   color: rgb(0, 0, 0);

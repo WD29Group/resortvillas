@@ -80,14 +80,17 @@ code {
   .Title2{
     font-size: 5rem;
   }
-  
+  .rvmodal {
+    top: 70px;
+    right: 25px;
+  }
 }
 @media (max-width: 900px) {
   .navmenu{
     display: none;
   }
   .siteName{
-    left: 37px;
+    left: 17px;
   }
   .logo{
     left: 17px;
@@ -99,6 +102,10 @@ code {
   .Title2{
     font-size: 2rem;
     top: 25px;
+  }
+  .rvmodal {
+    top: 20px;
+    right: 120px;
   }
 }
 
@@ -231,7 +238,7 @@ li{
 }
 
 .bkg4 {
-  z-index: 1;
+  z-index: 0;
   margin: -7px 0 0 0;
   background: url('../img/bkg4.webp');
   position: relative;
@@ -242,7 +249,7 @@ li{
   align-items: flex-end;
 }
 .bkg5 {
-  z-index: 1;
+  z-index: 0;
   margin: -7px 0 0 0;
   background: url('../img/bkg5.webp');
   position: relative;
@@ -372,7 +379,7 @@ li{
 
 }
 
-iframe{
+.iframeRV{
   display: inline-block;
   z-index: 1;
   padding: 25px;
@@ -431,37 +438,46 @@ iframe{
   font-size: 3em;
 }
 
-#gallery.active {
-  /* styles for the contact nav item when it is active */
+/* #gallery.active {
   background-color: purple;
   color: white;
   font-size: 3em;
 }
 #services.active {
-  /* styles for the home nav item when it is active */
   background-color: blue;
   color: white;
   font-size: 3em;
 }
 
 #booking.active {
-  /* styles for the about nav item when it is active */
   background-color: green;
   color: white;
   font-size: 3em;
 }
 
 #new.active {
-  /* styles for the contact nav item when it is active */
   background-color: purple;
   color: white;
   font-size: 3em;
 }
 #weather.active {
-  /* styles for the home nav item when it is active */
   background-color: blue;
   color: white;
   font-size: 3em;
+} */
+
+/* modal */
+.rvmodal {
+  color: rgb(255, 230, 90);
+  text-decoration: none;
+  appearance: button;
+  position: fixed;
+  z-index: 7;
+  font-size: 40px;
+  height: 35px;
+  width: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  border-radius: 5px;
 }
-
-
+/* modal */
