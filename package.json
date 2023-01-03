@@ -10,10 +10,6 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-=======
-    "react-facebook-login": "^4.1.1",
->>>>>>> bc54695e792d42665cbe4b0d3d52391fe71fd99a
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",
