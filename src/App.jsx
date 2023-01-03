@@ -26,6 +26,7 @@ function App() {
         </Routes>
       </Navigation>
     </BrowserRouter>
+    
   );
 }
 export default App;
