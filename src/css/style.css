@@ -543,6 +543,10 @@ iframe{
  opacity: 0.8;
 }
 
+#backgroundRooms {
+  background-color: #ffffc9;
+}
+
 @media(max-width: 768px){
   .box{
     padding: 0px;

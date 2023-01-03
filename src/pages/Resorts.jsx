@@ -1,16 +1,15 @@
-import MapLoc from "./MapLoc";
-import Rooms from "./Rooms";
+// import MapLoc from "./MapLoc";
+// import Rooms from "./Rooms";
+import DeluxeRoom from "./RoomPages/DeluxeRoom";
 function Resorts() {
   return (
     <>
-      <div class="bkg2">
+      <div>
+
+       <DeluxeRoom />
+    
       </div>
-      <div class="bkg3">
-      </div>
-      <div class="bkg4">
-      <Rooms />
-        <MapLoc />
-      </div>
+     
     </>
   );
 }
