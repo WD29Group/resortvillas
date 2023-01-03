@@ -1,3 +1,4 @@
+.fb-customerchat,
 .chat-support,
 .SVModalBorder,
 .Cardfrostedglass {
@@ -8,6 +9,7 @@
     box-shadow: var(--boxshadow);
     height: 400px;
   }
+.fb-customerchat,
 .chat-support{
   position: fixed;
   width: 359px;
