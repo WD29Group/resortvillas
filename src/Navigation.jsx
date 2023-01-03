@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import ScrollToTopButton from './ReUse/ScrollToTopButton';
 import SpecialOffer from './ReUse/SpecialOffer';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
-
+import ChatSupport from './ReUse/ChatSupport';
 function Navigation({ children }) {
   const [selected, setSelected] = useState('*');
   console.log(selected);
@@ -199,10 +198,7 @@ function Navigation({ children }) {
           </Link>
         </li>
       </ul>
-        <MessengerCustomerChat
-          pageId="mark.wd29"
-          appId="6449264861753855"
-        />
+      <ChatSupport />
       {children}
       <ScrollToTopButton />
     </>

@@ -4,7 +4,7 @@ import React from 'react';
 function ChatSupport() {
   return (
     <MessengerCustomerChat
-      pageId="mark.wd29"
+      pageId="112254835081759"
       appId="6449264861753855"
     />
   );
