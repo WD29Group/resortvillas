@@ -34,7 +34,7 @@ function ScrollToTopButton() {
                   opacity: DisplayBtn,
                   borderRadius: "100px",
                   appearance: "button",
-                  background: "rgba(255, 180, 75, 0.6)",
+                  background: "rgba(255, 222, 89, 0.5)",
                   color: "rgba(0, 0, 0, 0.8)",
                   border: "none",
                   height: "60px",
