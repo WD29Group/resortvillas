@@ -1,0 +1,191 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/208986735.webp?k=65fd68111e18a008a43606f432ecd596467e204517eb2d3ae76ff54dc0eb74bc&o=",
+      "title": "Cuna Hotel",
+      "content": "Set in El Nido within 8 km of Big Lagoon, Cuna Hotel features an outdoor swimming pool, a shared lounge, and a restaurant and bar on-site. At the hotel, all rooms are fitted with air conditioning, a desk, and a TV. THe rooms also comes with a private bathroom equipped with a hairdryer and a shower facility with free toiletries. Some rooms at Cuna Hotel feature views of the mountain.",
+      "location": "Osmeña Street, Barangay Masagana, Palawan, 5313 El Nido, Philippines",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 3500,
+      "ratings": 3
+    },
+    {
+      "id": 2,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/387762008.webp?k=67879731b91253569fe3100c35a876cda38773a4b860cddcf51d92b1016464b8&o=",
+      "title": "S Resort El Nido",
+      "content": "S Resort El Nido is situated in El Nido, within 70 m of El Nido Beach and less than 1 km of Caalan Beach. The property is around 9.1 km from Big Lagoon El Nido, 8.9 km from Small Lagoon El Nido and 3.7 km from Cadlao Island. Free WiFi and an ATM are offered.",
+      "location": "Rizal Street, Palawan, 5313 El Nido, Philippines ",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 3600,
+      "ratings": 4
+    },
+    {
+      "id": 3,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/364269761.webp?k=10f0abb17c66159af3274fe43f0dd211750da67e01eaa9dc9b2a24bfe40f2178&o=",
+      "title": "Rosanna's Pension",
+      "content": "Featuring free WiFi, Rosanna's Pension offers accommodation in El Nido. Rooms come with a TV. Some units have a seating area where you can relax. Some rooms feature views of the sea or mountain.",
+      "location": "Hama Street, Barangay Masagana, Palawan, 5313 El Nido, Philippines",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 3700,
+      "ratings": 5
+    },
+    {
+      "id": 4,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/225847367.webp?k=11684eb2f4bc5f378d97c546ca4e0d6b1f44a917cf41db5340e3f3c64631bd4e&o=",
+      "title": "South Anchorage Inn",
+      "content": "Situated in El Nido and with El Nido Beach reachable within 100 metres, South Anchorage Inn features concierge services, non-smoking rooms, a shared lounge, free WiFi throughout the property and a terrace. This 2-star hotel offers a tour desk. The hotel has family rooms.",
+      "location": "Rizal Street, 5313 El Nido, Philippines",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 3800,
+      "ratings": 5
+    },
+    {
+      "id": 5,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/162054748.webp?k=d5c10235a65d143dbb847df395fc5824422e3bc13b01caa10394e78e4527a4a9&o=",
+      "title": "Sea Cocoon Hotel",
+      "content": "Boasting an outdoor swimming pool, shared lounge and views of pool, Sea Cocoon Hotel is situated in El Nido, 100 m from El Nido Beach. The property is located 800 m from Caalan Beach, 9.2 km from Big Lagoon El Nido and 9.1 km from Small Lagoon El Nido. The accommodation features a 24-hour front desk, airport transfers, luggage storage space and free WiFi throughout the property.",
+      "location": "Calle Real, Barangay Masagana, Palawan, 5313 El Nido, Philippines ",
+      "facilities": [
+        "🚭 Non-smoking rooms",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 3900,
+      "ratings": 5
+    },
+    {
+      "id": 6,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/151145570.webp?k=cf0042df31560a2569e649a98ff8ef75988216e5c4dcd94146b9ac2ad08f6c4c&o=",
+      "title": "Lagùn Hotel",
+      "content": "Situated in El Nido, Lagùn Hotel features an outdoor swimming pool and a terrace. Located around 8 km from Big Lagoon El Nido, the hotel is also 8 km away from Small Lagoon El Nido. Guests can enjoy a drink at the bar or a meal in the restaurant.",
+      "location": "Balinsasayaw Road, Barangay Maligaya, National Highway, Palawan, 5313 El Nido, Philippines",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 4000,
+      "ratings": 5
+    },
+    {
+      "id": 7,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/163979601.webp?k=72f911ce323391bc1702bd9aafec88fea38c478b421ac9d1fc397d28968f5ef5&o=",
+      "title": "Maligaya Beach Bungalows",
+      "content": "Situated on the beachfront in El Nido and boasting a garden, Maligaya Beach Bungalows has free WiFi throughout the property. The property is around a few steps from Corong Corong Beach, 500 m from Lapus Lapus Beach and 11 km from Big Lagoon El Nido. The tour desk is available to assist guests in planning their days out.",
+      "location": "Corong Corong Beach, Palawan, 5313 El Nido, Philippines",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 4100,
+      "ratings": 5
+    },
+    {
+      "id": 8,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/400692126.webp?k=a25aac82b9dccec361380c4fd5d52b73d9d24cc110996acd11db4f45236cb40e&o=",
+      "title": "One El Nido Suite",
+      "content": "Rooms are air-conditioned and equipped with a flat-screen TV, safety deposit box and wardrobe. Private bathrooms are fitted with a shower and bidet. For your comfort, you will find slippers, free toiletries and a hairdryer.",
+      "location": " Lot 2, Barangay Corong-Corong, Palawan, 5313 El Nido, Philippines",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 4200,
+      "ratings": 5
+    },
+    {
+      "id": 9,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/405041437.webp?k=e629c937658b1eae26fcd3921122b9d5f2d01a2e825cbfc3496521a3a1c6f868&o=",
+      "title": "Jai-cob’s Suites",
+      "content": "Located in Coron, one kilometer from Dicanituan Beach, Jai-cob’s Suites has accommodations with a restaurant, free private parking, a garden and a terrace. Located around 5.3 km from Kayangan Lake, the hotel with free WiFi is also 5.5 km away from Twin Lagoon. The hotel has family rooms.",
+      "location": "Real Street 12, Coron Town Proper, 5316 Coron, Philippines",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 4250,
+      "ratings": 5
+    },
+    {
+      "id": 10,
+      "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/388661621.webp?k=92f80ee9a6de5348122735c3c6d1d63f76346b7e6fedc271fc7ea2a3279afebb&o=",
+      "title": "Swiftlets Inn",
+      "content": "Located in the Town Proper of El Nido, 8 km from Big Lagoon and 13 km from Matinloc Shrine, Swiftlets Inn features limestone views of Palawan. The rooms at the Swiftlets Inn are air-conditioned and has a private bathroom with free toiletries. Guests will find a flat-screen TV in some rooms as well as a balcony.",
+      "location": "Rizal Street corner Balinsasayaw Road Maligaya, Palawan, 5313 El Nido, Philippines ",
+      "facilities": [
+        "🌊 1 swimming pool",
+        "🚭 Non-smoking rooms",
+        "🅿 Free parking ",
+        "🐾 Pet friendly",
+        "🕑 24-hour front desk",
+        "📶Free WiFi",
+        "❄ Air conditioning",
+        "🛁 Bathtub"
+      ],
+      "price": 4250,
+      "ratings": 5
+    }
+  ]
+}
