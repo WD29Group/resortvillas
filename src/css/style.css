@@ -489,3 +489,22 @@ li{
 .wrow2{
   padding-top:6vh
 }
+
+/* gallery */
+
+#Gbod{
+  padding-top:15vh;
+  background-color:#201c1c;
+}
+
+.Galbod{
+    background: rgba(74, 74, 74, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(201, 202, 215, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 4vh;
+    padding-left: 3vh;
+    color:white;
+}

@@ -33,6 +33,7 @@ function Weatherforecast() {
           <div className="fw-bold">{getWeekday(data.data[1].datetime)}</div>
           <div>{data.data[1].min_temp} °C</div>
           <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[1].weather.icon}.png`} />
+
         </div>
 
         {/* second */}
