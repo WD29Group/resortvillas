@@ -1,6 +1,3 @@
-import Elnidovid2 from "../ReUse/Elnidovid2";
-import ContentsGalleryCards from "../contents/ContentsGalleryCards";
-import ChangeTopBG from "../ReUse/ChangeTopBG";
 import Footer from "../ReUse/Footer";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 
@@ -29,11 +26,13 @@ function Gallery() {
                 key={i}
                 src={image}
                 style={{ width: "100%", display: "block" }}
+                alt="..."
               />
             ))}
           </Masonry>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

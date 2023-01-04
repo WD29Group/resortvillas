@@ -32,7 +32,7 @@ function Weatherforecast() {
         <div className="col-md-3">
           <div className="fw-bold">{getWeekday(data.data[1].datetime)}</div>
           <div>{data.data[1].min_temp} °C</div>
-          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[1].weather.icon}.png`} />
+          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[1].weather.icon}.png`} alt="..."/>
 
         </div>
 
@@ -40,21 +40,21 @@ function Weatherforecast() {
         <div className="col-md-3">
           <div className="fw-bold">{getWeekday(data.data[2].datetime)}</div>
           <div>{data.data[2].min_temp} °C</div>
-          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[2].weather.icon}.png`} />
+          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[2].weather.icon}.png`} alt="..."/>
 
         </div>
         {/* third */}
         <div className="col-md-3">
         <div className="fw-bold">{getWeekday(data.data[3].datetime)}</div>
         <div>{data.data[3].min_temp} °C</div>
-          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[3].weather.icon}.png`} />
+          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[3].weather.icon}.png`} alt="..."/>
 
         </div>
         {/* fourth */}
         <div className="col-md-3">
         <div className="fw-bold">{getWeekday(data.data[4].datetime)}</div>
         <div>{data.data[4].min_temp} °C</div>
-          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[4].weather.icon}.png`} />
+          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[4].weather.icon}.png`} alt="..."/>
 
         </div>
       </div>
@@ -63,21 +63,21 @@ function Weatherforecast() {
         <div className="col-md-4 ps-5">
         <div className="fw-bold">{getWeekday(data.data[5].datetime)}</div>
         <div>{data.data[5].min_temp} °C</div>
-          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[5].weather.icon}.png`} />
+          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[5].weather.icon}.png`} alt="..."/>
 
         </div>
         {/* sixth */}
         <div className="col-md-4 ">
         <div className="fw-bold">{getWeekday(data.data[6].datetime)}</div>
         <div>{data.data[6].min_temp} °C</div>
-          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[6].weather.icon}.png`} />
+          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[6].weather.icon}.png`} alt="..." />
 
         </div>
         {/* seventh */}
         <div className="col-md-4">
         <div className="fw-bold">{getWeekday(data.data[7].datetime)}</div>
           <div>{data.data[7].min_temp} °C</div>
-          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[7].weather.icon}.png`} />
+          <img height="80" src={process.env.PUBLIC_URL + `/icons/${data.data[7].weather.icon}.png`} alt="..."/>
 
         </div>
       </div>

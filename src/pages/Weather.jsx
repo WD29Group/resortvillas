@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Weatherforecast from '../pages/weatherforecast';
 import Wforecast from '../pages/weatherforecast';
 
 function Weather() {
@@ -49,7 +48,7 @@ function Weather() {
                 <span className="ps-5">{description} at {city}, {country}</span>
                 {/* Make sure to use the correct path to the image file */}
                 <div className="d-flex align-items-center justify-content-center pt-3">
-                <img src={process.env.PUBLIC_URL + `/icons/${data.data[0].weather.icon}.png`} />
+                <img src={process.env.PUBLIC_URL + `/icons/${data.data[0].weather.icon}.png`} alt="..."/>
                 </div>
                 <div className="pt-5 ps-4">Air Quality Index : {aqi}</div>
                 <div className="ps-4">Wind speed : {wndspd}m/s</div>
