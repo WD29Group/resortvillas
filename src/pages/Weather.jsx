@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Weatherforecast from '../pages/weatherforecast';
+// import Weatherforecast from '../pages/weatherforecast';
 import Wforecast from '../pages/weatherforecast';
 import Footer from "../ReUse/Footer";
 

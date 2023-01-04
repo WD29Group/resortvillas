@@ -74,7 +74,17 @@ function Footer(props) {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
       >
-            <small>Copyright (c) 2022-2023 WD29 Group-VI Project-2</small>
+        <small>Copyright (c) 2022-2023 WD29 Group-VI Project-2</small><br />
+        <div>
+          <a class="fa-brands fa-facebook footerIcons" href="http://www.facebook.com/112254835081759"></a>
+          <a class="fa-brands fa-twitter footerIcons" href="http://www.fb.com/"></a>
+          <a class="fa-brands fa-telegram footerIcons" href="http://www.fb.com/"></a>
+          <a class="fa-brands fa-instagram footerIcons" href="http://www.fb.com/"></a>
+          <a class="fa-brands fa-github footerIcons" href="http://www.fb.com/"></a>
+          <a class="fa-brands fa-line footerIcons" href="http://www.fb.com/"></a>
+          <a class="fa-brands fa-whatsapp footerIcons" href="http://www.fb.com/"></a>
+        </div>
+        <h5>contact us</h5>
         </footer>
     );
 }

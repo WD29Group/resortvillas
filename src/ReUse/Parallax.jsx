@@ -2,9 +2,9 @@ import "../css/Parallax.css";
 function Parallax(props) {
   return (
     <>
-      <div class="bgimg-1">
-        <div class="caption">
-          <span class="borders">{props.Title}</span>
+      <div className="bgimg-1">
+        <div className="caption">
+          <span className="borders">{props.Title}</span>
         </div>
       </div>
 
@@ -13,10 +13,10 @@ function Parallax(props) {
         {props.Body1}
         {props.Carousel1}
       </div>
-      <div class="bgimg-2">
-        <div class="caption">
+      <div className="bgimg-2">
+        <div className="caption">
           <span
-            class="borders"
+            className="borders"
             style={{
               backgroundColor: "transparent",
               fontSize: "35px",
@@ -36,10 +36,10 @@ function Parallax(props) {
         </div>
       </div>
 
-      <div class="bgimg-3">
-        <div class="caption">
+      <div className="bgimg-3">
+        <div className="caption">
           <span
-            class="borders"
+            className="borders"
             style={{
               backgroundColor: "transparent",
               fontSize: "35px",
@@ -59,9 +59,9 @@ function Parallax(props) {
         </div>
       </div>
 
-      <div class="bgimg-1">
-        <div class="caption">
-          <span class="borders">
+      <div className="bgimg-1">
+        <div className="caption">
+          <span className="borders">
             Resort Villas <br />
             at your service
           </span>

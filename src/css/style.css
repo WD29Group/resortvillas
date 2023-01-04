@@ -492,3 +492,11 @@ li{
 .wrow2{
   padding-top:6vh
 }
+.footerIcons{
+  background: black;
+  font-size: 2.5em;
+  margin: 7px 7px 0 7px;
+  padding: 5px;
+  color: var(--BigTextcolor);
+  border-radius: 100px;
+}

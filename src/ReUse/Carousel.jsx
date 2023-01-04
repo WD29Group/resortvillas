@@ -53,8 +53,8 @@ function Carousel(props) {
 
         <div className="carousel-inner">
           <div className="carousel-item" data-bs-interval="3000">
-            <div className="slide1">
-              <img src={props.SlideImg1} alt="carouseldata" />
+            <div>
+              <img className="slide1" src={props.SlideImg1} alt="carouseldata" />
             </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title1}</h3>
@@ -64,8 +64,8 @@ function Carousel(props) {
           </div>
 
           <div className="carousel-item" data-bs-interval="3000">
-            <div className="slide2">
-              <img src={props.SlideImg2} alt="carouseldata" />
+            <div>
+              <img className="slide2" src={props.SlideImg2} alt="carouseldata" />
             </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title2}</h3>
@@ -75,8 +75,8 @@ function Carousel(props) {
           </div>
 
           <div className="carousel-item active" data-bs-interval="3000">
-            <div className="slide3">
-              <img src={props.SlideImg3} alt="carouseldata" />
+            <div>
+              <img className="slide3" src={props.SlideImg3} alt="carouseldata" />
             </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title3}</h3>
