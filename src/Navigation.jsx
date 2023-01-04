@@ -8,7 +8,17 @@ function Navigation({ children }) {
   // alert(window.location.href)
   return (
     <>
+      <div className={
+        window.location.href.includes("Resorts") ||
+        window.location.href.includes("Gallery") ||
+        window.location.href.includes("Services") ||
+        window.location.href.includes("Booking") ||
+        window.location.href.includes("News") ||
+        window.location.href.includes("Weather")      
+        ? "unshow" : "show"}
+      >
       <SpecialOffer scrollAmount="150"/>
+      </div>
       <div class-="container">
         <span>
           <img className="logo" alt="Logo" src="./logo.png" />
@@ -22,6 +32,7 @@ function Navigation({ children }) {
                 window.location.href.includes("Home")
                   ? "navButton selected nvbtn"
                   : "navButton nvbtn"
+                  
               }
               onClick={() => setSelected("Home")}
             >

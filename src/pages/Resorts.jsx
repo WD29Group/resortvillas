@@ -9,7 +9,7 @@ function Resorts() {
       <div class="bkg3">
         <MapLoc id="#map" />
       </div>
-      <Footer scrollAmount="50" setBGcolor="rgba(0, 0, 0, 0.50)" />
+      <Footer scrollAmount="0" setBGcolor="rgba(0, 0, 0, 0.50)" />
     </>
   );
 }

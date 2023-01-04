@@ -9,7 +9,7 @@ function News() {
       {/* <EmailForm /> */}
       <Modal />
       <ChangeTopBG scrollAmount="50" transitionDuration="0.5s" />
-      <Footer scrollAmount="800" setBGcolor="rgba(0, 0, 0, 0.50)" />
+      <Footer scrollAmount="-10" setBGcolor="rgba(0, 0, 0, 0.50)" />
     </>
   );
   

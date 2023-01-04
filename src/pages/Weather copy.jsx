@@ -42,23 +42,23 @@ function Weather() {
           <div className="row">
             <div className="weatherbod col-md-4">
               <div className="col-md-11" style={{minWidth: "230px"}}>
-                <center  style={{minWidth: "230px",}}>
-                  <span>Current weather</span>
+                <center  style={{minWidth: "230px", margin: "0 0 0 -50px", padding: "0 0 0 26px"}}>
+                <span>Current weather</span>
+                  <hr />
                   <br />
+                  <span className="fw-bold h1 pt-5 ps-5 pe-5">{temp} °C </span>
                   <br />
-                  <div className="fw-bold h1">{temp} °C </div>
                   <span className="">{description}<br /> at {city}, {country}</span>
                 </center>
+                
                 {/* Make sure to use the correct path to the image file */}
                 <div className="d-flex align-items-center justify-content-center pt-3">
                 <img src={process.env.PUBLIC_URL + `/icons/${data.data[0].weather.icon}.png`} alt={process.env.PUBLIC_URL + `/icons/${data.data[0].weather.icon}.png`} />
                 </div>
-                <center style={{margin:"0 0 0 -20px"}}>
-                  <div>Air Quality Index : {aqi}</div>
-                  <div>Wind speed : {wndspd}m/s</div>
-                  <div>Sunrise : {sunrise} am</div>
-                  <div>Sunset : {sunset} pm</div>
-                </center>
+                <div className="pt-5 ps-4">Air Quality Index : {aqi}</div>
+                <div className="ps-4">Wind speed : {wndspd}m/s</div>
+                <div className="ps-4">Sunrise : {sunrise} am</div>
+                <div className="ps-4">Sunset : {sunset} pm</div>
               </div>
             </div>
             <div className="weatherbod col-md-8">
@@ -74,7 +74,7 @@ function Weather() {
           </div>
         </div>
       </div>
-      <Footer scrollAmount="-10" setBGcolor="rgba(0, 0, 0, 0.50)" />
+      <Footer scrollAmount="0" setBGcolor="rgba(0, 0, 0, 0.50)" />
     </>
   );
 }

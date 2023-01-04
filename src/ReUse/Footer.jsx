@@ -4,12 +4,12 @@ function Footer(props) {
   const [bgColor, setBgColor] = useState(props.setBGcolor);
   const [backdropFilter, bckDropFilter] = useState('blur(3px)');
   const [bgHeight, setbgHeight] = React.useState('25px');
-  const [DisplayBtn, DisplayUpBtn] = useState('0.7');
+  const [xOpacity, DisplayUpBtn] = useState('0.7');
   const [borderRadius, getBorderRadius] = useState('120px 120px 0 0');
   const footerStyle = {
                       backgroundColor: bgColor,
                       height: bgHeight,
-                      opacity: DisplayBtn,
+                      opacity: xOpacity,
                       color: "white",
                       width: "99.5%",
                       position: "fixed",
@@ -23,7 +23,22 @@ function Footer(props) {
                       borderRadius: borderRadius,
                       transform: "translate(-50%, 0)",
   }
+ 
   
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY + window.innerHeight === document.body.scrollHeight) {
+        setbgHeight('120px')
+      }else{
+        setbgHeight('25px')}
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   function handleMouseEnter() {
     setbgHeight(window.scrollY > props.scrollAmount ? '120px' : '25px');
     DisplayUpBtn("1");
