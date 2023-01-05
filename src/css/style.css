@@ -523,7 +523,7 @@ li{
     /* padding: 5px; */
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 435px) {
   .footerIcons {
     font-size: 1em;
     margin: 10px 0 2px 0;
