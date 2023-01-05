@@ -77,12 +77,12 @@ function Footer(props) {
         <small>Copyright (c) 2022-2023 WD29 Group-VI Project-2</small><br />
         <div>
           <a className="fa-brands fa-facebook footerIcons" href="http://www.facebook.com/112254835081759"> </a>
-          <a className="fa-brands fa-twitter footerIcons" href="http://www.fb.com/"> </a>
+          <a className="fa-brands fa-twitter footerIcons" href="https://twitter.com/ResortVillas"> </a>
           <a className="fa-brands fa-telegram footerIcons" href="http://www.fb.com/"> </a>
-          <a className="fa-brands fa-instagram footerIcons" href="http://www.fb.com/"> </a>
-          <a className="fa-brands fa-github footerIcons" href="http://www.fb.com/"> </a>
-          <a className="fa-brands fa-line footerIcons" href="http://www.fb.com/"> </a>
-          <a className="fa-brands fa-whatsapp footerIcons" href="http://www.fb.com/"> </a>
+          <a className="fa-brands fa-instagram footerIcons" href="https://www.instagram.com/explore/tags/resortvilla/"> </a>
+          <a className="fa-brands fa-github footerIcons" href="https://github.com/WD29Group/g6repository"> </a>
+          <a className="fa-brands fa-discord footerIcons" href="https://discord.com/channels/1060360858364018790/1060360859483918389"> </a>
+          <a className="fa-brands fa-whatsapp footerIcons" href="https://wa.me/qr/SRQ7H3R5UZYSI1"> </a>
         </div>
         <h5>contact us</h5>
         </footer>
