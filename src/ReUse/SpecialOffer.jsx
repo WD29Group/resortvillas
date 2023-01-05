@@ -20,10 +20,18 @@ function SpecialOffer(props) {
   const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  const PromoHeader = {
+    background: "rgba(255, 222, 89, 1)",
+    color: "black",
+    margin: "-7px -7px -5px -7px",
+    padding: "7px",
+    borderRadius: " 20px 20px 0 0",
+    textShadow: "1px 1px 2px black",
+  }
   const spCloseBtn = {
     background: "transparent",
     border: "none",
-    color: "yellow",
+    color: "rgba(255, 0, 0, .75)",
     textShadow: "1px 1px 2px black",
     position: "absolute",
     top: "3px",
@@ -59,11 +67,11 @@ function SpecialOffer(props) {
           days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0 ? "unshow" : "show SpecialPromoStyling"}
       >
       <button style={spCloseBtn} onClick={closeSpecialPromo}>X</button>
-      <div style={{background:"rgba(255, 0, 0, 0.75)", margin: "-7px -7px -5px -7px", padding: "7px", borderRadius:" 20px 20px 0 0"}}><strong className='h5'>Holiday Special Promo</strong></div><hr/>
+      <div style={PromoHeader}><strong className='h5'>Holiday Special Promo</strong></div><hr/>
         <p> Ends on <br /><i>January 30, 2023</i> remaining time offer: <br />
           <div style={{
             background: "rgba(0,0,0, 0.77)",
-            color: "yellow",
+            color: "rgba(255, 222, 89, 1)",
             width: "136px",
             borderRadius: "5px"
           }}>
