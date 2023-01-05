@@ -512,17 +512,18 @@ li{
 @media (max-width: 614px) {
   .footerIcons {
     font-size: 2.1em;
+    margin: 8px 2px 2px 2px;
     /* padding: 5px; */
   }
 }
 @media (max-width: 549px) {
   .footerIcons {
     font-size: 1.5em;
-    margin: 7px 2px 0 2px;
+    margin: 10px 2px 4px 2px;
     /* padding: 5px; */
   }
 }
-@media (max-width: 382px) {
+@media (max-width: 410px) {
   .footerIcons {
     font-size: 1em;
     margin: 10px 0 2px 0;
