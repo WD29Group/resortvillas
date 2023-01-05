@@ -76,14 +76,20 @@ function Footer(props) {
               onMouseLeave={handleMouseLeave}
       >
         <small>Copyright (c) 2022-2023 WD29 Group-VI Project-2</small><br />
-        <div>
-          <a className="fa-brands fa-facebook footerIcons iconTilt" href="http://www.facebook.com/112254835081759"> </a>
-          <a className="fa-brands fa-twitter footerIcons iconTilt" href="https://twitter.com/ResortVillas"> </a>
-          <a className="fa-brands fa-telegram footerIcons iconTilt" href="http://www.fb.com/"> </a>
-          <a className="fa-brands fa-instagram footerIcons iconTilt" href="https://www.instagram.com/explore/tags/resortvilla/"> </a>
-          <a className="fa-brands fa-github footerIcons iconTilt" href="https://github.com/WD29Group/g6repository"> </a>
-          <a className="fa-brands fa-discord footerIcons iconTilt" href="https://discord.com/channels/1060360858364018790/1060360859483918389"> </a>
-          <a className="fa-brands fa-whatsapp footerIcons iconTilt" href="https://wa.me/qr/SRQ7H3R5UZYSI1"> </a>
+        <div className='row'>
+          <div className="col-1">
+          </div>
+          <div className="col">
+            <a className="fa-brands fa-facebook footerIcons iconTilt" href="http://www.facebook.com/112254835081759"> </a>
+            <a className="fa-brands fa-twitter footerIcons iconTilt" href="https://twitter.com/ResortVillas"> </a>
+            <a className="fa-brands fa-telegram footerIcons iconTilt" href="http://www.fb.com/"> </a>
+            <a className="fa-brands fa-instagram footerIcons iconTilt" href="https://www.instagram.com/explore/tags/resortvilla/"> </a>
+            <a className="fa-brands fa-github footerIcons iconTilt" href="https://github.com/WD29Group/g6repository"> </a>
+            <a className="fa-brands fa-discord footerIcons iconTilt" href="https://discord.com/channels/1060360858364018790/1060360859483918389"> </a>
+            <a className="fa-brands fa-whatsapp footerIcons iconTilt" href="https://wa.me/qr/SRQ7H3R5UZYSI1"> </a>
+          </div>
+          <div className="col-1">
+          </div>
         </div>
         <p>you can contact us here</p>
         </footer>
