@@ -19,12 +19,12 @@ function Resorts() {
                   <div class="card">
                     <img src={hotel.thumbnailUrl} class="card-img-top" alt="..." />
                     <div class="card-body">
-                      <h4 class="card-title">{hotel.title}</h4>
-                      <h5 class="card-title">{hotel.location}</h5>
-                      <p class="card-text">{hotel.content}</p>
-                      <p class="card-text">{hotel.facilities}</p>
-                      <p class="card-text">P {hotel.price} </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h4 className="card-title">{hotel.title}</h4>
+                      <h5 className="card-title">{hotel.location}</h5>
+                      <p className="card-text">{hotel.content}</p>
+                      <p className="card-text">{hotel.facilities}</p>
+                      <p className="card-text">P {hotel.price} </p>
+                      <a href="#" className="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
                 </div>
