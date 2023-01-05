@@ -4,7 +4,7 @@ function Footer(props) {
   const [bgColor, setBgColor] = useState(props.setBGcolor);
   const [backdropFilter, bckDropFilter] = useState('blur(3px)');
   const [bgHeight, setbgHeight] = React.useState('25px');
-  const [xOpacity, DisplayUpBtn] = useState('0.7');
+  const [xOpacity, opac] = useState('0.7');
   const [borderRadius, getBorderRadius] = useState('120px 120px 0 0');
   const footerStyle = {
                       backgroundColor: bgColor,
@@ -28,7 +28,8 @@ function Footer(props) {
   useEffect(() => {
     function handleScroll() {
       if (window.scrollY + window.innerHeight === document.body.scrollHeight) {
-        setbgHeight('120px')
+        setbgHeight('110px')
+        opac("0.95");
       }else{
         setbgHeight('25px')}
     }
@@ -40,14 +41,14 @@ function Footer(props) {
   }, []);
 
   function handleMouseEnter() {
-    setbgHeight(window.scrollY > props.scrollAmount ? '120px' : '25px');
-    DisplayUpBtn("1");
+    setbgHeight(window.scrollY > props.scrollAmount ? '110px' : '25px');
+    opac("1");
     getBorderRadius('80px 80px 0 0');
   }
 
   function handleMouseLeave() {
     setbgHeight('25px');
-    DisplayUpBtn("0.7");
+    opac("0.7");
     getBorderRadius('20px 20px 0 0');
   }
 
@@ -84,7 +85,7 @@ function Footer(props) {
           <a className="fa-brands fa-discord footerIcons" href="https://discord.com/channels/1060360858364018790/1060360859483918389"> </a>
           <a className="fa-brands fa-whatsapp footerIcons" href="https://wa.me/qr/SRQ7H3R5UZYSI1"> </a>
         </div>
-        <h5>contact us</h5>
+        <p>you can contact us here</p>
         </footer>
     );
 }

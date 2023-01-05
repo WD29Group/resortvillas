@@ -9,7 +9,7 @@ function ScrollToTopButton() {
     function handleScroll() {
       const scroll = window.scrollY;
 
-      if (scroll > 800) {
+      if (scroll > 1500) {
         DisplayUpBtn("1");
 
       } else {
@@ -37,13 +37,14 @@ function ScrollToTopButton() {
                   background: "rgba(255, 222, 89, 0.75)",
                   color: "rgba(0, 0, 0, 0.8)",
                   border: "none",
-                  height: "60px",
-                  width: "60px",
+                  height: "50px",
+                  width: "25px",
                   position: "fixed",
+                  lineHeight: "8px",
                   zIndex: "3",
-                  bottom: "25px",
-                  right: "90px",
-                  fontSize: "2.7em",
+                  bottom: "125px",
+                  right: "5px",
+                  fontSize: "2.5em",
                   fontWeight: "999",
                   transitionDuration: "0.7s"
                 }
