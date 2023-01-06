@@ -566,4 +566,20 @@ iframe{
   width: 100%;
   height: 41vh;
   object-fit: cover;
+  transition: .3s;
+}
+.img-fluid:hover {
+  transform:scale(1.3);
+  z-index: 2;
+}
+.book-now .price-now {
+  transition: .3s;
+}
+.book-now:hover {
+  transform:scale(1.3);
+  z-index: 2;
+}
+.price-now:hover {
+  transform:scale(1.3);
+  z-index: 2;
 }
