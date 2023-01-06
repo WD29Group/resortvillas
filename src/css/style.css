@@ -554,5 +554,18 @@ iframe{
     display: flex;
     flex-direction: column-reverse;
   }
+  
+  .facilities {
+    display: none;
+  }
 }
 /* ROOMS AREA */
+
+.card {
+  max-width: 55em;
+}
+.img-fluid{
+  width: 100%;
+  height: 32vh;
+  object-fit: cover;
+}
