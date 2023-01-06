@@ -53,8 +53,8 @@
 }
 .SubscribedBtn {
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.50);
-  color: yellow;
+  background: rgba(0, 0, 0, 95);
+  color: rgba(255, 222, 89, 0.8);
   width: 150px;
   padding: 0 0 0 0;
   margin: -10px 0 0 -6px;
@@ -64,14 +64,14 @@
 .SPbuttonFrosted:hover,
 .buttonFrosted:hover{
   color: rgb(0, 0, 0);
-  background: rgba(255, 230, 0, 0.75);
+  background: rgba(255, 222, 89, 0.8);
   border-radius: 10px;
   border: solid 2px rgba(255, 255, 255, 0.15);
   /* box-shadow: var(--boxshadow); */
   box-shadow:  -1px -1px 1px #ffffff;
 }
 .SPbuttonFrosted:hover{
-  background: rgba(255, 230, 0, 0.75);
+  background: rgba(255, 222, 89, 0.8);
   border-radius: 10px;
   border-radius: 0 0 20px 20px;
   margin: -10px;

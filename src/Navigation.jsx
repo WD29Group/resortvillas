@@ -3,9 +3,7 @@ import { useState } from 'react';
 import ScrollToTopButton from './ReUse/ScrollToTopButton';
 import SpecialOffer from './ReUse/SpecialOffer';
 function Navigation({ children }) {
-  const [selected, setSelected] = useState('*');
-  console.log(selected);
-  // alert(window.location.href)
+  const  setSelected = useState('*');
   return (
     <>
       <div className={

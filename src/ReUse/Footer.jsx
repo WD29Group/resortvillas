@@ -5,7 +5,7 @@ function Footer(props) {
   const [backdropFilter, bckDropFilter] = useState('blur(3px)');
   const [bgHeight, setbgHeight] = React.useState('25px');
   const [xOpacity, opac] = useState('0.7');
-  const [borderRadius, getBorderRadius] = useState('120px 120px 0 0');
+  const [borderRadius, getBorderRadius] = useState('80px 80px 0 0');
   const footerStyle = {
                       backgroundColor: bgColor,
                       height: bgHeight,
@@ -75,7 +75,7 @@ function Footer(props) {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
       >
-        <small>Copyright (c) 2022-2023 WD29 Group-VI Project-2</small><br />
+        <small>Copyright ©️ 2022-2023 WD29 Group-VI Project-II</small><br />
         <div className='row'>
           <div className="col">
           </div>
@@ -87,11 +87,11 @@ function Footer(props) {
             <a className="fa-brands fa-github footerIcons iconTilt" href="https://github.com/WD29Group/g6repository"> </a>
             <a className="fa-brands fa-discord footerIcons iconTilt" href="https://discord.com/channels/1060360858364018790/1060360859483918389"> </a>
             <a className="fa-brands fa-whatsapp footerIcons iconTilt" href="https://wa.me/qr/SRQ7H3R5UZYSI1"> </a>
+            <p className='footerTxt'>&nbsp; you can contact us here&nbsp; </p>
           </div>
           <div className="col">
           </div>
         </div>
-        <p>you can contact us here</p>
         </footer>
     );
 }
