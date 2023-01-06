@@ -1,60 +1,17 @@
-// import MapLoc from "./MapLoc";
-// // import Rooms from "./Rooms";
-// import { useState, useEffect } from "react";
-// import hotelsVillas from "./hotelsVillas.json"
-
-// function Resorts() {
-//   useEffect(() => {
-//     console.log(hotelsVillas)
-//   });
-//   return (
-//     <div className="m-5">
-//       <MapLoc />
-//       {hotelsVillas.hotels.map((hotel) => {
-//         return (
-
-//           <>
-//           <div>
-//           </div>
-//             <div className="container-fluid">
-//               <div className="row">
-//                 <div className="col-md-6">
-//                   <div class="card">
-//                     <img src={hotel.thumbnailUrl} class="card-img-top" alt="..." />
-//                     <div class="card-body">
-//                       <h4 className="card-title">{hotel.title}</h4>
-//                       <h5 className="card-title">{hotel.location}</h5>
-//                       <p className="card-text">{hotel.content}</p>
-//                       <p className="card-text">{hotel.facilities}</p>
-//                       <p className="card-text">P {hotel.price} </p>
-//                       <a href="#" className="btn btn-primary">Go somewhere</a>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-
-//           </>
-//         );
-//         })};
-//     </div>
-
-
-//   );
-// }
-
-// export default Resorts;
-
+import { Link } from "react-router-dom";
 import MapLoc from "./MapLoc";
 // import Rooms from "./Rooms";
 import { useState, useEffect } from "react";
 import hotelsVillas from "./hotelsVillas.json"
+
 
 function Resorts() {
   useEffect(() => {
     console.log(hotelsVillas)
   });
   return (
+  <>
+    {/* /* -------------------Hotel Cards Array----------------------------- */}
     <div className="resort-card m-5 ">
       {hotelsVillas.hotels.map((hotel) => {
         return (
@@ -72,31 +29,35 @@ function Resorts() {
                     <p class="card-text">{hotel.content}</p>
                     <div className="card-text">
                       <ul className="col-fluid">
+                      {/* /* -------------------End ofHotel Cards Array----------------------------- */}
+                      
+                         {/* /* -------------------Facilities Array----------------------------- */}
                         <div className="row">
                           {hotel.facilities.map((facility) => {
                             return (<li className="facilities col-6 col-md-4 d-flex justify-content-start" id="facilities" style={{ fontSize: "12px" }}>{facility}</li>)
                           })}
                         </div>
+                        {/* /* ------------------- End of Facilities Array----------------------------- */}
                       </ul>
                       <div class="d-flex mb-3">
                         <div class="me-auto p-2"><h4> P {hotel.price}</h4></div>
-
-                        <div class="p-2"><button className="btn btn-warning mb-1"> BOOK NOW</button></div>
+                        <div class="p-2">
+                          <button Link to="/Booking" className="btn btn-warning mb-1">
+                             <Link to="/Booking"  onClick={() => ('Booking')} className="text-dark">BOOK NOW</Link> 
+                          </button>
+                          </div>
                       </div>
-
-                    
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         );
       })};
     </div >
-
-
+    <MapLoc/>
+    </>
   );
 }
 

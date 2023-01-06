@@ -560,10 +560,10 @@ iframe{
 /* ROOMS AREA */
 
 .card {
-  max-width: 58em;
+  max-width: 60em;
 }
 .img-fluid{
   width: 100%;
-  height: 45vh;
+  height: 41vh;
   object-fit: cover;
 }
