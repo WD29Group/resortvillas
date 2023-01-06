@@ -62,7 +62,7 @@ function Resorts() {
 
             <div class="card mb-3" style={{ maxWidth: "540px;" }}>
               <div class="row g-0">
-                <div class="col-md-4 pt-3">
+                <div class="col-md-4 py-3">
                   <img src={hotel.thumbnailUrl} class="img-fluid rounded-start" alt="..." />
                 </div>
                 <div class="col-md-8">
@@ -72,9 +72,9 @@ function Resorts() {
                     <p class="card-text">{hotel.content}</p>
                     <div className="card-text">
                       <ul className="col-fluid">
-                        <div className="facilities row">
+                        <div className="row">
                           {hotel.facilities.map((facility) => {
-                            return (<li className="facilities col-6 col-md-4 d-flex justify-content-center" id="facilities" style={{ fontSize: "12px" }}>{facility}</li>)
+                            return (<li className="facilities col-6 col-md-4 d-flex justify-content-start" id="facilities" style={{ fontSize: "12px" }}>{facility}</li>)
                           })}
                         </div>
                       </ul>

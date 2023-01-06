@@ -555,17 +555,15 @@ iframe{
     flex-direction: column-reverse;
   }
   
-  .facilities {
-    display: none;
-  }
+
 }
 /* ROOMS AREA */
 
 .card {
-  max-width: 55em;
+  max-width: 58em;
 }
 .img-fluid{
   width: 100%;
-  height: 32vh;
+  height: 45vh;
   object-fit: cover;
 }
