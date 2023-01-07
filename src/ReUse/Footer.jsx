@@ -75,7 +75,7 @@ function Footer(props) {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
       >
-        <small>Copyright ©️ 2022-2023 WD29 Group-VI Project-II</small><br />
+        <small>you can contact us here</small><br />
         <div className='row'>
           <div className="col">
           </div>
@@ -87,7 +87,7 @@ function Footer(props) {
             <a className="fa-brands fa-github footerIcons iconTilt" href="https://github.com/WD29Group/g6repository"> </a>
             <a className="fa-brands fa-discord footerIcons iconTilt" href="https://discord.com/channels/1060360858364018790/1060360859483918389"> </a>
             <a className="fa-brands fa-whatsapp footerIcons iconTilt" href="https://wa.me/qr/SRQ7H3R5UZYSI1"> </a>
-            <p className='footerTxt'>&nbsp; you can contact us here&nbsp; </p>
+            <p className='footerTxt'>&nbsp;Copyright ©️ 2022-2023 WD29 Group-VI Project-II&nbsp; </p>
           </div>
           <div className="col">
           </div>
