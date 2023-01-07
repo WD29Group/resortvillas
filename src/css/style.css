@@ -381,7 +381,7 @@ nav a:link, a:visited{
   background: rgba(0, 0, 0, 0.808); 
 
 }
-
+/* 
 iframe{
   display: inline-block;
   z-index: 1;
@@ -399,7 +399,7 @@ iframe{
   top: 100%;
   left: 50%;
   transform: translate(-50%, 50%);
-}
+} */
 
 /* footer {
   z-index: 1;
