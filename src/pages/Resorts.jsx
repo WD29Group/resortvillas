@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import hotelsVillas from "../json/hotelsVillas.json"
-
+import ChangeTopBG from "../ReUse/ChangeTopBG";
+import Footer from "../ReUse/Footer";
 function Resorts() {
   useEffect(() => {
     console.log(hotelsVillas)
   });
   const RestyleCards = {
     position: "relative",
-    zIndex: "5",
+    zIndex: "1",
     padding:"70px 0 0 0",
     }
   return (
@@ -57,6 +58,8 @@ function Resorts() {
           })};
         </div >    
       </div>
+      <ChangeTopBG scrollAmount="0" transitionDuration="0.5s" />
+      <Footer scrollAmount="-10" setBGcolor="rgba(0, 0, 0, 0.50)" />
     </>
 
   );
