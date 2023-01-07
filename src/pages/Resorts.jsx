@@ -35,13 +35,12 @@ function Resorts() {
   let discounted = (1 - (1 * discount));
   if ((!promoEnabled) ? discounted : discounted = 1);
 
-  let toggle = false;
-
-  const handleClick = (arg) => {
-    toggle ? toggle = false : toggle = true
-    document.getElementById(arg).style.display = toggle ? 'block' : "none";
+  const openMap = (arg) => {
+    document.getElementById(arg).style.display = 'block';
   };
-
+  const closeMap = (arg) => {
+    document.getElementById(arg).style.display =  "none";
+  };
   return (
     <>
       <div className="landingpg2"></div>
@@ -65,7 +64,7 @@ function Resorts() {
                     <div className="col-md-8">
                       <div className="card-body">
                         <h5 className="card-title m-0 p-0">{hotelTitle}</h5>
-                        <p className="card-text hotelLocation"><small className="hotelLocation" onClick={() => handleClick(`${hotelMapId}`)}>{hotelLocation}</small></p>
+                        <p className="card-text hotelLocation"><small className="hotelLocation" onClick={() => openMap(`${hotelMapId}`)}>{hotelLocation}</small></p>
 
                           <div id={hotelMapId} className="container" style={{display: "none"}}>
                             <iframe 
@@ -75,7 +74,7 @@ function Resorts() {
                                 width="500"
                                 title="gmap_canvas"
                             ></iframe>
-                            <button className='mapButton' onClick={() => handleClick(`${hotelMapId}`)}>X</button>
+                            <button className='mapButton' onClick={() => closeMap(`${hotelMapId}`)}>X</button>
                           </div>                        
 
                         <p className="card-text">{hotelContent}</p>
