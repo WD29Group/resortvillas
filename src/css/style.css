@@ -20,6 +20,16 @@
   --BigTextcolor: rgba(255, 222, 89, 0.8);
   --fontfam: 'Nothing You Could Do', cursive;
 }
+body,
+html {
+  /* height: 100%; */
+  /* margin: 0; */
+  color: #777;
+  background: rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
+  /* font-size: ; */
+}
+
 .myFontFam{
   font-family: var(--fontfam);
 }
@@ -39,8 +49,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
 
 .siteName{
   position: fixed;
@@ -375,24 +383,49 @@ li{
   background: rgba(0, 0, 0, 0.808); 
 
 }
-
+.modalButton{
+  top: 150px;
+  right: 25px;
+  position: fixed;
+  appearance: button;
+  width: 150px;
+  height: 50px;
+  background: red;
+  z-index: 999999;
+}
 .iframeRV{
-  display: inline-block;
-  z-index: 1;
-  padding: 25px;
-  margin: 0 auto;
-  width: 100vw;
-  max-width: 600px;
-  box-shadow: var(--boxshadow);
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
-  border: solid 2px rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(3px);
+  z-index: 10;
+  max-width: 545px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.25);
   border-radius: 7px;
   position: relative;
-  /* top: 100%; */
-  left: 50%;
-  transform: translate(-50%, 50%);
+  top: -5px;
+  left: -12px
+}
+.mapButton{
+  background: rgba(0, 0, 0, 0.75);
+  color: var(--BigTextcolor);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  appearance: button;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  position: absolute;
+  top: 45px;
+  right: 35px;
+}
+.mapButton:hover{
+  background: rgba(0, 0, 0, 1);
+}
+.hotelLocation {
+  appearance: button;
+  color: gray;
+}
+.hotelLocation:hover {
+  color: black;
+  font-weight: bold;
 }
 /* PARALAX AREA */
 .pararelax{
@@ -547,4 +580,22 @@ li{
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
   transition-duration: 1.2s;
+}
+/* gallery */
+
+#Gbod {
+  padding-top: 15vh;
+  background-color: #201c1c;
+}
+
+.Galbod {
+  background: rgba(74, 74, 74, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(201, 202, 215, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 4vh;
+  padding-left: 3vh;
+  color: white;
 }

@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import hotelsVillas from "../json/hotelsVillas.json"
 import ChangeTopBG from "../ReUse/ChangeTopBG";
 import Footer from "../ReUse/Footer";
+// import MapLoc from "../ReUse/MapLoc";
 function Resorts() {
-  // useEffect(() => {
-  //   console.log(hotelsVillas)
-  // });
   const RestyleCards = {
     position: "relative",
     zIndex: "1",
@@ -35,28 +33,56 @@ function Resorts() {
 //ADDING PROMO DURATION  
   
   let discounted = (1 - (1 * discount));
-  if((!promoEnabled) ? discounted : discounted = 1)
+  if ((!promoEnabled) ? discounted : discounted = 1);
+
+  let toggle = false;
+
+  const handleClick = (arg) => {
+    toggle ? toggle = false : toggle = true
+    document.getElementById(arg).style.display = toggle ? 'block' : "none";
+  };
+
   return (
     <>
       <div className="landingpg2"></div>
       <div style={RestyleCards}>
       <div className="resort-card m-5 ">
           {hotelsVillas.hotels.map((hotel) => {
+            const hotelThumbnailUrl = `${hotel.thumbnailUrl}`;
+            const hotelTitle = `${hotel.title}`;
+            const hotelLocation = `${hotel.location}`;
+            const hotelContent = `${hotel.content}`;
+            const hotelMapId = `${hotel.mapId}`;
+            const hotelIframe = `${hotel.iframe}`;
+            
             return (
               <div className="row  d-flex justify-content-center">
                 <div className="card mb-3 " style={{ maxWidth: "540px;" }}>
                   <div className="row g-0 ">
                     <div className="col-md-4 pt-3 ">
-                      <img src={hotel.thumbnailUrl} className="img-fluid rounded-start" alt={hotel.thumbnailUrl} />
+                      <img src={hotelThumbnailUrl} className="img-fluid rounded-start" alt={hotelThumbnailUrl} />
                     </div>
                     <div className="col-md-8">
                       <div className="card-body">
-                        <h5 className="card-title m-0 p-0">{hotel.title}</h5>
-                        <p className="card-text"><small className="text-muted">{hotel.location}</small></p>
-                        <p className="card-text">{hotel.content}</p>
+                        <h5 className="card-title m-0 p-0">{hotelTitle}</h5>
+                        <p className="card-text hotelLocation"><small className="hotelLocation" onClick={() => handleClick(`${hotelMapId}`)}>{hotelLocation}</small></p>
+
+                          <div id={hotelMapId} className="container" style={{display: "none"}}>
+                            <iframe 
+                                className="iframeRV"
+                                src={hotelIframe}
+                                height="300"
+                                width="500"
+                                title="gmap_canvas"
+                            ></iframe>
+                            <button className='mapButton' onClick={() => handleClick(`${hotelMapId}`)}>X</button>
+                          </div>                        
+
+                        <p className="card-text">{hotelContent}</p>
                         <div className="card-text">
                           <ul className="col-fluid">
                             <div className="facilities row">
+
                               {hotel.facilities.map((facility) => {
                                 return (<li className="facilities col-6 col-md-4 d-flex justify-content-center" id="facilities" style={{ fontSize: "12px" }}>{facility}</li>)
                               })}
