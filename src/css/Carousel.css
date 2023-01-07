@@ -31,18 +31,6 @@ a:hover{
     color: rgba(255, 255, 255, 0.75);
 }
 
-/* .slide1 {
-    background-image: url("../carouseldata/1.jpg");
-}
-
-.slide2 {
-    background-image: url("../carouseldata/2.jpg");
-}
-
-.slide3 {
-    background-image: url("../carouseldata/3.jpg");
-} */
-
 .carousel-item {
     opacity: 0;
 }

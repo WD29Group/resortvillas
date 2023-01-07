@@ -50,7 +50,6 @@ body, html {
 } 
 
 .caption span.borders {
-  /* background-color: rgba(0, 0, 0, 0.75); */
   color: #fff;
   padding: 18px;
   font-size: 3em;

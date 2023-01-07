@@ -40,20 +40,20 @@ function Resorts() {
     <>
       <div className="landingpg2"></div>
       <div style={RestyleCards}>
-      <div className="resort-card m-5">
+      <div className="resort-card m-5 ">
           {hotelsVillas.hotels.map((hotel) => {
             return (
-              <div className="row d-flex justify-content-center">
-                <div class="card mb-3" style={{ maxWidth: "540px;" }}>
-                  <div class="row g-0">
-                    <div class="col-md-4 pt-3">
-                      <img src={hotel.thumbnailUrl} class="img-fluid rounded-start" alt="..." />
+              <div className="row  d-flex justify-content-center">
+                <div className="card mb-3 " style={{ maxWidth: "540px;" }}>
+                  <div className="row g-0 ">
+                    <div className="col-md-4 pt-3 ">
+                      <img src={hotel.thumbnailUrl} className="img-fluid rounded-start" alt={hotel.thumbnailUrl} />
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title m-0 p-0">{hotel.title}</h5>
-                        <p class="card-text"><small class="text-muted">{hotel.location}</small></p>
-                        <p class="card-text">{hotel.content}</p>
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <h5 className="card-title m-0 p-0">{hotel.title}</h5>
+                        <p className="card-text"><small className="text-muted">{hotel.location}</small></p>
+                        <p className="card-text">{hotel.content}</p>
                         <div className="card-text">
                           <ul className="col-fluid">
                             <div className="facilities row">
@@ -62,9 +62,9 @@ function Resorts() {
                               })}
                             </div>
                           </ul>
-                          <div class="d-flex mb-3">
-                            <div class="me-auto p-2"><h4 className={(!promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discounted).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(!promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
-                            <div class="p-2"><button className="btn btn-warning mb-1">BOOK NOW</button></div>
+                          <div className="d-flex mb-3">
+                            <div className="me-auto p-2"><h4 className={(!promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discounted).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(!promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
+                            <div className="p-2"><button className="btn btn-warning mb-1">BOOK NOW</button></div>
                           </div>
                         </div>
                       </div>
