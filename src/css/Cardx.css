@@ -89,7 +89,7 @@ hr{
   position: fixed;
   bottom: 100px;
   right: 35px;
-  z-index: 2;
+  z-index: 3;
   width: 150px;
   height: 255px;
   text-align: center;

@@ -56,27 +56,15 @@ function Resorts() {
             
             return (
               <div className="row  d-flex justify-content-center">
-                <div className="card mb-3 " style={{ maxWidth: "540px;" }}>
+                <div className="card mb-5 pb-3 " style={{ maxWidth: "540px;" }}>
                   <div className="row g-0 ">
                     <div className="col-md-4 pt-3 ">
-                      <img src={hotelThumbnailUrl} className="img-fluid rounded-start" alt={hotelThumbnailUrl} />
+                      <img src={hotelThumbnailUrl} className="img-fluid rounded" alt={hotelThumbnailUrl} />
                     </div>
                     <div className="col-md-8">
                       <div className="card-body">
                         <h5 className="card-title m-0 p-0">{hotelTitle}</h5>
                         <p className="card-text hotelLocation"><small className="hotelLocation" onClick={() => openMap(`${hotelMapId}`)}>{hotelLocation}</small></p>
-
-                          <div id={hotelMapId} className="container" style={{display: "none"}}>
-                            <iframe 
-                                className="iframeRV"
-                                src={hotelIframe}
-                                height="300"
-                                width="500"
-                                title="gmap_canvas"
-                            ></iframe>
-                            <button className='mapButton' onClick={() => closeMap(`${hotelMapId}`)}>X</button>
-                          </div>                        
-
                         <p className="card-text">{hotelContent}</p>
                         <div className="card-text">
                           <ul className="col-fluid">
@@ -94,6 +82,16 @@ function Resorts() {
                         </div>
                       </div>
                     </div>
+                    <div id={hotelMapId} className="container" style={{ display: "none" }}>
+                          <button className='mapButton' onClick={() => closeMap(`${hotelMapId}`)}>X</button>
+                            <iframe 
+                                className="iframeRV"
+                                src={hotelIframe}
+                                height="300"
+                                width="1000"
+                                title="gmap_canvas"
+                            ></iframe>
+                          </div>    
                   </div>
                 </div>
               </div>
