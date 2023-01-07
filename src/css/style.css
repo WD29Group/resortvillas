@@ -511,9 +511,11 @@ li{
   .newPrice,
   .price {
    font-size: 1.2em;
+   margin: 0 -15px 0 -8px;
   }
   .oldPrice{
    font-size: 0.9em;
+   margin: 0 -15px 0 -8px;
 }
 }
 .iconTilt {

@@ -63,8 +63,8 @@ function Resorts() {
                             </div>
                           </ul>
                           <div class="d-flex mb-3">
-                            <div class="me-auto p-2"><h4 className={(!promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discounted).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(!promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
-                            <div class="p-2"><button className="btn btn-warning mb-1"> BOOK NOW</button></div>
+                            <div class="me-auto p-2"><h4 className={(!promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discounted).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(!promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
+                            <div class="p-2"><button className="btn btn-warning mb-1">BOOK NOW</button></div>
                           </div>
                         </div>
                       </div>

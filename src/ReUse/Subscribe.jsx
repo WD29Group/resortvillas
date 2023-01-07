@@ -20,11 +20,11 @@ import React, { useState } from 'react';
   
   return (
 <div>
-  <div className="rvmodal material-symbols-outlined AccountProfile" data-bs-toggle="modal" data-bs-target="#AccProf">
+  <div className="rvmodal material-symbols-outlined AccountProfile" data-bs-toggle="modal" data-bs-target="#subscribe">
   mail
   </div>
   
-  <div className="modal fade" id="AccProf">
+  <div className="modal fade" id="subscribe">
     <div className="modal-dialog modal-dialog-centered">
       <div className=" ModaSVlBorder Cardtransp modal-content p-5">
         <p className="fw-bold mb-3 text-center h2">Subscribe to our newsletter</p>
