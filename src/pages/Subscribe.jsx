@@ -2,13 +2,13 @@ import {db} from '../firebase'
 import {addDoc, collection} from 'firebase/firestore'
 import React, { useState } from 'react';
 
-const Subscribe = ({ scroll }) => {
+  const Subscribe = ({ scroll }) => {
   const [input, setInput] = useState('');
-
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const subscribeToList = async (e) => {
     e.preventDefault()
-    if (input === '') {
-        alert('Please enter a valid message')
+    if (input === '' || !input.match(emailRegex)) {
+        alert('Please enter a valid email address')
         return
     }
     await addDoc(collection(db, 'subscription'), {
@@ -17,6 +17,7 @@ const Subscribe = ({ scroll }) => {
     setInput('')
     scroll.current.scrollIntoView({behavior: 'smooth'})
   }
+  
   return (
 <div>
   <div className="rvmodal material-symbols-outlined AccountProfile" data-bs-toggle="modal" data-bs-target="#AccProf">
