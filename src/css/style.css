@@ -508,6 +508,13 @@ li{
   .footerTxt {
     float: left;
   }
+  .newPrice,
+  .price {
+   font-size: 1.2em;
+  }
+  .oldPrice{
+   font-size: 0.9em;
+}
 }
 .iconTilt {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.5);
