@@ -31,10 +31,11 @@ function Resorts() {
   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
   const promoEnabled = (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0);
-  let discount = 0.9;
+  let discount = 0.15;
 //ADDING PROMO DURATION  
   
-  if((!promoEnabled) ? discount : discount = 1)
+  let discounted = (1 - (1 * discount));
+  if((!promoEnabled) ? discounted : discounted = 1)
   return (
     <>
       <div className="landingpg2"></div>
@@ -62,7 +63,7 @@ function Resorts() {
                             </div>
                           </ul>
                           <div class="d-flex mb-3">
-                            <div class="me-auto p-2"><h4 className={(!promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discount).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(!promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
+                            <div class="me-auto p-2"><h4 className={(!promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discounted).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(!promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
                             <div class="p-2"><button className="btn btn-warning mb-1"> BOOK NOW</button></div>
                           </div>
                         </div>

@@ -9,7 +9,7 @@ function Home() {
       <ChangeTopBG scrollAmount="700" transitionDuration="3s" />
       <Elnidovid1 />
       <ContentsHomeParallax />
-      <Footer scrollAmount="800" setBGcolor="rgba(0, 0, 0, 0)" />
+      <Footer scrollAmount="300" setBGcolor="rgba(0, 0, 0, 0)" />
     </>
   );
 }
