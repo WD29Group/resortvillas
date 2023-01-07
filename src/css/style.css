@@ -559,7 +559,7 @@ iframe{
 }
 /* ROOMS AREA */
 /* Resort Area */
-.card {
+/* .card {
   max-width: 60em;
 }
 .img-fluid{
@@ -582,5 +582,22 @@ iframe{
 .price-now:hover {
   transform:scale(1.3);
   z-index: 2;
-}
+} */
 /* Resort Area */
+.img-fluid{
+  object-fit: cover;
+  width: 100%;
+}
+.effect-news:hover {
+  transform:scale(1.1);
+  z-index:2;
+}
+.effect-news{
+  object-fit: cover;
+  transition: .3s;
+}
+
+.three-cards{
+  width: 100%;
+  height: 20vh;
+}
