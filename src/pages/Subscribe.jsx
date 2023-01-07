@@ -31,7 +31,7 @@ import React, { useState } from 'react';
           <form onSubmit={subscribeToList}>
             <center>
             <div className="mb-3">
-              <input id="fieldemail" className="form-control" type="text" name="email" value={input} placeholder='name@email.com' onChange={(e) => setInput(e.target.value)} />
+              <input id="fieldemail" className="form-control" type="text" name="email" value={input} placeholder='emailname@email.com' onChange={(e) => setInput(e.target.value)} />
             </div>
             <button className="SubscribedBtn" type="submit" data-bs-dismiss="modal">Subscribe</button>
             </center>

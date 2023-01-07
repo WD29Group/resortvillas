@@ -434,34 +434,6 @@ li{
   font-size: 3em;
 }
 
-/* #gallery.active {
-  background-color: purple;
-  color: white;
-  font-size: 3em;
-}
-#services.active {
-  background-color: blue;
-  color: white;
-  font-size: 3em;
-}
-
-#booking.active {
-  background-color: green;
-  color: white;
-  font-size: 3em;
-}
-
-#new.active {
-  background-color: purple;
-  color: white;
-  font-size: 3em;
-}
-#weather.active {
-  background-color: blue;
-  color: white;
-  font-size: 3em;
-} */
-
 /* modal */
 .rvmodal {
   color: rgb(255, 230, 90);
@@ -476,11 +448,6 @@ li{
   text-shadow: 2px 2px 3px black;
   border-radius: 5px;
 }
-/* modal */
-
-
-
-/* weather */
 
 #weather1 {
   padding-top: 15vh;
@@ -560,14 +527,3 @@ li{
   transform: rotate(360deg);
   transition-duration: 1.2s;
 }
-
-/* 
-.chat-support {
-  position: fixed;
-  width: 359px;
-  height: 520px;
-  padding: 7px;
-  bottom: 50px;
-  right: 180px;
-  z-index: 7;
-} */

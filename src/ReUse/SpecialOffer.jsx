@@ -20,6 +20,23 @@ function SpecialOffer(props) {
   const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    
+  const closeSpecialPromo = () => {
+    document.getElementById("specialPromo").style.display = "none"
+  }
+
+  const [shaking, setShaking] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShaking(!shaking);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [shaking]);
+  
+  const promoEnabled = (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0);
   const PromoHeader = {
     background: "rgba(255, 222, 89, 1)",
     color: "black",
@@ -37,21 +54,6 @@ function SpecialOffer(props) {
     top: "3px",
     right: "12px",
   }
-    
-  const closeSpecialPromo = () => {
-    document.getElementById("specialPromo").style.display = "none"
-  }
-
-  const [shaking, setShaking] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShaking(!shaking);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [shaking]);
-  
   return (
     <>
       <div style={{
@@ -59,12 +61,12 @@ function SpecialOffer(props) {
       }}>
         <div id="specialPromo"
           style={{
-          bottom: Math.round(window.scrollY / 7.5),
-          transitionDuration: "3s",
-          animation: `${shaking ? "shake" : "none"} 0.82s cubic-bezier(.36,.07,.19,.97) both`
-      }}
+            bottom: Math.round(window.scrollY / 7.5),
+            transitionDuration: "3s",
+            animation: `${shaking ? "shake" : "none"} 0.82s cubic-bezier(.36,.07,.19,.97) both`
+          }}
           className={
-          days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0 ? "unshow" : "show SpecialPromoStyling"}
+            promoEnabled ? "unshow" : "show SpecialPromoStyling"}
       >
       <button style={spCloseBtn} onClick={closeSpecialPromo}>X</button>
       <div style={PromoHeader}><strong className='h5'>Holiday Special Promo</strong></div><hr/>

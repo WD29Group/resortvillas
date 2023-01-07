@@ -60,23 +60,6 @@ body, html {
   border-radius: 10px;
 }
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-family: var(--fontfam);
-  color: #111;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-/* @media only screen and (max-device-width: 1024px) {
-
-  .bgimg-1,
-  .bgimg-2,
-  .bgimg-3 {
-    background-attachment: scroll;
-  }
-} */
 .style1{
   color: #777;
   background-color:white;
@@ -114,6 +97,3 @@ h3 {
     padding: 70px 10px;
   }
 }
-/* @media (max-width: 900px) {
-
-} */
