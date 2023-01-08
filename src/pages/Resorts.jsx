@@ -83,8 +83,8 @@ function Resorts() {
                             <form action="/books.html" method="GET">
                               <input type="hidden" name="mapid" value={hotelMapId} />
                               <input type="hidden" name="hotel" value={hotelTitle} />
-                              <input type="hidden" name="discounted" value={promoEnabled} />
-                              <input type="hidden" name="price" value={hotel.price} />
+                              <input type="hidden" name="discounted" value={promoEnabled ? "yes": "no"} />
+                              <input type="hidden" name="price" value={hotel.price * discounted} />
                               <div className="p-2">
                                 <button className="btn btn-warning mb-1" type="submit" value="Submit">BOOK NOW</button>
                               </div>
