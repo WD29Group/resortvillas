@@ -34,32 +34,62 @@ function News() {
           </div>
         </div>
       </div>
-
-
       <div className="container-xxl">
         <div class="row p-2">
           <h3>Recent News</h3>
-          <div class="effect-news col-md-4 bg-white p-0">
-          <div className="mx-1">
-              <img className="three-cards img-fluid" src="https://pix10.agoda.net/hotelImages/9714/-1/5af56521ca524350683fa265ce95b9be.jpg?ca=7&ce=1&s=1024x768" alt="" />
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-            </div>
-          </div>
-          <div class="effect-news col-md-4 bg-white p-0">
-          <div className="mx-1">
-              <img className="three-cards img-fluid" src="https://elnidoresortscareers.com/admin/uploads/about/155381974581846300.jpg" alt="" />
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-            </div>
-          </div>
-          <div class="effect-news col-md-4 bg-white p-0">
+          <div class="effect-news col-md-6 bg-white p-0">
             <div className="mx-1">
-              <img className="three-cards img-fluid" src="https://media-cdn.tripadvisor.com/media/photo-s/16/03/e0/3d/miniloc-island-water.jpg" alt="" />
+              <img className="recent-cards img-fluid" src="https://pix10.agoda.net/hotelImages/9714/-1/5af56521ca524350683fa265ce95b9be.jpg?ca=7&ce=1&s=1024x768" alt="" />
+              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+            </div>
+          </div>
+          <div class="effect-news col-md-6 bg-white p-0">
+            <div className="mx-1">
+              <img className="recent-cards img-fluid" src="https://elnidoresortscareers.com/admin/uploads/about/155381974581846300.jpg" alt="" />
+              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+            </div>
+          </div>
+          <div class="effect-news col-md-6 bg-white p-0">
+            <div className="mx-1">
+              <img className="recent-cards img-fluid" src="https://media-cdn.tripadvisor.com/media/photo-s/16/03/e0/3d/miniloc-island-water.jpg" alt="" />
+              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+            </div>
+          </div>
+          <div class="effect-news col-md-6 bg-white p-0">
+            <div className="mx-1">
+              <img className="recent-cards img-fluid" src="https://media-cdn.tripadvisor.com/media/photo-s/16/03/e0/3d/miniloc-island-water.jpg" alt="" />
+              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
               <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
             </div>
           </div>
         </div>
       </div>
 
+      <div className="container-xxl">
+        <div class="row p-2">
+          <h3>Hotels Featured on Movies</h3>
+          <div class="effect-news col-md-4 bg-white p-0">
+            <div className="mx-1">
+              <img className="recent-cards img-fluid" src="https://pix10.agoda.net/hotelImages/9714/-1/5af56521ca524350683fa265ce95b9be.jpg?ca=7&ce=1&s=1024x768" alt="" />
+              <p className="mt-1 ">h1Arjo Atayde, Maine Mendoza spend quality time in El Nidoh1Arjo Atayde, Maine Mendoza spend quality time in El Nidoh1Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+            </div>
+          </div>
+          <div class="effect-news col-md-4 bg-white p-0">
+            <div className="mx-1">
+              <img className="recent-cards img-fluid" src="https://elnidoresortscareers.com/admin/uploads/about/155381974581846300.jpg" alt="" />
+              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+            </div>
+          </div>
+          <div class="effect-news col-md-4 bg-white p-0">
+            <div className="mx-1">
+              <img className="recent-cards img-fluid" src="https://media-cdn.tripadvisor.com/media/photo-s/16/03/e0/3d/miniloc-island-water.jpg" alt="" />
+              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
