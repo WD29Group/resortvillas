@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import hotelsVillas from "../json/hotelsVillas.json"
 import ChangeTopBG from "../ReUse/ChangeTopBG";
 import Footer from "../ReUse/Footer";
-// import MapLoc from "../ReUse/MapLoc";
 function Resorts() {
   const RestyleCards = {
     position: "relative",
@@ -28,12 +27,12 @@ function Resorts() {
   const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-  const promoEnabled = (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0);
+  const promoEnabled = (!(days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0));
   let discount = 0.15;
 //ADDING PROMO DURATION  
   
   let discounted = (1 - (1 * discount));
-  if ((!promoEnabled) ? discounted : discounted = 1);
+  if ((promoEnabled) ? discounted : discounted = 1);
 
   const openMap = (arg) => {
     document.getElementById(arg).style.display = 'block';
@@ -45,7 +44,7 @@ function Resorts() {
     <>
       <div className="landingpg2"></div>
       <div style={RestyleCards}>
-      <div className="resort-card m-5 ">
+        <div className="resort-card m-5 ">
           {hotelsVillas.hotels.map((hotel) => {
             const hotelThumbnailUrl = `${hotel.thumbnailUrl}`;
             const hotelTitle = `${hotel.title}`;
@@ -56,42 +55,54 @@ function Resorts() {
             
             return (
               <div className="row  d-flex justify-content-center">
-                <div className="card mb-5 pb-3 " style={{ maxWidth: "540px;" }}>
-                  <div className="row g-0 ">
-                    <div className="col-md-4 pt-3 ">
+                <div className="card mb-5 pb-3 WhitefrostedGlass Whitetransp" style={{ maxWidth: "540px;" }}>
+                  <div className="row g-0 mt-3 WhitefrostedGlass Whitetransp">
+                    <div className="col-md-4 p-2">
                       <img src={hotelThumbnailUrl} className="img-fluid rounded" alt={hotelThumbnailUrl} />
                     </div>
                     <div className="col-md-8">
                       <div className="card-body">
                         <h5 className="card-title m-0 p-0">{hotelTitle}</h5>
-                        <p className="card-text hotelLocation"><small className="hotelLocation" onClick={() => openMap(`${hotelMapId}`)}>{hotelLocation}</small></p>
+                          <small className="hotelLocation" onClick={() => openMap(`${hotelMapId}`)}>
+                            {hotelLocation}
+                          </small>
                         <p className="card-text">{hotelContent}</p>
                         <div className="card-text">
                           <ul className="col-fluid">
                             <div className="facilities row">
-
                               {hotel.facilities.map((facility) => {
-                                return (<li className="facilities col-6 col-md-4 d-flex justify-content-center" id="facilities" style={{ fontSize: "12px" }}>{facility}</li>)
+                                return (
+                                  <li className=" facilities col-6 col-md-4 d-flex justify-content-left" id="facilities">
+                                    {facility}
+                                  </li>)
                               })}
                             </div>
                           </ul>
-                          <div className="d-flex mb-3">
-                            <div className="me-auto p-2"><h4 className={(!promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discounted).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(!promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
-                            <div className="p-2"><button className="btn btn-warning mb-1">BOOK NOW</button></div>
+                          <div className="d-flex mb-0">
+                            <div className="me-auto p-0"><h4 className={(promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discounted).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
+                            <form action="/books.html" method="GET">
+                              <input type="hidden" name="mapid" value={hotelMapId} />
+                              <input type="hidden" name="hotel" value={hotelTitle} />
+                              <input type="hidden" name="discounted" value={promoEnabled} />
+                              <input type="hidden" name="price" value={hotel.price} />
+                              <div className="p-2">
+                                <button className="btn btn-warning mb-1" type="submit" value="Submit">BOOK NOW</button>
+                              </div>
+                            </form>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div id={hotelMapId} className="container" style={{ display: "none" }}>
-                          <button className='mapButton' onClick={() => closeMap(`${hotelMapId}`)}>X</button>
-                            <iframe 
-                                className="iframeRV"
-                                src={hotelIframe}
-                                height="300"
-                                width="1000"
-                                title="gmap_canvas"
-                            ></iframe>
-                          </div>    
+                    <div id={hotelMapId} className="container pt-3" style={{ display: "none" }}>
+                      <button className='mapButton' onClick={() => closeMap(`${hotelMapId}`)}>X</button>
+                      <iframe 
+                          className="iframeRV"
+                          src={hotelIframe}
+                          height="300"
+                          width="1000"
+                          title="gmap_canvas"
+                      ></iframe>
+                    </div>    
                   </div>
                 </div>
               </div>
@@ -105,3 +116,10 @@ function Resorts() {
   );
 }
 export default Resorts;
+
+
+                          // <input for="username" type="text" id="username" name="username" />
+                          // <input for="password" type="password" id="password" name="password" />
+                          // <input for="firstname" type="text" id="firstname" name="firstname" />
+                          // <input for="lastname" type="text" id="lastname" name="lastname" />
+                          // <input for="country" type="text" id="country" name="country" />

@@ -20,21 +20,11 @@
   --BigTextcolor: rgba(255, 222, 89, 0.8);
   --fontfam: 'Nothing You Could Do', cursive;
 }
+
 body,
 html {
-  /* height: 100%; */
-  /* margin: 0; */
   color: #777;
   background: rgba(0, 0, 0, 0.5);
-  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
-  /* font-size: ; */
-}
-
-.myFontFam{
-  font-family: var(--fontfam);
-}
-.myFontStrong{
-  font-weight: bolder;
 }
 body {
   margin: 0;
@@ -45,11 +35,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --fontfam: 'Nothing You Could Do', cursive;
 }
 
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+.myFontFam{
+  font-family: var(--fontfam);
+}
+.myFontStrong{
+  font-weight: bolder;
+}
 .siteName{
   position: fixed;
   z-index: 5;
@@ -264,6 +263,7 @@ li{
 .bkg5 {
   background: url('../img/bkg5.webp');
 }
+/* 
 .lowerdivCommentaries{
   position: relative;
   width: 390px;
@@ -271,12 +271,7 @@ li{
   top: 10px;
   margin: 0 20px 30px 0; 
   overflow-y: scroll;
-  /* position: relative;
-  top: calc(100% - (45%));;
-  left: calc(100vw - 65%);; */
-  /* margin: 0 100px 0 100px; */
 }
-
 .testimonials{
   background: var(--navbckg);
   color:rgb(255, 240, 102);
@@ -300,7 +295,6 @@ li{
   z-index: 1;
   color: var(--BigTextcolor);
   max-width: 550px;
-  /* font-size: 5rem; */
   top: calc((100% * 1) - 70% );
   left: 50px;
   font-family: var(--fontfam);
@@ -312,12 +306,28 @@ li{
   z-index: 1;
   color: var(--BigTextcolor);
   max-width: 550px;
-  /* font-size: 5rem; */
   top: calc((100% * 2.5) - 70% );
   left: 50px;
   font-family: var(--fontfam);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
+} */
+
+.WhitefrostedGlass {
+  color: black;
+  border-radius: 20px;
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  box-shadow: var(--boxshadow);
 }
+
+.Whitetransp {
+  /* background-color: transparent; */
+  background: rgba(255, 255, 255, 0.75);
+  /* color: rgb(255, 255, 255); */
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  border-radius: 7px;
+}
+
 .frostedglass {
   color: rgb(182, 182, 182);
   padding: 25px;
