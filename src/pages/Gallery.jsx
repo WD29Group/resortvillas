@@ -34,67 +34,13 @@ function Gallery() {
   }
 
   const images = [
-    imgs.img1,
-    imgs.img2,
-    imgs.img3,
-    imgs.img4,
-    imgs.img5,
-    imgs.img6,
-    imgs.img7,
-    imgs.img8,
-    imgs.img9,
-    imgs.img10,
-    imgs.img11,
-    imgs.img12,
-    imgs.img13,
-    imgs.img14,
-    imgs.img15,
-    imgs.img16,
-    imgs.img17,
-    imgs.img18,
-    imgs.img19,
-    imgs.img20,
-    imgs.img21,
-    imgs.img22,
-    imgs.img23,
-    imgs.img24,
-    imgs.img25,
-    imgs.img26,
-    imgs.img27,
-    imgs.img28,
-    imgs.img29,
-    imgs.img30,
-    imgs.img31,
-    imgs.img32,
-    imgs.img33,
-    imgs.img34,
-    imgs.img35,
-    imgs.img36,
-    imgs.img37,
-    imgs.img38,
-    imgs.img39,
-    imgs.img40,
-    imgs.img41,
-    imgs.img42,
-    imgs.img43,
-    imgs.img44,
-    imgs.img45,
-    imgs.img46,
-    imgs.img47,
-    imgs.img48,
-    imgs.img49,
-    imgs.img50,
-
-
-    // "https://picsum.photos/3000/3000",
-    // "https://picsum.photos/2000/3500",
-    // "https://picsum.photos/2500/3000",
-    // "https://picsum.photos/2000/3000",
-    // "https://picsum.photos/2000/3500",
-    // "https://picsum.photos/2000/3500",
-    // "https://picsum.photos/2500/3000",
-    // "https://picsum.photos/2500/3000",
+    
   ];
+
+  for (let i = 1; i <= 50; i++) {
+    const image = imgs[`img${i}`];
+    images.push(image);
+  }
 
   return (
     <>
