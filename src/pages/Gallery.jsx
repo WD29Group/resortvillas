@@ -45,30 +45,32 @@ function Gallery() {
   return (
     <>
     {data.img &&
-    <div  style={{
+    <div style={{
       width: '100%',
       height: '100vh',
       background: 'black',
       position: 'fixed',
-      display: 'flex',
+      display: 'flex',  
       justifyContent: 'center',
       alignItems: 'center',
       overflow: 'hidden',
       zIndex: 100,
     }}>
-       <button onClick={() => imgAction('')}style={{position: 'absolute',top: '10px',right: '10px'}} className="p-1">x</button>
-       <button onClick={() => imgAction('previous-img')} className="me-3">Previous</button>
-       <img src={data.img} style={{width: 'auto', maxWidth: '90%', maxHeight: '90%'}} alt=""/>
-       <button onClick={() => imgAction('next-img')} className="ms-3">Next</button>
+       <button onClick={() => imgAction('')} className="btn btn-secondary position-absolute" style={{top: '10px', right: '10px'}}>x</button>
+         <button onClick={() => imgAction('previous-img')} className="btn btn-secondary position-absolute ms-5" style={{left: 0}}>Prev</button>
+         <img src={data.img} className="img-fluid" style={{width: '80%', height: '80vh',}} alt=""/>
+         <button onClick={() => imgAction('next-img')} className="btn btn-secondary position-absolute me-5" style={{right: 0}}>Next</button>
     </div>
-    
     }
 
 
       <Footer scrollAmount="0" setBGcolor="rgba(0, 0, 0, 0.50)" />
       <div id="Gbod">
         <div className="container Galbod">
-          <div className="text-center text-black h1 pb-5">El Nido, Palawan</div>
+          <div className="text-center text-black h1 pb-4">El Nido, Palawan
+          <div className="container pt-3"> <hr/></div>
+          </div>
+          
           <ResponsiveMasonry>
           <Masonry columnsCount={3} gutter="20px">
             {images.map((image, i) => (
