@@ -586,22 +586,27 @@ li{
 }
 /* gallery */
 
-#Gbod {
-  padding-top: 15vh;
-  background-color: #201c1c;
+#Gbod{
+  padding-top:15vh;
+  background:url(../img/bkg6.webp);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Galbod {
-  background: rgba(74, 74, 74, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(201, 202, 215, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding-top: 4vh;
-  padding-left: 3vh;
-  color: white;
+.Galbod{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(201, 202, 215, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 4vh;
+    padding-left: 3vh;
+    color:white;
 }
+
 .bookingStyle{
   background: rgba(255, 255, 255, 0.9);
   color: rgb(0, 0, 0);
