@@ -23,7 +23,11 @@ function Weather() {
 
 
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+    <div className='frost-iconBg'>
+      <div className='frost-icon'>❄️</div>
+    </div>
+    );
   }
 
   const temp = data.data[0].temp;

@@ -1,6 +1,7 @@
 import ChangeTopBG from "../ReUse/ChangeTopBG";
 import Subscribe from "../ReUse/Subscribe"
 import Footer from "../ReUse/Footer";
+
 function News() {
   return (
     <>

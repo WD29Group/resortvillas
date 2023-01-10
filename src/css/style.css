@@ -24,7 +24,7 @@
 body,
 html {
   color: #777;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.95);
 }
 body {
   margin: 0;
@@ -621,4 +621,74 @@ li{
   padding: 25px;
   border-radius: 12px;
 
+}
+
+
+.adminPanel{
+  background: rgba(255, 255, 255, 0.75);  
+  padding: 15px;
+  border-radius: 12px;
+  position: fixed;
+  z-index: 5;
+  width: 350px;
+  height: 570px;
+  font-size: 21px;
+  color: black;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.emailFields {
+  margin: 10px 0 0 0; 
+  border-radius: 10px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.39);
+  height: 375px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.emailFields2 {
+  background: var(--navbckg);
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  border-radius: 5px;
+  margin: 5px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
+}
+
+.frost-iconBg {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.frost-icon {
+  pointer-events: none;
+  text-align: center;
+  animation: frost-icon-spin infinite 5s linear;
+  font-size: 10em;
+  position: absolute;
+  z-index: 5;
+}
+
+@keyframes frost-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.visible-false{
+  visibility: hidden;
 }
