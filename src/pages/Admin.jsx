@@ -3,7 +3,8 @@ import { uid } from "uid";
 import { set, ref, onValue, remove, update } from "firebase/database";
 import { useState, useEffect } from "react";
 
-function Admin() {
+function Admin(props) {
+  let isAuthenticated = true;
   const [email, setemail] = useState("");
   const [emails, setemails] = useState([]);
   const [isEdit, setIsEdit] = useState(false);
@@ -61,9 +62,19 @@ function Admin() {
     remove(ref(db, `/${email.uuid}`));
   };
 
+  const authen = () => {
+    isAuthenticated = true;
+    console.log(isAuthenticated);
+    alert(isAuthenticated);
+  } 
   return (
+    <>
+      {isAuthenticated ? (
+        <div>
+
     <div  className="adminPanel">
-      <h5 className="text-center pb-2 odaSVlBorder">Our email subscribers for newsletter</h5>
+      <h5 className="text-center pb-2 odaSVlBorder">Our email subscribers for newsletter</h5><hr/>
+            <p>{ props.name}</p>
       <input className="mb-2 form-control visible-false" type="text" value={email} onChange={handleemailChange} />
       {isEdit ? (
         <>
@@ -92,6 +103,17 @@ function Admin() {
       ))}
         </div>
     </div>
+        </div>
+      ): (
+           
+        <div style={{top:"150px",right:"150px",position:"fixed",zIndex:"7",width:"250px",height:"250px",background:"gray"}}>
+            <button className="btn" onSubmit={authen}>Authen</button>
+            
+        </div>
+        )  
+    }
+    </>
+
   );
 }
 
