@@ -30,7 +30,7 @@ function News() {
               {/* Small news */}
               <div class="col-md-4">
                 <div class="row">
-                  <div className="ms-2 p-0">
+                  <div className="mx-2 p-0">
                     {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 1).map((newsUpdate) => (
                       <div className="sideNews bg-white  bg-opacity-50  shadow-lg pb-1 mb-3">
                         <img className="img-fluid three-cards m-0" src={newsUpdate.thumbnailUrl} />                       
@@ -71,10 +71,11 @@ function News() {
             <h3>Recent News</h3>
             {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 3).map((newsUpdate) => (
               <CardProps
-                column="effect-news col-md-6 col-lg-4  p-0 pb-5"
+                column="effect-news  col-lg-4  p-0 pb-1"
                 title={newsUpdate.title}
                 date={newsUpdate.date}
                 scr={newsUpdate.thumbnailUrl}
+                body={newsUpdate.content}
                 href={newsUpdate.link}
               />
             ))}
