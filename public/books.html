@@ -92,11 +92,33 @@
     .formlabels3 {
         width: 270px;
     }
+    .logo{
+        background: url("logo.png");
+        text-align: center;
+        font-size: 2em;
+        z-index: 2;
+        width: 250px;
+        height: 250px;
+        background-position: center;
+        margin: 0 auto;
+        font-weight: 500;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    @media (max-width: 990px) {
+        .logo{
+            padding: 20px 0 0 0;
+        }
+    }
 
-    @media (min-width: 576px) {
-        /* .forminput1{
-            background: red;
-        } */
+    @media (min-width: 991px) {
+        .logo{
+            position: absolute;
+            top:20px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 200px;
+            height: 200px;
+        }
     }
 
     .formbutton {
@@ -142,6 +164,7 @@
         background: rgba(255, 222, 89, 0.8);
         color: rgba(0, 0, 0, 0.733);
     }
+
 </style>
 
 <body onload="calculate()">
@@ -264,12 +287,13 @@
                                 </div>
                                 <hr>
                                 <button class="formbutton mx-auto" type="submit" value="Submit">Confirm</button>
+                                <div class="logo">Resort Villas</div>
                             </div>
                         </div>
-                    </form>
+                    </form><br>
                 </div>
             </div>
-        </div>
+        </div><br><br>
     </div>
     <script>
         $('#checkin').datepicker(
@@ -335,7 +359,7 @@
 
         document.getElementById("checkout").value = dateOut;
     </script>
-    
+
     <script type="text/javascript">
         $("#submit").click(function () {
             var name = $("#name").val();
