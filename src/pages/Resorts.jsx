@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import MapLoc from "./MapLoc";
 // import Rooms from "./Rooms";
-import { useState, useEffect } from "react";
-import hotelsVillas from "./hotelsVillas.json"
+
+import hotelsVillas from "./hotelsVillas.json";
 
 
 function Resorts() {
@@ -11,7 +11,7 @@ function Resorts() {
   // });
   return (
     <>
-      {/* /* -------------------Hotel Cards Array----------------------------- */}
+       {/* -------------------Hotel Cards Array----------------------------- */}
       <div className="resort-card m-5 ">
         {hotelsVillas.hotels.map((hotel) => {
           return (
@@ -61,7 +61,7 @@ function Resorts() {
               </div>
             </div>
           );
-        })};
+        })}
       </div >
       <MapLoc />
     </>

@@ -1,0 +1,31 @@
+{
+  "newsUpdates" : [
+    {
+      "id":1,
+      "thumbnailUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/a1/ed/34/breath-taking-view-from.jpg?w=300&h=-1&s=1",
+      "title": "El Nido’s Pangulasian Island bags Conde Nast Middle East’s Gold List Award for 2020",
+      "content": "An El Nido private island recently won the international travel and lifestyle magazine Conde Nast Traveler Middle East’s Gold List Award for 2020, an award recognizing environmental-friendly hotels around the world.",
+      "link": " https://www.philstar.com/headlines/2020/02/06/1990870/el-nidos-pangulasian-island-bags-conde-nast-middle-easts-gold-list-award-2020",
+      "date": "Friday March 6th, 2020"
+    },
+    {
+      "id":2,
+      "thumbnailUrl": "https://www.elnidoresorts.com/wp-content/uploads/2020/03/el-nido-palawan-travel-guide-hotels-itinerary-amp-local-tips-640x427.jpg",
+      "title": "El Nido Palawan Travel Guide: Hotels, Itinerary & Local Tips",
+      "content": "Do you want to live the royal life in El Nido and stay in the best island resorts? Check out these highly-rated accommodations. You’ll have the exclusivity and serene vibe of a private island without the crowds and get the best service.",
+      "link": " https://guidetothephilippines.ph/articles/ultimate-guides/el-nido-palawan-travel-guide",
+      "date": "Thursday March 5th, 2020"
+    },
+    {
+      "id":3,
+      "thumbnailUrl": "https://www.elnidoresorts.com/wp-content/uploads/2018/07/Qantas-LIR-May-2018-640x360.jpg",
+      "title": "Which Island in the Philippines is Right For You?",
+      "content": "At Lagen Island Resort, a 45-minute boat transfer from El Nido Airport, manager Jen Zafra knows that spectacular natural settings can enhance life’s most romantic experiences.",
+      "link": " http://travelinsider.qantas.com.au/asia/philippines/which-island-in-the-philippines-is-right-for-you",
+      "date": "Wednesday July 18th, 2018"
+    }
+    
+    
+    
+  ]
+}

@@ -1,97 +1,90 @@
-function News() {
-  return (
-    <div className="main-news">
-      <div className="bg-white">
-        <div className="container-xxl">
-          <div class="row">
-            <div class="col-md-9">
-              <div className="effect-news bg-white">
-                <img className="img-fluid " src="https://data-starcinema.abs-cbn.com/starcinema/starcinema/media/april-2022/25/arjo-atayde,-maine-mendoza-spend-quality-time-in-el-nido_1.jpg?ext=.jpg" alt="" />
-                <div className="mt-2 p-2">
-                  <h1>Arjo Atayde, Maine Mendoza spend quality time in El Nido</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eos hic nemo facilis at temporibus quos necessitatibus quidem error tempora doloremque, consequatur placeat minus consequuntur exercitationem eligendi quisquam expedita asperiores.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="row">
-                <div className="me-2">
-                  <div class="effect-news col-md-12 bg-white p-0">
-                    <img className="three-cards img-fluid" src="https://mega.onemega.com/wp-content/uploads/2019/04/Nadine-Lustre-Palawan-1024x1024.jpg" alt="" />
-                    <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-                  </div>
-                  <div class="effect-news col-md-12  my-2 bg-white p-0">
-                    <img className="three-cards img-fluid" src="https://data-starcinema.abs-cbn.com/starcinema/starcinema/media/april-2022/30/bea-alonzo.jpg?ext=.jpg" alt="" />
-                    <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-                  </div>
-                  <div class="effect-news col-md-12 bg-white p-0">
-                    <img className="three-cards img-fluid" src="https://aphrodite.gmanetwork.com/entertainment/photos/photo/in_photos__celebrities_at_the_beautiful_beaches_arny_ross_1493193457.jpg" alt="" />
-                    <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container-xxl">
-        <div class="row p-2">
-          <h3>Recent News</h3>
-          <div class="effect-news col-md-6 bg-white p-0">
-            <div className="mx-1">
-              <img className="recent-cards img-fluid" src="https://pix10.agoda.net/hotelImages/9714/-1/5af56521ca524350683fa265ce95b9be.jpg?ca=7&ce=1&s=1024x768" alt="" />
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-            </div>
-          </div>
-          <div class="effect-news col-md-6 bg-white p-0">
-            <div className="mx-1">
-              <img className="recent-cards img-fluid" src="https://elnidoresortscareers.com/admin/uploads/about/155381974581846300.jpg" alt="" />
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-            </div>
-          </div>
-          <div class="effect-news col-md-6 bg-white p-0">
-            <div className="mx-1">
-              <img className="recent-cards img-fluid" src="https://media-cdn.tripadvisor.com/media/photo-s/16/03/e0/3d/miniloc-island-water.jpg" alt="" />
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-            </div>
-          </div>
-          <div class="effect-news col-md-6 bg-white p-0">
-            <div className="mx-1">
-              <img className="recent-cards img-fluid" src="https://media-cdn.tripadvisor.com/media/photo-s/16/03/e0/3d/miniloc-island-water.jpg" alt="" />
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-            </div>
-          </div>
-        </div>
-      </div>
+import React from "react";
+import CardProps from "../ReUse/CardProps";
+import breakingNews from "./NewsAndUpdates/breakingNews.json";
 
-      <div className="container-xxl">
-        <div class="row p-2">
-          <h3>Hotels Featured on Movies</h3>
-          <div class="effect-news col-md-4 bg-white p-0">
-            <div className="mx-1">
-              <img className="recent-cards img-fluid" src="https://pix10.agoda.net/hotelImages/9714/-1/5af56521ca524350683fa265ce95b9be.jpg?ca=7&ce=1&s=1024x768" alt="" />
-              <p className="mt-1 ">h1Arjo Atayde, Maine Mendoza spend quality time in El Nidoh1Arjo Atayde, Maine Mendoza spend quality time in El Nidoh1Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-            </div>
-          </div>
-          <div class="effect-news col-md-4 bg-white p-0">
-            <div className="mx-1">
-              <img className="recent-cards img-fluid" src="https://elnidoresortscareers.com/admin/uploads/about/155381974581846300.jpg" alt="" />
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
-            </div>
-          </div>
-          <div class="effect-news col-md-4 bg-white p-0">
-            <div className="mx-1">
-              <img className="recent-cards img-fluid" src="https://media-cdn.tripadvisor.com/media/photo-s/16/03/e0/3d/miniloc-island-water.jpg" alt="" />
-              <p className="mt-1">Arjo Atayde, Maine Mendoza spend quality time in El Nido</p>
+function News() {
+
+  return (
+    <>
+      {/* main news */}
+      <div className=" contaier-fluid">
+        <img className="img-fluid" src="https://t4.ftcdn.net/jpg/02/65/26/83/360_F_265268314_LmykO3vrtzmh3TQbBdnxj9vUczqqJXCU.jpg" alt="" />
+      </div>
+      <div className="main-news mt-5">
+        <div className="forbackground pt-5" id="breaking-news">
+          <div className="container-xxl">
+            <div class="row">
+              {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 4).map((newsUpdate) => (
+                <div class="col-md-8 mb-3 shadow-lg  bg-white  bg-opacity-50 p-0">
+                  <div className="effect-news">
+                    <img className="main-pict img-fluid" src={newsUpdate.thumbnailUrl} alt="" />
+                    <div className="mt-2 p-2">
+                      <h2>{newsUpdate.title}</h2>
+                      <p>{newsUpdate.date}</p>
+                      <h6>{newsUpdate.content}<a className="text-decoration-underline text-primary" href={"https://www.travelbubble.elnidoresorts.com/"} target="_blank">see more, </a></h6>
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              {/* Small news */}
+              <div class="col-md-4">
+                <div class="row">
+                  <div className="ms-2 p-0">
+                    {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 1).map((newsUpdate) => (
+                      <div className="sideNews bg-white  bg-opacity-50  shadow-lg pb-1 mb-3">
+                        <img className="img-fluid three-cards m-0" src={newsUpdate.thumbnailUrl} />                       
+                        <h5 className="m-2">{newsUpdate.title}</h5>
+                        <p className="m-2">{newsUpdate.date}</p>
+                        <p className="m-2"><a className="text-decoration-underline text-primary" href={newsUpdate.link} target="_blank"> see more,</a></p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div className="container-fluid" id="breaking-news">
+          <div className="container-xxl py-3">
+          
+            {/* Breaking news */}
+            <div class="row">
+              <h3>Breaking News</h3>
+              {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 2).map((newsUpdate) => (
+                <CardProps
+                  column="effect-news col-md-6 p-0"
+                  title={newsUpdate.title}
+                  date={newsUpdate.date}
+                  scr={newsUpdate.thumbnailUrl}
+                  body={newsUpdate.content}
+                  href={newsUpdate.link}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid" id="breaking-news">
+            {/* Recent news */}
+        <div className="container-xxl">
+          <div class="row p-2">
+            <h3>Recent News</h3>
+            {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 3).map((newsUpdate) => (
+              <CardProps
+                column="effect-news col-md-6 col-lg-4  p-0 pb-5"
+                title={newsUpdate.title}
+                date={newsUpdate.date}
+                scr={newsUpdate.thumbnailUrl}
+                href={newsUpdate.link}
+              />
+            ))}
+          </div>
+        </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
+
 
 export default News;
