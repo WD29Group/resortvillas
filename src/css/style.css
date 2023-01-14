@@ -375,7 +375,7 @@ li{
 
 ::-webkit-scrollbar {
   width: 9px;
-  background: #00000052; 
+  background: #00000025; 
 }
 
 ::-webkit-scrollbar-track {
@@ -385,12 +385,12 @@ li{
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #00000098; 
+  background: #4242426e; 
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.808); 
+  background: rgba(78, 78, 78, 0.753); 
 
 }
 

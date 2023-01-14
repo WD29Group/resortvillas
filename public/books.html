@@ -6,14 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        background: rgb(177, 179, 187);
+    }
+    .maindiv{
+        width: 500px;
+        height: 523px;
+        margin: 0 auto;
+        padding:25px ;
+        background: rgb(252, 252, 252);
+        margin-top: 75px;
+        border-radius: 12px;;
+        box-shadow: 2px 2px 7px rgb(150, 150, 150);
+    }
+    .forminput{
+        color: rgba(66, 66, 66, 0.822);
+        padding: 5px;
+        margin: 0 0 7px 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+        box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
+    }
+    .results{
+        color: white;
+    }
+    .formlabels{
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    .formbutton{
+        display: block;
+        padding: 7px;
+        margin: 5px;
+        width: 100px;
+        height: 32px;
+        font-weight: bold;
+        border-radius: 7px;
+        border: none;
+        background: rgb(223, 223, 15);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.541);
+    }
+    .formbutton:hover{
+        background: rgb(233, 233, 28);
+    }
+    #id0id0,
+    #id0{
+        display: none;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+        top: 75px;
+        right: 75px;
+        float:right;
+    }
+</style>
 <body>
-    <div id="results"></div>
-    <script>
-        const resultsList = document.getElementById('results')
-        new URLSearchParams(window.location.search).forEach((value, name) => {
-            resultsList.append(`${name}: ${value}`)
-            resultsList.append(document.createElement('br'))
-        })
-    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+           <div class="maindiv">
+                <div>
+                    <h1>Resort Villas</h1>
+
+                </div>
+                <img>
+                <form action="booking.com" method="GET">
+                    <script>
+                        let x = 0;
+                        let y = 'id';
+                        const resultsList = document.getElementById('results')
+                        new URLSearchParams(window.location.search).forEach((value, name) => {
+                            y = y + x;
+                            x++;
+                                if(`${y}`== "id0"){
+                                    document.write(`<style>img{background: url(${value});}</style>`);
+                                }
+                            document.write(`<div class="formlabels" id='${y + y}' > ${name} </div><input` + ` name=${name} ` + `readonly class="forminput" id=` + `${y}` + ` value="${value}"` + ` >`)
+                            y = 'id';
+                        })
+                    </script>
+                    <div class="formlabels">Check-in </div>
+                    <input class="forminput" type="date" name="" id="">
+                    <div class="formlabels">Check-out </div>
+                    <input class="forminput" type="date" name="" id="">
+                    <button class="formbutton" type="submit" value="Submit">Confirm</button>
+                </form>
+            </div>
+            </div>
+ 
+        </div>
+    </div>
 </body>
 </html>

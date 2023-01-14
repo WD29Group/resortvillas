@@ -81,10 +81,11 @@ function Resorts() {
                           <div className="d-flex mb-0">
                             <div className="me-auto p-0"><h4 className={(promoEnabled) ? 'newPrice' : 'price'}>  ₱ {(hotel.price * discounted).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h4><h3 className={(promoEnabled) ? 'oldPrice' : 'unshow'}> ₱ {(hotel.price).toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3></div>
                             <form action="/books.html" method="GET">
-                              <input type="hidden" name="mapid" value={hotelMapId} />
-                              <input type="hidden" name="hotel" value={hotelTitle} />
-                              <input type="hidden" name="discounted" value={promoEnabled ? "yes": "no"} />
-                              <input type="hidden" name="price" value={hotel.price * discounted} />
+                              <input type="hidden" name="Photo" value={hotelThumbnailUrl} />
+                              <input type="hidden" name="Map" value={hotelMapId} />
+                              <input type="hidden" name="Hotel" value={hotelTitle} />
+                              <input type="hidden" name="Discounted" value={promoEnabled ? "yes": "no"} />
+                              <input type="hidden" name="Price" value={hotel.price * discounted} />
                               <div className="p-2">
                                 <button className="btn btn-warning mb-1" type="submit" value="Submit">BOOK NOW</button>
                               </div>
