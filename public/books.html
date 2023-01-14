@@ -109,7 +109,7 @@
         box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
     }
 </style>
-<body>
+<body onload="calculate()">
     <div class="container">
         <div class="row">
             <div>
@@ -139,29 +139,29 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="formlabels">No. of Adult</div>
-                                        <input class="forminput forminput3" max="10" type="number" min="1" value="2" name="" id="">
+                                        <input id="adult" class="forminput forminput3" max="10" type="number" min="1" value="1" name="adult" onchange="calculate()">
                                     </div>
                                     <div class="col">
                                         <div class="formlabels">No. of Child</div>
-                                        <input class="forminput forminput3" max="10" type="number" value="0" name="" id="">
+                                        <input id="child" class="forminput forminput3" max="10" type="number" min="0" value="0" name="child" onchange="calculate()">
                                     </div>
                                     <div class="col">
                                         <div class="formlabels">No. Rooms</div>
-                                        <input class="forminput forminput3" max="5" type="number" value="1" name="" id="">
+                                        <input id="room" class="forminput forminput3" max="5" type="number" min="1"  value="1" name="room" onchange="calculate()">
                                     </div>
                                 </div><br>
                                 <div class="row">
                                     <div class="col">
                                         <div class="formlabels">Check-in </div>
-                                        <input class="forminput forminput2" type="date" name="" id="">
+                                        <input id="checkin" class="forminput forminput2" type="date" name="" id="">
                                     </div>
                                     <div class="col">
                                         <div class="formlabels">Check-out </div>
-                                        <input class="forminput forminput2" type="date" name="" id="">
+                                        <input id="checkout" class="forminput forminput2" type="date" name="" id="">
                                     </div>
                                     <div class="col">
                                         <div class="formlabels">Total Amount</div>
-                                        <input class="forminput forminput2" max="10" type="text" value="0" name="" id="">
+                                        <input class="forminput forminput2" type="number" id="total" name="total" readonly onchange="calculate()">
                                     </div>
                                 </div><hr>
                             </center>
@@ -171,5 +171,38 @@
             </div>
         </div>
     </div>
-</body>
+    <script>
+        function calculate() {
+            var id4 = document.getElementById("id4").value;
+            var room = document.getElementById("room").value;
+            var adult = document.getElementById("adult").value;
+            var child = document.getElementById("child").value;
+            var guess = parseFloat(adult) + (parseFloat(child) * parseFloat(0.75));
+            var total = parseFloat(guess) * parseFloat(id4) * parseFloat(room);
+            document.getElementById("total").value = total;
+        }
+    </script>
+    <script>
+        var today = new Date();
+        var dateIn = today;
+        var dateOut = today;
+
+        dateIn.setDate(dateIn.getDate() + 1);
+        var dd = String(dateIn.getDate()).padStart(2, '0');
+        var mm = String(dateIn.getMonth() + 1).padStart(2, '0');
+        var yyyy = dateIn.getFullYear();
+        dateIn = yyyy + '-' + mm + '-' + dd;
+        
+        document.getElementById("checkin").value = dateIn;
+
+
+        dateOut.setDate(dateOut.getDate() + 1);
+        var dd = String(dateOut.getDate()).padStart(2, '0');
+        var mm = String(dateOut.getMonth() + 1).padStart(2, '0');
+        var yyyy = dateOut.getFullYear();
+        dateOut = yyyy + '-' + mm + '-' + dd;
+        
+        document.getElementById("checkout").value = dateOut;
+
+    </script>
 </html>
