@@ -28,14 +28,13 @@
         background-position: center;
     }
     .maindiv {
-        /* max-width: 900px; */
+        max-width: 900px;
         min-width: 300px;
         margin: 0 auto;
         padding: 25px;
         background: rgb(252, 252, 252);
         margin-top: 75px;
         border-radius: 12px;
-        ;
         box-shadow: 2px 2px 7px rgb(150, 150, 150);
     }
 
@@ -145,6 +144,16 @@
         box-shadow: 2x 2x 2x rgba(0, 0, 0, 1);
         box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
     }
+    @media (max-width: 450px) {
+        img {
+            width: 300px;
+            min-width: 250px;
+            height: 203px;
+        }    
+        .maindiv {
+            padding: 25px 3px 0 3px;
+        }
+    }
     .backtoresortsBtn{
         text-decoration: none;
         font-size: 1em;
@@ -164,17 +173,26 @@
         background: rgba(255, 222, 89, 0.8);
         color: rgba(0, 0, 0, 0.733);
     }
-
+    .showHr{
+        display: none;
+    }
+    @media (max-width: 610px) {
+        .showHr{
+            display: block;
+        }
+        .bookingsitename{
+            text-align: center;
+        }
+    }
 </style>
 
 <body onload="calculate()">
     <div class="landingpg"></div>
     <a class="backtoresortsBtn" href="Resorts">🢀 Back to Resort Villas</a>
-    <div class="container">
         <div class="row">
             <div>
                 <div class="maindiv col">
-                    <h1>Resort Villas Booking</h1>
+                    <h1 class="bookingsitename">Resort Villas Booking</h1>
                     <hr>
                     <form action="books.html" method="GET">
                         <div class="row">
@@ -250,6 +268,9 @@
                             </div>
                             </center>
                             <div class="col">
+                                <div class="showHr pt-3 pb-2">
+                                    <hr>
+                                </div>
                                 <h4 class="uppercase bold">Contact Information</h4>
                                 <div class="col">
                                     <label class="formlabels3" for="first_name"> First Name </label>
@@ -294,7 +315,6 @@
                 </div>
             </div>
         </div><br><br>
-    </div>
     <script>
         $('#checkin').datepicker(
             {
