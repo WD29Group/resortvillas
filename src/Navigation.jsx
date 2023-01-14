@@ -10,7 +10,7 @@ function Navigation({ children }) {
         window.location.href.includes("Resorts") ||
         window.location.href.includes("Gallery") ||
         window.location.href.includes("Services") ||
-        window.location.href.includes("Booking") ||
+        // window.location.href.includes("Booking") ||
         window.location.href.includes("News") ||
         window.location.href.includes("Weather")      
         ? "unshow" : "show"}
@@ -69,7 +69,7 @@ function Navigation({ children }) {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               to="/Booking"
               className={
                 window.location.href.includes("Booking")
@@ -79,7 +79,7 @@ function Navigation({ children }) {
               onClick={() => setSelected("Booking")}
             >
               Booking
-            </Link>
+            </Link> */}
             <Link
               to="/News"
               className={
@@ -167,7 +167,7 @@ function Navigation({ children }) {
           </Link>
         </li>
         <li>
-          <Link
+          {/* <Link
             to="/Booking"
             className={
               window.location.href.includes("Booking")
@@ -177,7 +177,7 @@ function Navigation({ children }) {
             onClick={() => setSelected("Booking")}
           >
             Booking
-          </Link>
+          </Link> */}
         </li>
         <li>
           <Link
