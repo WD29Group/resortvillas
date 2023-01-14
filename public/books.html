@@ -53,9 +53,9 @@
     }
     
     @media (min-width: 576px) {
-        .forminput1{
+        /* .forminput1{
             background: red;
-        }
+        } */
     }
     @media (max-width: 575px) {
         img{
@@ -70,11 +70,12 @@
             max-width: 100%;
         }
         .forminput1{
+            /* background: blue; */
             width: 100%;
             margin: 0;
         }
     .formlabels1{
-        padding: 5px;
+        padding: 0;
         margin: 0;
         }
     }
@@ -82,17 +83,16 @@
     .formbutton{
         display: block;
         padding: 7px;
-        margin: 5px;
+        margin: 15px;
         width: 100px;
-        height: 32px;
-        font-weight: bold;
+        height: 38px;
         border-radius: 7px;
         border: none;
-        background: rgb(223, 223, 15);
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.541);
+        background-color: #ffc107;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
     }
     .formbutton:hover{
-        background: rgb(233, 233, 28);
+        background: rgba(255, 222, 89, 0.8);
     }
     #id0id0,
     #id0,
@@ -135,32 +135,37 @@
                             })
                         </script></div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="formlabels">Check-in </div>
-                                <input class="forminput forminput2" type="date" name="" id="">
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="formlabels">Check-out </div>
-                                <input class="forminput forminput2" type="date" name="" id="">
-                            </div>
-                        <div class="col-sm-4">
-                            <div class="formlabels">No. Rooms</div>
-                            <input class="forminput forminput3" max="5" type="number" value="0" name="" id="">
-                        </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="formlabels">No. of Adults</div>
-                                <input class="forminput forminput3" max="10" type="number" min="1" value="2" name="" id="">
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="formlabels">No. of Child</div>
-                                <input class="forminput forminput3" max="10" type="number" value="0" name="" id="">
-                            </div>
-                        </div>
-                        
-                        <button class="formbutton" type="submit" value="Submit">Confirm</button>
+                            <center><hr>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="formlabels">No. of Adult</div>
+                                        <input class="forminput forminput3" max="10" type="number" min="1" value="2" name="" id="">
+                                    </div>
+                                    <div class="col">
+                                        <div class="formlabels">No. of Child</div>
+                                        <input class="forminput forminput3" max="10" type="number" value="0" name="" id="">
+                                    </div>
+                                    <div class="col">
+                                        <div class="formlabels">No. Rooms</div>
+                                        <input class="forminput forminput3" max="5" type="number" value="0" name="" id="">
+                                    </div>
+                                </div><br>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="formlabels">Check-in </div>
+                                        <input class="forminput forminput2" type="date" name="" id="">
+                                    </div>
+                                    <div class="col">
+                                        <div class="formlabels">Check-out </div>
+                                        <input class="forminput forminput2" type="date" name="" id="">
+                                    </div>
+                                    <div class="col">
+                                        <div class="formlabels">Total Amount</div>
+                                        <input class="forminput forminput2" max="10" type="text" value="0" name="" id="">
+                                    </div>
+                                </div><hr>
+                            </center>
+                        <button class="formbutton mx-auto" type="submit" value="Submit">Confirm</button>
                     </form>
                 </div>
             </div>
