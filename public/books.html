@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,100 +8,114 @@
     <title>Booking</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 <style>
-    body{
+    body {
         background: rgb(177, 179, 187);
+        
     }
-    .maindiv{
-        max-width: 550px;
+    .landingpg {
+        z-index: -1;
+        /* margin: 0; */
+        background: url('bkg.webp');
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-position: center;
+    }
+    .maindiv {
+        /* max-width: 900px; */
         min-width: 300px;
         margin: 0 auto;
-        padding:25px ;
+        padding: 25px;
         background: rgb(252, 252, 252);
         margin-top: 75px;
-        border-radius: 12px;;
+        border-radius: 12px;
+        ;
         box-shadow: 2px 2px 7px rgb(150, 150, 150);
     }
-    .forminput{
+
+    .forminput {
         color: rgba(66, 66, 66, 0.822);
         padding: 5px;
         border-radius: 5px;
         border: 1px solid black;
         box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
+        text-align: center;
     }
-    .forminput1{
-        width: 190px;
-        margin: 0 0 0 25px;
+
+    .forminput1 {
+        width: 100%;
     }
-    .forminput2{
-        width: 140px;
+
+    .forminput2 {
+        width: 120px;
     }
-    .forminput3{
+
+    .forminput3 {
         width: 50px;
     }
-    .results{
+
+    .forminput3 {
+        width: 50px;
+    }
+
+    .forminput4 {
+        width: 100%;
+    }
+
+    .results {
         color: white;
     }
+
     .formlabels,
-    .formlabels1{
+    .formlabels1,
+    .formlabels2,
+    .formlabels3 {
+        width: 130px;
         padding: 5px;
-        font-size: 1.2em;
-    }    
-    .formlabels1{
-        padding: 5px;
-        margin: 0 0 0 25px;
     }
-    
+
+    .formlabels1 {
+        padding: 5px;
+        /* margin: 0 0 0 25px; */
+    }
+
+    .formlabels2 {
+        width: 120px;
+    }
+
+    .formlabels3 {
+        width: 270px;
+    }
+
     @media (min-width: 576px) {
         /* .forminput1{
             background: red;
         } */
     }
-    @media (max-width: 575px) {
-        img{
-            width: 500px;
-            height: auto;
-            margin: 25px 0 0 0;
-            border-radius: 9px;
-            box-shadow: 2x 2x 2x rgba(0, 0, 0, 1);
-            box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
-        }
-        .maindiv{
-            max-width: 100%;
-        }
-        .forminput1{
-            /* background: blue; */
-            width: 100%;
-            margin: 0;
-        }
-    .formlabels1{
-        padding: 0;
-        margin: 0;
-        }
-    }
-        
-    .formbutton{
+
+    .formbutton {
         display: block;
         padding: 7px;
         margin: 15px;
-        width: 100px;
+        width: 150px;
         height: 38px;
         border-radius: 7px;
         border: none;
         background-color: #ffc107;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
     }
-    .formbutton:hover{
+
+    .formbutton:hover {
         background: rgba(255, 222, 89, 0.8);
     }
-    #id0id0,
-    #id0,
-    #id1id1,
-    #id1{
-        display: none;
-    }
-    img{
+
+    img {
         width: 250px;
         height: 200px;
         margin: 25px 0 0 0;
@@ -108,78 +123,195 @@
         box-shadow: 2x 2x 2x rgba(0, 0, 0, 1);
         box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
     }
+    .backtoresortsBtn{
+        text-decoration: none;
+        font-size: 1em;
+        display: block;
+        padding: 7px;
+        width: 200px;
+        height: 38px;
+        border-radius: 7px;
+        border: none;
+        background-color: #ffc107;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        font-weight: 400;
+        text-align: center;
+        color: black;
+    }
+    .backtoresortsBtn:hover {
+        background: rgba(255, 222, 89, 0.8);
+        color: rgba(0, 0, 0, 0.733);
+    }
 </style>
+
 <body onload="calculate()">
+    <div class="landingpg"></div>
+    <a class="backtoresortsBtn" href="Resorts">🢀 Back to Resort Villas</a>
     <div class="container">
         <div class="row">
             <div>
-            <div class="maindiv">
-                <div>
-                    <h1>Resort Villas</h1>
-
-                </div>
-                    <form action="booking.com" method="GET">
-                        <div class="row"><div class="col-sm-6"><center><img>
-                        <script>
-                            let x = 0;
-                            let y = 'id';
-                            const resultsList = document.getElementById('results')
-                            new URLSearchParams(window.location.search).forEach((value, name) => {
-                                y = y + x;
-                                x++;
-                                if (`${y}` == "id0") {
-                                    document.write(`<style>img{background: url(${value});}</style></div></center><div class="col-sm-4">`);
-                                }
-                                document.write(`<div class="formlabels1" id='${y + y}' > ${name} </div><input` + ` name=${name} ` + `readonly class="forminput forminput1" id=` + `${y}` + ` value="${value}"` + ` >`)
-                                y = 'id';
-                            })
-                        </script></div>
-                        </div>
-                            <center><hr>
+                <div class="maindiv col">
+                    <h1>Resort Villas Booking</h1>
+                    <hr>
+                    <form action="books.html" method="GET">
+                        <div class="row">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col">
-                                        <div class="formlabels">No. of Adult</div>
-                                        <input id="adult" class="forminput forminput3" max="10" type="number" min="1" value="1" name="adult" onchange="calculate()">
+                                        <center><img>
+                                            <script>
+                                                let x = 0;
+                                                let y = 'id';
+                                                const resultsList = document.getElementById('results')
+                                                new URLSearchParams(window.location.search).forEach((value, name) => {
+                                                    y = y + x;
+                                                    x++;
+                                                    if (`${y}` == "id0") {
+                                                        document.write(`<style>img{background: url(${value});}</style></div><div class="col">`);
+                                                    }
+                                                    if (`${y}` == "id4") {
+                                                        document.write(`<input id="hotelPrice" type="hidden" value="${value}">`);
+                                                    }
+                                                    if (`${y}` == "id0" || `${y}` == "id1") {
+                                                        // document.write(`<div class="formlabels1" id='${y + y}' > ${name} </div><input` + ` name=${name} ` + `readonly class="forminput forminput1" id=` + `${y}` + ` value="  ₱ ${value}">`);
+                                                    } else {
+                                                        document.write(`<div class="formlabels1" id='${y + y}' > ${name} </div><input` + ` name=${name} ` + `readonly class="forminput forminput1" id=` + `${y}` + ` value=" ${value}">`);
+                                                    }
+                                                    y = 'id';
+                                                })
+                                            </script></center>
                                     </div>
-                                    <div class="col">
-                                        <div class="formlabels">No. of Child</div>
-                                        <input id="child" class="forminput forminput3" max="10" type="number" min="0" value="0" name="child" onchange="calculate()">
+                                </div>
+                                <center>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="formlabels2">No. of Adult</div>
+                                            <input id="adult" class="forminput forminput3" max="10" type="number"
+                                                min="1" value="1" name="adult" onchange="calculate()">
+                                        </div>
+                                        <div class="col">
+                                            <div class="formlabels2">No. of Child</div>
+                                            <input id="child" class="forminput forminput3" data-toggle="tooltip"
+                                                data-placement="right" title="25% discount" max="10" type="number"
+                                                min="0" value="0" name="child" onchange="calculate()">
+                                        </div>
+                                        <div class="col">
+                                            <div class="formlabels2">No. Rooms</div>
+                                            <input id="room" class="forminput forminput3" max="5" type="number" min="1"
+                                                value="1" name="room" onchange="calculate()">
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="formlabels">Check-in </div>
+                                            <input id="checkin" class="forminput forminput2" type="text" name="checkin"
+                                                readonly onchange="compareDates(),calculate()">
+                                        </div>
+                                        <div class="col">
+                                            <div class="formlabels">Check-out </div>
+                                            <input id="checkout" class="forminput forminput2" type="text"
+                                                name="checkout" readonly onchange="compareDates(),calculate()">
+                                        </div>
+                                        <div class="col">
+                                            <div class="formlabels">No. of days</div>
+                                            <input id="days" class="forminput forminput3" value="1" readonly
+                                                onchange="compareDates()"></input>
+                                        </div>
+                                        <div class="col">
+                                            <div class="formlabels">Total Amount</div>
+                                            <input class="forminput forminput2" type="text" id="total" name="total"
+                                                readonly onchange="calculate()">
+                                        </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="formlabels">No. Rooms</div>
-                                        <input id="room" class="forminput forminput3" max="5" type="number" min="1"  value="1" name="room" onchange="calculate()">
-                                    </div>
-                                </div><br>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="formlabels">Check-in </div>
-                                        <input id="checkin" class="forminput forminput2" type="date" name="" id="">
-                                    </div>
-                                    <div class="col">
-                                        <div class="formlabels">Check-out </div>
-                                        <input id="checkout" class="forminput forminput2" type="date" name="" id="">
-                                    </div>
-                                    <div class="col">
-                                        <div class="formlabels">Total Amount</div>
-                                        <input class="forminput forminput2" type="number" id="total" name="total" readonly onchange="calculate()">
-                                    </div>
-                                </div><hr>
+                            </div>
                             </center>
-                        <button class="formbutton mx-auto" type="submit" value="Submit">Confirm</button>
+                            <div class="col">
+                                <h4 class="uppercase bold">Contact Information</h4>
+                                <div class="col">
+                                    <label class="formlabels3" for="first_name"> First Name </label>
+                                    <input type="text" name="first_name" class="forminput forminput4" id="first_name"
+                                        autocomplete="off" maxlength="45" required>
+                                </div>
+                                <div class="col">
+                                    <label class="formlabels3" for="last_name"> Last Name </label>
+                                    <input type="text" name="last_name" class="forminput forminput4" id="last_name"
+                                        autocomplete="off" maxlength="45" required>
+                                </div>
+                                <div class="col">
+                                    <label class="formlabels3" for="email"> Email </label>
+                                    <input type="text" name="email" class="forminput forminput4" id="email"
+                                        autocomplete="off" data-label="Email" required>
+                                </div>
+                                <div class="col">
+                                    <label class="formlabels3" for="phone"> Phone</label>
+                                    <input type="text" name="phone" class="forminput forminput4" id="phone"
+                                        autocomplete="off" data-label="Phone" required>
+                                </div>
+
+                                <div class="col">
+                                    <label class="formlabels3" for="country"> Select Your Country </label>
+                                    <div>
+                                        <select name="country" id="country" class="forminput forminput4"
+                                            autocomplete="off" id="country" aria-label="country" data-label="Country"
+                                            required>
+                                            <option value="" selected="selected">Select Country</option>
+                                            <option value="AF">Afghanistan</option>
+                                            <option value="AX">Åland Islands</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <hr>
+                                <button class="formbutton mx-auto" type="submit" value="Submit">Confirm</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <script>
+        $('#checkin').datepicker(
+            {
+                minDate: 0,
+                beforeShow: function () {
+                    $(this).datepicker('option', 'maxDate', $('#checkout').val());
+                }
+            });
+        $('#checkout').datepicker(
+            {
+                defaultDate: "+1w",
+                beforeShow: function () {
+                    $(this).datepicker('option', 'minDate', $('#checkin').val());
+                    if ($('#checkin').val() === '') $(this).datepicker('option', 'minDate', 0);
+                }
+            });
+    </script>
+
+    <script>
+        function compareDates() {
+            var date1 = new Date(document.getElementById("checkin").value);
+            var date2 = new Date(document.getElementById("checkout").value);
+            var timeDiff = date2.getTime() - date1.getTime();
+            var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+            if (diffDays > 0) {
+                document.getElementById("days").value = diffDays;
+            }
+
+        }
+    </script>
+
+    <script>
         function calculate() {
-            var id4 = document.getElementById("id4").value;
+            var hotelPrice = document.getElementById("hotelPrice").value;
             var room = document.getElementById("room").value;
+            var days = document.getElementById("days").value;
             var adult = document.getElementById("adult").value;
             var child = document.getElementById("child").value;
             var guess = parseFloat(adult) + (parseFloat(child) * parseFloat(0.75));
-            var total = parseFloat(guess) * parseFloat(id4) * parseFloat(room);
-            document.getElementById("total").value = total;
+            var total = parseFloat(guess) * (parseFloat(hotelPrice) * parseFloat(room) * parseFloat(days));
+            document.getElementById("total").value = "₱ " + parseFloat(total);
         }
     </script>
     <script>
@@ -191,18 +323,28 @@
         var dd = String(dateIn.getDate()).padStart(2, '0');
         var mm = String(dateIn.getMonth() + 1).padStart(2, '0');
         var yyyy = dateIn.getFullYear();
-        dateIn = yyyy + '-' + mm + '-' + dd;
-        
-        document.getElementById("checkin").value = dateIn;
+        dateIn = mm + '/' + dd + '/' + yyyy;
 
+        document.getElementById("checkin").value = dateIn;
 
         dateOut.setDate(dateOut.getDate() + 1);
         var dd = String(dateOut.getDate()).padStart(2, '0');
         var mm = String(dateOut.getMonth() + 1).padStart(2, '0');
         var yyyy = dateOut.getFullYear();
-        dateOut = yyyy + '-' + mm + '-' + dd;
-        
-        document.getElementById("checkout").value = dateOut;
+        dateOut = mm + '/' + dd + '/' + yyyy;
 
+        document.getElementById("checkout").value = dateOut;
     </script>
+    
+    <script type="text/javascript">
+        $("#submit").click(function () {
+            var name = $("#name").val();
+            var marks = $("#marks").val();
+            var str = "You Have Entered "
+                + "Name: " + name
+                + " and Marks: " + marks;
+            $("#modal_body").html(str);
+        });
+    </script>
+
 </html>
