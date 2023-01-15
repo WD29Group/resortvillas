@@ -23,6 +23,8 @@
                     <h1 class="bookingsitename">Resort Villas Booking</h1>
                     <hr>
                     <form action="confirmedbook.html" method="GET">
+                        <input name="Reference #" id="referenceStamp" value="" type="hidden"></input>
+                        <input name="Inquiry Date" id="creationDate" value="" type="hidden"></input>
                         <div class="row">
                             <div class="col">
                                 <div class="row">
@@ -402,6 +404,7 @@
         dateOut = mm + '/' + dd + '/' + yyyy;
 
         document.getElementById("checkout").value = dateOut;
+        document.getElementById("creationDate").value = today.toLocaleString('en-US', options);
     </script>
 
     <script type="text/javascript">
@@ -414,5 +417,21 @@
             $("#modal_body").html(str);
         });
     </script>
+    <script>
+            var today = new Date();
+            var referenceStamp = today.getTime();
+            var refno = document.getElementById("referenceStamp").value;
+            document.getElementById("referenceStamp").innerHTML = referenceStamp;
+            document.getElementById("referenceStamp").value = referenceStamp;
+            // var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+                            var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false };
 
+            document.getElementById("creationDate").value = today.toLocaleString('en-US', options);
+
+
+
+
+                // console.log(today.toLocaleDateString('en-US', options) + " - " + today.toLocaleTimeString('en-US', options));
+
+    </script>
 </html>

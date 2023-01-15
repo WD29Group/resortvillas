@@ -64,9 +64,11 @@
         align-items: flex-end;
         font-weight: 250;
     }
-    #timestamp{
+    #referenceStamp{
         width: 135px;
         font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid black;
     }
     .smallHR{
         padding: 3px;
@@ -160,7 +162,6 @@
                         by asking you to complete pre-payment for your stay at Lihim Resorts!
                     </p>
                     <h5>Please Check Your Details</h5>
-                    Reference #: <b>RV-<input id="timestamp" value="test"></input></b>
                     <table>
                         <hr class="smallerHR">
                         <script>
@@ -171,13 +172,13 @@
                                 y = y + x;
                                 x++;
 
-                                if (`${y}` == "id0" || `${y}` == "id1" || `${y}` == "id2" || `${y}` == "id2id2") {
+                                if (`${y}` == "id2" || `${y}` == "id3" || `${y}` == "id4" || `${y}` == "id4id4") {
                                     // document.write(`<div class="formlabels1" id='${y + y}' > ${name} </div><input` + ` name=${name} ` + `readonly class="forminput forminput1" id=` + `${y}` + ` value="  ₱ ${value}">`);
-                                } else if (`${y}` == "id8" || `${y}` == "id9") {
-                                    document.write(`<tr><td><hr class="smallestHR">${name}</td><td> <hr class="smallestHR">&emsp;&emsp;:&emsp;${value}</td></tr>`);
+                                } else if (`${y}` == "id1" || `${y}` == "id2" || `${y}` == "id10" || `${y}` == "id11") {
+                                    document.write(`<tr><td><hr class="smallestHR">${name}</td><td> <hr class="smallestHR">&emsp;:&emsp;${value}</td></tr>`);
                                 }
                                 else {
-                                    document.write(`<tr><td>${name}</td><td> &emsp;&emsp;:&emsp;${value}</td></tr>`);
+                                    document.write(`<tr><td>${name}</td><td>&emsp;:&emsp;${value}</td></tr>`);
                                 }
                                 y = 'id';
                             })
@@ -202,7 +203,7 @@
                         </tr>
                         <tr>
                             <td>Account Name</td>
-                            <td> :&emsp;<b>Resort Villas.
+                            <td> :&emsp;<b>Resort Villas
                                     <hr class="smallestHR">
                                 </b></td>
                         </tr>
@@ -258,14 +259,5 @@
             print_window.close();
         }
     </script>
-    
-    <script>
-        var today = new Date();
-        var timestamp = today.getTime();
-        var refno = document.getElementById("timestamp").value;
-        document.getElementById("timestamp").innerHTML = timestamp;
-        document.getElementById("timestamp").value = timestamp;
-    </script>
-
 </body>
 </html>
