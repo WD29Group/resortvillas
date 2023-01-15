@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+:root {
+    --fontfam: 'Nothing You Could Do', cursive;
+}
+
+body {
+    background: rgb(177, 179, 187);
+}
+
+.landingpg {
+    z-index: -1;
+    /* margin: 0; */
+    background: url('bkg.webp');
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-position: center;
+}
+
+.maindiv {
+    max-width: 900px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 25px;
+    background: rgb(252, 252, 252);
+    margin-top: 75px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 7px rgb(150, 150, 150);
+}
+
+.forminput {
+    color: rgba(66, 66, 66, 0.822);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
+    text-align: center;
+}
+
+.forminput1 {
+    width: 100%;
+}
+
+.forminput2 {
+    width: 120px;
+}
+
+.forminput3 {
+    width: 50px;
+}
+
+.forminput3 {
+    width: 50px;
+}
+
+.forminput4 {
+    width: 100%;
+}
+
+.results {
+    color: white;
+}
+
+.formlabels,
+.formlabels1,
+.formlabels2,
+.formlabels3 {
+    width: 130px;
+    padding: 5px;
+}
+
+.formlabels1 {
+    padding: 5px;
+    /* margin: 0 0 0 25px; */
+}
+
+.formlabels2 {
+    width: 120px;
+}
+
+.formlabels3 {
+    width: 270px;
+}
+
+.logo {
+    background: url("logo.png");
+    text-align: center;
+    font-size: 2em;
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    margin: 0 auto;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: var(--fontfam);
+}
+
+@media (max-width: 990px) {
+    .logo {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 991px) {
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.formbutton {
+    display: block;
+    padding: 7px;
+    margin: 15px;
+    width: 150px;
+    height: 38px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ffc107;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.formbutton:hover {
+    background: rgba(255, 222, 89, 0.8);
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    margin: 25px 0 0 0;
+    border-radius: 9px;
+    box-shadow: 2x 2x 2x rgba(0, 0, 0, 1);
+    box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
+}
+
+@media (max-width: 450px) {
+    img {
+        width: 300px;
+        min-width: 250px;
+        height: 203px;
+    }
+
+    .maindiv {
+        padding: 25px 3px 0 3px;
+    }
+}
+
+.backtoresortsBtn {
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    padding: 7px;
+    width: 200px;
+    height: 38px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ffc107;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+.backtoresortsBtn:hover {
+    background: rgba(255, 222, 89, 0.8);
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.showHr {
+    display: none;
+}
+
+.bookingsitename {
+    z-index: 3;
+    font-size: 2.2em;
+}
+
+@media (max-width: 610px) {
+    .showHr {
+        display: block;
+    }
+
+    .bookingsitename {
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+
+.logo {
+    background: url("logo.png");
+    text-align: center;
+    font-size: 2em;
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    margin: 0 auto;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: var(--fontfam);
+    margin-top: 25px;
+}
+
+.formlabels1 {
+    font-size: 1em;
+}
+
+.mainMargin {
+    max-width: 500px;
+    ;
+    margin: auto;
+}
+
+.pageArea {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.printNotice {
+    font-size: small;
+    font-weight: 0;
+}
+
+.reservationtxt {
+    align-items: flex-end;
+}
