@@ -23,8 +23,6 @@
                     <h1 class="bookingsitename">Resort Villas Booking</h1>
                     <hr>
                     <form action="confirmedbook.html" method="GET">
-                        <input name="Reference #" id="referenceStamp" value="" type="hidden"></input>
-                        <input name="Inquiry Date" id="creationDate" value="" type="hidden"></input>
                         <div class="row">
                             <div class="col">
                                 <div class="row">
@@ -44,17 +42,19 @@
                                                         document.write(`<input id="hotelPrice" type="hidden" value="${value}">`);
                                                     }
                                                     if (`${y}` == "id0" || `${y}` == "id1") {
-                                                        // document.write(`<div class="formlabels1" id='${y + y}' > ${name} </div><input` + ` name=${name} ` + `readonly class="forminput forminput1" id=` + `${y}` + ` value="  ₱ ${value}">`);
                                                     } else {
                                                         document.write(`<div class="formlabels1" id='${y + y}' > ${name} </div><input` + ` name=${name} ` + `readonly class="forminput forminput1" id=` + `${y}` + ` value=" ${value}">`);
                                                     }
                                                     y = 'id';
                                                 })
                                             </script></center>
+                                            <input name="Reference #" id="referenceStamp" value="" type="hidden"></input>
+                                            <input name="Inquiry Date" id="creationDate" value="" type="hidden"></input>
                                     </div>
                                 </div>
                                 <center>
                                     <hr>
+                                    
                                     <div class="row">
                                         <div class="col">
                                             <div class="formlabels2">No. of Adult</div>
@@ -91,7 +91,7 @@
                                         </div>
                                         <div class="col">
                                             <div class="formlabels">Total Amount</div>
-                                            <input class="forminput forminput2" type="text" id="total" name="total"
+                                            <input class="forminput forminput5" type="text" id="total" name="Total"
                                                 readonly onchange="calculate()">
                                         </div>
                                     </div>
@@ -333,7 +333,13 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <button class="formbutton mx-auto" type="submit" value="Submit">Confirm</button>
+                                <!-- <input type="hidden" name="_next" value="https://resortvillas.vercel.app/books.html"> -->
+                                <button class="formbutton mx-auto">Apply</button>
+                                <!-- <button class="formbutton mx-auto" type="submit" value="Submit">Confirm</button> -->
+                            <!-- <input type="submit" formaction="default_url_when_press_enter" style="visibility: hidden; display: none;"> -->
+                                <!-- <button formaction="https://formsubmit.co/9d6be94780c9d6a46b6c942d02c522ac" formmethod="POST" >Action1</button> this is Working -->
+                                <!-- <button formaction="https://formspree.io/f/moqzvvoj" formmethod="POST" >Action1</button>
+                                <button formaction="confirmedbook.html">Action2</button> -->
                                 <div class="logo">Resort Villas</div>
                             </div>
                         </div>
@@ -423,15 +429,77 @@
             var refno = document.getElementById("referenceStamp").value;
             document.getElementById("referenceStamp").innerHTML = referenceStamp;
             document.getElementById("referenceStamp").value = referenceStamp;
-            // var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
                             var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false };
 
             document.getElementById("creationDate").value = today.toLocaleString('en-US', options);
 
-
-
-
-                // console.log(today.toLocaleDateString('en-US', options) + " - " + today.toLocaleTimeString('en-US', options));
-
     </script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+
+
+
+
+        <script>
+            function submitForm() {
+                var form = document.getElementById("myForm");
+                var field1 = document.getElementById("field1").value;
+                if (field1 == "value1") {
+                    form.action = "page1.php";
+                } else {
+                    form.action = "page2.php";
+                }
+                form.submit();
+            }
+        </script>
+
+        <!-- <script>
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', function (e) {
+                e.preventDefault()
+                var referenceStamp = document.getElementById('referenceStamp').value;
+                var creationDate = document.getElementById('creationDate').value;
+                var hotel = document.getElementById('id2').value;
+                var discounted = document.getElementById('id3').value;
+                var hotelPrice = document.getElementById('hotelPrice').value;
+                var adult = document.getElementById('adult').value;
+                var child = document.getElementById('child').value;
+                var room = document.getElementById('room').value;
+                var checkin = document.getElementById('checkin').value;
+                var checkout = document.getElementById('checkout').value;
+                var daysStay = document.getElementById('days').value;
+                var totalPrice = document.getElementById('total').value;
+                var first_name = document.getElementById('first_name').value;
+                var last_name = document.getElementById('last_name').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                var country = document.getElementById('country').value;
+                var body = "Hi!, I'm " + first_name + " " + last_name + "<br> I'm booking for " + hotel + " with " + 
+                "<br> adults : " + adult + 
+                "<br> child(s) : " + child +
+                "<br> room(s) : " + room +
+                "<br> Checkin date : " + checkin +
+                "<br> Checkout date : " + checkout +
+                "<br> Total of stays : " + daysStay +
+                "<br> Total of :  P " + totalPrice +
+                "<br><br><hr>" + 
+                "My contact # : " + phone +
+                "You can email me at : " + email +
+                "Country : " + country +
+                "<br><hr> My Reference # : " + referenceStamp +
+                "Created this : " + creationDate;
+
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "resortsvillas@gmail.com",
+                    Password: "orwybmtcnhykoirz",
+                    To: 'resortsvillas@gmail.com',
+                    From: email,
+                    Subject: "Resort Booking",
+                    Body: body
+                }).then(
+                    message => alert(message)
+                );
+            })
+        </script> -->
 </html>

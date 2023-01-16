@@ -50,12 +50,12 @@ body {
     width: 50px;
 }
 
-.forminput3 {
-    width: 50px;
-}
-
 .forminput4 {
     width: 100%;
+}
+
+.forminput5 {
+    width: 75%;
 }
 
 .results {
