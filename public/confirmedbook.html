@@ -59,6 +59,16 @@
         background: rgba(128, 128, 128, 0.25);
     }
 
+    .forminput3 {
+        border-bottom: 1px rgb(117, 117, 117) dotted; 
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-weight: 700;
+        width: 270px;
+        padding: 0;
+    }
+
 
     .formlabels1{
         font-size: 15px;
@@ -88,6 +98,7 @@
         font-weight: 500;
         margin: 10px 0 10px 0;
     }
+
     .mainMargin{
         max-width: 500px;
         min-width: 300px;
@@ -232,14 +243,14 @@
                     function putRef() {
                         var thisReference = document.getElementById("id3").value;
                         var datecreated = document.getElementById("id4").value;
-                        document.getElementById("refnumber").innerHTML =   "Referece no#  :" + thisReference;
-                        document.getElementById("datecreated").innerHTML = "Date Inquired : " + datecreated;
+                        document.getElementById("refnumber").value =   "Referece no#  :" + thisReference;
+                        document.getElementById("datecreated").value = "Date Inquired : " + datecreated;
                     }
                 </script>
                     <form action="">
                         <hr class="smallestHR">
-                        <div id="refnumber" class="formlabels1"></div>
-                        <div id="datecreated" class="formlabels1"></div>
+                        <input id="refnumber" readonly class="forminput3"></input><br>
+                        <input id="datecreated" readonly class="forminput3"></input>
                         <table>
                         <hr class="smallerHR">
                             <script>
