@@ -8,7 +8,8 @@ function News() {
 
   return (
     <>
-      <div id="breaking-news"><h1 className="NewsUpdateTitle">Resort Villas News Update for Palawan</h1></div>
+      <div id="breaking-news"></div>
+      <h1 className="NewsUpdateTitle">Resort Villas News Update for Palawan</h1>
       <div className=" contaier-fluid">
         <img className="img-fluid" src="https://t4.ftcdn.net/jpg/02/65/26/83/360_F_265268314_LmykO3vrtzmh3TQbBdnxj9vUczqqJXCU.jpg" alt="resort villas" />
       </div>

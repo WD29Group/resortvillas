@@ -747,7 +747,6 @@ li{
   background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
 }
-
 #breaking-news{
   background: url('../img/bkg4.webp');
   background-size: cover;
@@ -759,7 +758,14 @@ li{
   float: right;
   width: 100%;
   height: 100%;
-
-  
-  
+}
+.NewsUpdateTitle{
+  color: rgb(255, 254, 254);
+  text-align: center;
+  font-size: 5rem;
+  font-family: var(--fontfam);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  top: 200px;
+  position: relative;
+  z-index: 0;
 }
