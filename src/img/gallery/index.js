@@ -48,16 +48,12 @@ import img47 from "./gallery47.jpg";
 import img48 from "./gallery48.jpg";
 import img49 from "./gallery49.jpg";
 import img50 from "./gallery50.jpg";
-import img51 from "./gallery51.jpg";
-import img52 from "./gallery52.jpg";
-import img53 from "./gallery53.jpg";
 
 
 
 
 export { img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
      img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
-     img21, img22, img23, img24, img25, img26, img27, img28, img29, img30,
-     img31, img32, img33, img34, img35, img36, img37, img38, img39, img40,
-     img41, img42, img43, img44, img45, img46, img47, img48, img49, img50,
-     img51, img52, img53};
+      img21, img22, img23, img24, img25, img26, img27, img28, img29, img30,
+      img31, img32, img33, img34, img35, img36, img37, img38, img39, img40,
+      img41, img42, img43, img44, img45, img46, img47, img48, img49, img50};

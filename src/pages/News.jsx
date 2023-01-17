@@ -2,20 +2,21 @@ import React from "react";
 import CardProps from "../ReUse/CardProps";
 import breakingNews from "../json/breakingNews.json";
 import ChangeTopBG from "../ReUse/ChangeTopBG";
+import Subscribe from "../ReUse/Subscribe"
 import Footer from "../ReUse/Footer";
 
 function News() {
 
   return (
     <>
+      <Subscribe />
       <div id="breaking-news"></div>
-      {/* <h1 className="NewsUpdateTitle">News Update from Palawan</h1> */}
       <div className=" contaier-fluid">
         <img className="img-fluid" src="https://t4.ftcdn.net/jpg/02/65/26/83/360_F_265268314_LmykO3vrtzmh3TQbBdnxj9vUczqqJXCU.jpg" alt="resort villas" />
       </div>
-      <div className="main-news">
-        <div className="forbackground">
-          <div className="container">
+      <div className="main-news mt-5">
+        <div className="forbackground pt-5">
+          <div className="container-xxl">
             <div class="row">
               {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids === 4).map((newsUpdate) => (
                 <div class="col-md-8 p-1">
@@ -56,7 +57,7 @@ function News() {
               <h3>Breaking News</h3>
               {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids === 2).map((newsUpdate) => (
                 <CardProps
-                  column="effect-news col-md-6 p-1 m-3"
+                  column="effect-news col-md-6 p-0"
                   title={newsUpdate.title}
                   date={newsUpdate.date}
                   scr={newsUpdate.thumbnailUrl}
@@ -74,7 +75,7 @@ function News() {
             <h3>Recent News</h3>
             {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids === 3).map((newsUpdate) => (
               <CardProps
-                column="effect-news col-sm-6 p-2 pb-2"
+                column="effect-news  col-lg-4  p-2 pb-2"
                 title={newsUpdate.title}
                 date={newsUpdate.date}
                 scr={newsUpdate.thumbnailUrl}

@@ -33,7 +33,7 @@ function Subscribe() {
                     value={email}  
                     onChange={(e) => setemail(e.target.value)} />
                 </div>
-                    <button className="btn btn-warning mb-1"  data-bs-dismiss="modal"
+                    <button className="btn btn-warning mb-1" data-bs-dismiss="modal"
                     onClick={subscribeToList}>Subscribe</button>
                 </center>
               </div>
