@@ -2,14 +2,12 @@ import React from "react";
 import CardProps from "../ReUse/CardProps";
 import breakingNews from "../json/breakingNews.json";
 import ChangeTopBG from "../ReUse/ChangeTopBG";
-import Subscribe from "../ReUse/Subscribe"
 import Footer from "../ReUse/Footer";
 
 function News() {
 
   return (
     <>
-      <Subscribe />
       <div id="breaking-news"><h1 className="NewsUpdateTitle">Resort Villas News Update for Palawan</h1></div>
       <div className=" contaier-fluid">
         <img className="img-fluid" src="https://t4.ftcdn.net/jpg/02/65/26/83/360_F_265268314_LmykO3vrtzmh3TQbBdnxj9vUczqqJXCU.jpg" alt="resort villas" />

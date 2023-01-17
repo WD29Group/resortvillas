@@ -3,7 +3,7 @@ import { uid } from "uid";
 import { set, ref } from "firebase/database";
 import React, { useState } from 'react';
 
-function App() {
+function Subscribe() {
   const [email, setemail] = useState("");
   const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const subscribeToList = async (e) => {
@@ -21,9 +21,6 @@ function App() {
   }
   return (
     <>
-      <div className="rvmodal material-symbols-outlined AccountProfile" data-bs-toggle="modal" data-bs-target="#subscribe">
-      mail
-      </div>
       <div>
         <div className="modal fade" id="subscribe">
           <div className="modal-dialog modal-dialog-centered">
@@ -36,7 +33,7 @@ function App() {
                     value={email}  
                     onChange={(e) => setemail(e.target.value)} />
                 </div>
-                    <button className="SubscribedBtn" data-bs-dismiss="modal"
+                    <button className="btn btn-warning mb-1"  data-bs-dismiss="modal"
                     onClick={subscribeToList}>Subscribe</button>
                 </center>
               </div>
@@ -47,7 +44,7 @@ function App() {
   );
 }
 
-export default App;
+export default Subscribe;
 
 
 

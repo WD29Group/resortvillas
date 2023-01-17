@@ -1,9 +1,5 @@
-.slide,
-.slide1 img,
-.slide2,
-.slide3 {
-    height: 50vh;
-    width: auto;
+.slide{
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.95);
     background-size: cover;
     transition: opacity 0.3s ease-in-out;
@@ -25,7 +21,7 @@
 a{
     line-height: 0px;
     font-style: italic;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 a:hover{
     color: rgba(255, 255, 255, 0.75);
