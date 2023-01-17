@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/moved.temp
 /.pnp
 .pnp.js
 
@@ -23,3 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 firebase.jsx
 start.cmd
+.7z

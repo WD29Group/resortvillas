@@ -9,7 +9,7 @@ function Navigation({ children }) {
       <div className={
         window.location.href.includes("Resorts") ||
         window.location.href.includes("Gallery") ||
-        window.location.href.includes("Services") ||
+        // window.location.href.includes("Services") ||
         // window.location.href.includes("Booking") ||
         window.location.href.includes("News") ||
         window.location.href.includes("Weather")      
@@ -58,7 +58,7 @@ function Navigation({ children }) {
             >
               Gallery
             </Link>
-            <Link
+            {/* <Link
               to="/Services"
               className={
                 window.location.href.includes("Services")
@@ -68,7 +68,7 @@ function Navigation({ children }) {
               onClick={() => setSelected("Services")}
             >
               Services
-            </Link>
+            </Link> */}
             {/* <Link
               to="/Booking"
               className={
@@ -153,7 +153,7 @@ function Navigation({ children }) {
             Gallery
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="/Services"
             className={
@@ -167,7 +167,7 @@ function Navigation({ children }) {
           </Link>
         </li>
         <li>
-          {/* <Link
+          <Link
             to="/Booking"
             className={
               window.location.href.includes("Booking")
@@ -177,8 +177,8 @@ function Navigation({ children }) {
             onClick={() => setSelected("Booking")}
           >
             Booking
-          </Link> */}
-        </li>
+          </Link>
+        </li> */}
         <li>
           <Link
             to="/News"
