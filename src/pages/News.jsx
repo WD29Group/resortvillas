@@ -2,13 +2,14 @@ import React from "react";
 import CardProps from "../ReUse/CardProps";
 import breakingNews from "../json/breakingNews.json";
 import ChangeTopBG from "../ReUse/ChangeTopBG";
+import Subscribe from "../ReUse/Subscribe"
 import Footer from "../ReUse/Footer";
 
 function News() {
 
   return (
     <>
-      {/* main news */}
+      <Subscribe />
       <div className=" contaier-fluid">
         <img className="img-fluid" src="https://t4.ftcdn.net/jpg/02/65/26/83/360_F_265268314_LmykO3vrtzmh3TQbBdnxj9vUczqqJXCU.jpg" alt="" />
       </div>
