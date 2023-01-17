@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../ReUse/Footer";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import ChangeTopBG from "../ReUse/ChangeTopBG";
 import * as imgs from "../img/gallery";
 
 function Gallery() {
@@ -37,7 +38,7 @@ function Gallery() {
     
   ];
 
-  for (let i = 1; i <= 50; i++) {
+  for (let i = 1; i <= 53; i++) {
     const image = imgs[`img${i}`];
     images.push(image);
   }
@@ -63,16 +64,16 @@ function Gallery() {
     </div>
     }
 
-
+      <ChangeTopBG scrollAmount="700" transitionDuration="3s" />
       <Footer scrollAmount="0" setBGcolor="rgba(0, 0, 0, 0.50)" />
       <div id="Gbod">
-        <div className="container Galbod">
+        <div className="container Galbod pb-5">
           <div className="text-center text-black h1 pb-4">El Nido, Palawan
           <div className="container pt-3"> <hr/></div>
           </div>
           
           <ResponsiveMasonry>
-          <Masonry columnsCount={3} gutter="20px">
+          <Masonry gutter="20px">
             {images.map((image, i) => (
               <img
               src={image}
@@ -85,8 +86,9 @@ function Gallery() {
             ))}
             </Masonry>
             </ResponsiveMasonry>
+              </div>
+            <div className="p-3"></div>
         </div>
-      </div>
     </>
   );
 }
