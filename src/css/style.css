@@ -723,27 +723,28 @@ li{
 .three-cards{
   width: 100%;
   height: 20vh;
-  background: green;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
 }
 .banner-news{
   object-fit: cover;
   width: 100%;
   height:20vh;
-  background: yellow;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
 }
 
 .recent-cards{
   width: 100%;
   height: 30vh;
-  background: pink;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
 }
 
 .main-pict {
   width: 100%;
-  height: 65vh;background: red;
+  height: 65vh;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
 }
 
