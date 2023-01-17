@@ -45,6 +45,7 @@ function Gallery() {
 
   return (
     <>
+    <div className="GbodBg"></div>
     {data.img &&
     <div style={{
       width: '100%',
@@ -63,7 +64,6 @@ function Gallery() {
          <button onClick={() => imgAction('next-img')} className="btn btn-secondary position-absolute me-5" style={{right: 0}}>Next</button>
     </div>
     }
-
 
       <div id="Gbod">
         <div className="container Galbod">
@@ -86,8 +86,8 @@ function Gallery() {
             </Masonry>
             </ResponsiveMasonry>
         </div>
+            <div className="p-3"></div>
       </div>
-            <div className="bkg5"></div>
       <Footer scrollAmount="0" setBGcolor="rgba(0, 0, 0, 0.50)" />
       <ChangeTopBG scrollAmount="50" transitionDuration="0.5s" />
     </>

@@ -8,9 +8,9 @@ function Weather() {
 
   useEffect(() => {
     async function fetchData() {
-      // in case of calls of api is maxed out use this key:1046089c61b14b8c884e8edf1f4ffe0b
+      // in case of calls of api is maxed out use this key:/0f2c78fe24d04bc8969b4c9cbb0b72c5
       const response = await fetch(
-        'https://api.weatherbit.io/v2.0/current?city=El-Nido&key=0f2c78fe24d04bc8969b4c9cbb0b72c5',
+        'https://api.weatherbit.io/v2.0/current?city=El-Nido&key=1046089c61b14b8c884e8edf1f4ffe0b',
       );
       const json = await response.json();
       setData(json);
@@ -18,9 +18,6 @@ function Weather() {
     }
     fetchData();
   }, []);
-
-
-
 
   if (!data) {
     return (
@@ -35,9 +32,23 @@ function Weather() {
   const city = data.data[0].city_name;
   const country = data.data[0].country_code;
   const aqi = data.data[0].aqi;
-  const wndspd = data.data[0].wind_spd;
-  const sunrise = data.data[0].sunrise;
-  const sunset = data.data[0].sunset;
+  const wndspd = Math.round(data.data[0].wind_spd);
+  const feelstemp = data.data[0].app_temp;
+
+  let aqiLevel;
+  if (aqi <= 50) {
+      aqiLevel = `The current Air Quality Index is ${aqi}, which is considered to be excellent!`;
+  } else if (aqi <= 100) {
+      aqiLevel = `The current Air Quality Index is ${aqi}, which is considered to be good!`;
+  } else if (aqi <= 150) {
+      aqiLevel = `The current Air Quality Index is ${aqi}, which is considered to be fair. Some people may be sensitive to air pollution at this level!`;
+  } else if (aqi <= 200) {
+      aqiLevel = `The current Air Quality Index is ${aqi}, which is considered to be poor. Some people may experience health effects!`;
+  } else if (aqi <= 300) {
+      aqiLevel = `The current Air Quality Index is ${aqi}, which is considered to be very poor. Everyone may experience health effects!`;
+  } else {
+      aqiLevel = `The current Air Quality Index is ${aqi}, which is considered to be hazardous. Everyone may experience more serious health effects!`;
+  }
 
   return (
     <>
@@ -58,10 +69,10 @@ function Weather() {
                 <img src={process.env.PUBLIC_URL + `/icons/${data.data[0].weather.icon}.png`} alt={process.env.PUBLIC_URL + `/icons/${data.data[0].weather.icon}.png`} />
                 </div>
                 <center style={{margin:"0 0 0 -20px"}}>
-                  <div>Air Quality Index : {aqi}</div>
-                  <div>Wind speed : {wndspd}m/s</div>
-                  <div>Sunrise : {sunrise} am</div>
-                  <div>Sunset : {sunset} pm</div>
+                  <div className="ps-5 pe-5"> {aqiLevel}</div>
+                  <br/>
+                  <div>Wind speed : {wndspd} m/s</div>
+                  <div>Feels Like : {feelstemp} °C</div>
                 </center>
               </div>
             </div>

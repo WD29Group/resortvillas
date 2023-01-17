@@ -6,7 +6,7 @@ function Weatherforecast() {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        'https://api.weatherbit.io/v2.0/forecast/daily?city=El Nido,PH&key=0f2c78fe24d04bc8969b4c9cbb0b72c5',
+        'https://api.weatherbit.io/v2.0/forecast/daily?city=El Nido,PH&key=1046089c61b14b8c884e8edf1f4ffe0b',
       );
       const json = await response.json();
       setData(json);

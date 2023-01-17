@@ -558,10 +558,21 @@ li {
   border-radius: 100px;
 }
 
+.mailist {
+  border-radius: 100px;
+  font-size: 2.5em;
+}
+
 @media (min-width: 615px) {
   .footerIcons {
     font-size: 2.5em;
   }
+
+  .mailist {
+    border-radius: 100px;
+    font-size: 2.3em;
+  }
+
 }
 
 @media (max-width: 614px) {
@@ -575,6 +586,11 @@ li {
   .footerIcons {
     font-size: 1.5em;
     margin: 10px 2px 4px 2px;
+  }
+
+  .mailist {
+    border-radius: 100px;
+    font-size: 1.4em;
   }
 
   .menu {
@@ -639,12 +655,20 @@ li {
 
 #Gbod {
   padding-top: 15vh;
-  background: url(../img/bkg5.webp);
+  background: transparent;
+
+}
+
+.GbodBg {
+  background: url(../img/bkg3.webp);
   height: 100%;
   width: 100%;
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  /* z-index: -1; */
 }
 
 .Galbod {
@@ -776,7 +800,7 @@ li {
 .three-cards {
   width: 100%;
   height: 20vh;
-  background: green;
+  /* background: green; */
   border-radius: 12px;
 }
 
@@ -784,21 +808,21 @@ li {
   object-fit: cover;
   width: 100%;
   height: 20vh;
-  background: yellow;
+  /* background: yellow; */
   border-radius: 12px;
 }
 
 .recent-cards {
   width: 100%;
   height: 30vh;
-  background: pink;
+  /* background: pink; */
   border-radius: 12px;
 }
 
 .main-pict {
   width: 100%;
   height: 65vh;
-  background: red;
+  /* background: red; */
   border-radius: 12px;
 }
 
