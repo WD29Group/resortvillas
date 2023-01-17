@@ -1,4 +1,7 @@
-.slide{
+.slide,
+.slide1,
+.slide2,
+.slide3{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.95);
     background-size: cover;
