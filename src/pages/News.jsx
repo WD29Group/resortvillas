@@ -1,6 +1,8 @@
 import React from "react";
 import CardProps from "../ReUse/CardProps";
 import breakingNews from "../json/breakingNews.json";
+import ChangeTopBG from "../ReUse/ChangeTopBG";
+import Footer from "../ReUse/Footer";
 
 function News() {
 
@@ -15,13 +17,13 @@ function News() {
           <div className="container-xxl">
             <div class="row">
               {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 4).map((newsUpdate) => (
-                <div class="col-md-8 mb-3 shadow-lg  bg-white  bg-opacity-50 p-0">
+                <div class="col-md-8 p-1">
                   <div className="effect-news">
                     <img className="main-pict img-fluid" src={newsUpdate.thumbnailUrl} alt="" />
                     <div className="mt-2 p-2">
                       <h2>{newsUpdate.title}</h2>
                       <p>{newsUpdate.date}</p>
-                      <h6>{newsUpdate.content}<a className="text-decoration-underline text-primary" href={"https://www.travelbubble.elnidoresorts.com/"} target="_blank">see more, </a></h6>
+                      <h6 className="p-2">>{newsUpdate.content}<a className="text-decoration-underline text-primary" href={"https://www.travelbubble.elnidoresorts.com/"} target="_blank">see more, </a></h6>
                     </div>
                   </div>
                 </div>
@@ -30,13 +32,13 @@ function News() {
               {/* Small news */}
               <div class="col-md-4">
                 <div class="row">
-                  <div className="mx-2 p-0">
+                  <div className="mb-2 p-0">
                     {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 1).map((newsUpdate) => (
-                      <div className="sideNews bg-white  bg-opacity-50  shadow-lg pb-1 mb-3">
+                      <div className="sideNews pb-1 mb-3">
                         <img className="img-fluid three-cards m-0" src={newsUpdate.thumbnailUrl} />                       
                         <h5 className="m-2">{newsUpdate.title}</h5>
                         <p className="m-2">{newsUpdate.date}</p>
-                        <p className="m-2"><a className="text-decoration-underline text-primary" href={newsUpdate.link} target="_blank"> see more,</a></p>
+                        <p className="mb-2"><a className="text-decoration-underline text-primary" href={newsUpdate.link} target="_blank"> see more,</a></p>
                       </div>
                     ))}
                   </div>
@@ -60,7 +62,7 @@ function News() {
                   body={newsUpdate.content}
                   href={newsUpdate.link}
                 />
-              ))}
+              ))}<br />
             </div>
           </div>
         </div>
@@ -71,7 +73,7 @@ function News() {
             <h3>Recent News</h3>
             {breakingNews.newsUpdates.filter(newsUpdates => newsUpdates.ids == 3).map((newsUpdate) => (
               <CardProps
-                column="effect-news  col-lg-4  p-0 pb-1"
+                column="effect-news  col-lg-4  p-2 pb-2"
                 title={newsUpdate.title}
                 date={newsUpdate.date}
                 scr={newsUpdate.thumbnailUrl}
@@ -79,10 +81,13 @@ function News() {
                 href={newsUpdate.link}
               />
             ))}
+              <br /><br />
           </div>
         </div>
         </div>
       </div>
+      <ChangeTopBG scrollAmount="50" transitionDuration="0.5s" />
+      <Footer scrollAmount="0" setBGcolor="rgba(0, 0, 0, 0.50)" />
     </>
   );
 }

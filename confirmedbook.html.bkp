@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,76 +34,14 @@
         font-family: var(--fontfam);
         margin-top: 25px;
     }
-    
-    .forminput {
-        font-size: 14px;
-        color: rgba(66, 66, 66, 0.822);
-        padding: 0;
-        font-weight: 500;
-    }
-
-    .forminput1 {
-        border-bottom: 1px rgb(117, 117, 117) dotted; 
-        border-top: none;
-        border-left: none;
-        border-right: none;
-    }
-
-    .forminput2 {
-        border-bottom: 1px rgb(117, 117, 117) dotted; 
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        font-weight: 700;
-        margin: 10px 0 10px 0;
-        background: rgba(128, 128, 128, 0.25);
-    }
-
-    .forminput3 {
-        border-bottom: 1px rgb(117, 117, 117) dotted; 
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        font-weight: 700;
-        width: 270px;
-        padding: 0;
-    }
-
 
     .formlabels1{
-        font-size: 15px;
-        border-bottom: 1px rgba(128, 128, 128, 0.5) dotted; 
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        font-weight: 500;
-
+        font-size: 1em;
     }
-
-    .formlabels2{
-        font-size: 15px;
-        border-bottom: 1px rgba(128, 128, 128, 0.5) dotted; 
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        font-weight: 700;
-        margin: 10px 0 10px 0;
-        background: rgba(128, 128, 128, 0.25);
-    }
-    .formlabels3{
-        font-size: 14px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        font-weight: 500;
-        margin: 10px 0 10px 0;
-    }
-
     .mainMargin{
         max-width: 500px;
         min-width: 300px;
         margin: auto;
-        padding: 25px;
     }
     .pageArea{
         background: white;
@@ -168,7 +106,7 @@
         background: rgba(255, 222, 89, 0.8);
         color: rgba(0, 0, 0, 0.733);
     }
-    
+
     .formbutton {
         z-index: 10;
         display: block;
@@ -187,31 +125,6 @@
     .formbutton:hover {
         background: rgba(255, 222, 89, 0.8);
     }
-
-    
-    .formbutton2 {
-        z-index: 10;
-        padding: 7px 17px 7px 17px;
-        border-radius: 7px;
-        border: none;
-        background-color: #ffc107;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-    }
-
-    .formbutton2:hover {
-        background: rgba(255, 222, 89, 0.8);
-    }
-
-    .formbuttonDisabled {
-        pointer-events: none;
-        z-index: 10;
-        padding: 7px 17px 7px 17px;
-        border-radius: 7px;
-        border: none;
-        background-color: #7c7c7c;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-    }
-
     .landingpg {
         z-index: -1;
         margin: 0;
@@ -249,50 +162,28 @@
                         by asking you to complete pre-payment for your stay at Lihim Resorts!
                     </p>
                     <h5>Please Check Your Details</h5>
-                <script>
-                    function putRef() {
-                        var thisReference = document.getElementById("id3").value;
-                        var datecreated = document.getElementById("id4").value;
-                        document.getElementById("refnumber").value =   "Referece no#  :" + thisReference;
-                        document.getElementById("datecreated").value = "Date Inquired : " + datecreated;
-                    }
-                </script>
-                    <form action="">
-                        <hr class="smallestHR">
-                        <input id="refnumber" readonly class="forminput3"></input><br>
-                        <input id="datecreated" readonly class="forminput3"></input>
-                        <table>
+                    <table>
                         <hr class="smallerHR">
-                            <script>
-                                let x = 0;
-                                let y = 'id';
-                                const resultsList = document.getElementById('results')
-                                new URLSearchParams(window.location.search).forEach((value, name) => {
-                                    y = y + x;
-                                    x++;
-                                    if (`${y}` == "id2" || `${y}` == "id12d2") {
-                                        // document.write(`<tr><td><div class="formlabels1" id='${y + y}' > ${name} </div></td><td>:<input` + ` name=${name} ` + `readonly class="forminput forminput1 " id=` + `${y}` + ` value=" ${value}"></td></tr>`);
-                                    } else if (`${y}` == "id3" || `${y}` == "id3d3" || `${y}` == "id4" || `${y}` == "id4d4") {
-                                        document.write(`<input name=${name} type="hidden" readonly class="forminput forminput2 " id=` + `${y}` + ` value=" ${value}"></td></tr>`);
-                                    } else if (`${y}` == "id10" || `${y}` == "id10d10" || `${y}` == "id0" || `${y}` == "id0d0") {
-                                        document.write(`<tr><td><div class="formlabels2" id='${y + y}' > ${name} </div></td><td><input  name=${name} readonly class="forminput forminput2 " id=` + `${y}` + ` value=" ${value}"></td></tr>`);
-                                    } else if (`${y}` == "id13" || `${y}` == "id13d13") {
-                                        document.write(`<tr><td><div class="formlabels1" id='${y + y}' > ${name} </div></td><td><input name=${name} readonly class="forminput forminput1 " type="email" id=` + `${y}` + ` value=" ${value}"></td></tr>`);
-                                    } else {
-                                        document.write(`<tr><td><div class="formlabels1" id='${y + y}' > ${name} </div></td><td><input name=${name} readonly class="forminput forminput1 " id=` + `${y}` + ` value=" ${value}"></td></tr>`);
-                                    }
-                                    y = 'id';
-                                })
-                                    putRef();
-                            </script>
-                        </table>
-                        <br>
-                        <hr class="smallerHR">
-                        <center>
-                            <button id="sendconfirmationBtn" class="formbutton2 mx-auto" formaction="https://formspree.io/f/moqzvvoj"
-                                formmethod="POST" onclick="disableThisButton()">Click if all details are correct</button>
-                        </center>
-                    </form>
+                        <script>
+                            let x = 0;
+                            let y = 'id';
+                            const resultsList = document.getElementById('results')
+                            new URLSearchParams(window.location.search).forEach((value, name) => {
+                                y = y + x;
+                                x++;
+
+                                if (`${y}` == "id2" || `${y}` == "id3" || `${y}` == "id4" || `${y}` == "id4id4") {
+                                    // document.write(`<div class="formlabels1" id='${y + y}' > ${name} </div><input` + ` name=${name} ` + `readonly class="forminput forminput1" id=` + `${y}` + ` value="  ₱ ${value}">`);
+                                } else if (`${y}` == "id1" || `${y}` == "id2" || `${y}` == "id10" || `${y}` == "id11") {
+                                    document.write(`<tr><td><hr class="smallestHR">${name}</td><td> <hr class="smallestHR">&emsp;:&emsp;${value}</td></tr>`);
+                                }
+                                else {
+                                    document.write(`<tr><td>${name}</td><td>&emsp;:&emsp;${value}</td></tr>`);
+                                }
+                                y = 'id';
+                            })
+                        </script>
+                    </table>
                     <hr class="smallerHR"><br>
                     <p align="justify">
                         &emsp;&emsp;To complete your reservation, we request a bank transfer for the amount above. Kindly e-mail us when
@@ -305,32 +196,32 @@
                     <hr class="smallHR">
                     <table>
                         <tr>
-                            <td class="formlabels3">Bank Name</td>
-                            <td class="formlabels3">   :Union Bank
+                            <td>Bank Name</td>
+                            <td> :&emsp;Union Bank
                                 <hr class="smallestHR">
                             </td>
                         </tr>
                         <tr>
-                            <td class="formlabels3"> Account Name</td>
-                            <td class="formlabels3"><b> :Resort Villas</b>
-                                    <hr class="smallestHR">
-                                </td>
-                        </tr>
-                        <tr>
-                            <td class="formlabels3">Account Number</td>
-                            <td class="formlabels3"><b> :0021700791
+                            <td>Account Name</td>
+                            <td> :&emsp;<b>Resort Villas
                                     <hr class="smallestHR">
                                 </b></td>
                         </tr>
                         <tr>
-                            <td class="formlabels3">Bank Address</td>
-                            <td class="formlabels3">   :Makati Avenue, Corner Durban St. Makati City
+                            <td>Account Number</td>
+                            <td>:&emsp;<b>0021700791
+                                    <hr class="smallestHR">
+                                </b></td>
+                        </tr>
+                        <tr>
+                            <td>Bank Address</td>
+                            <td> :&emsp;Makati Avenue, Corner Durban St. Makati City
                                 <hr class="smallestHR">
                             </td>
                         </tr>
                         <tr>
-                            <td class="formlabels3">Swift Code :</td>
-                            <td class="formlabels3"> :UBPHPHMM
+                            <td>Swift Code</td>
+                            <td>:&emsp;UBPHPHMM
                                 <hr class="smallestHR">
                             </td>
                         </tr>
@@ -348,7 +239,7 @@
                     we want to make sure our guests can book at Lihim Resorts with confidence!
                 
                     <hr>
-                    <h2 class="text-center">Thanks again from the team @Resort Villas!</h2>
+                    <h3 class="text-center">THANKS AGAIN FROM THE TEAM @RESORT VILLAS!</h3>
                     <br>
                 </div>
             </div>
@@ -368,28 +259,5 @@
             print_window.close();
         }
     </script>
-    <script>
-        function disableThisButton() {
-            document.getElementById("sendconfirmationBtn").className = "formbuttonDisabled"
-            document.getElementById("sendconfirmationBtn").innerHTML = "Booking Details Sent";
-        }
-    </script>
 </body>
-</html>
-
-<!-- id="id0id0" Hotel name="Hotel" id="id0" value=" El Nido Sea Shell Hotel"
-id="id1id1" Discounted name="Discounted" id="id1" value=" yes"
-id="id2id2" Price name="Price" id="id2" value=" 6375"
-id="id3id3" Reference # name="Reference" #="" id="id3" value=" 1673845928449"
-id="id4id4" Inquiry Date name="Inquiry" date="" id="id4" value=" Jan 16, 2023, 13:12"
-id="id5id5" adult name="adult" id="id5" value=" 1"
-id="id6id6" child name="child" id="id6" value=" 0"
-id="id7id7" room name="room" id="id7" value=" 1"
-id="id8id8" checkin name="checkin" id="id8" value=" 01/17/2023"
-id="id9id9" checkout name="checkout" id="id9" value=" 01/18/2023"
-id="id10id10" total name="total" id="id10" value=" ₱&nbsp;6375"
-id="id11id11" first_name name="first_name" id="id11" value=" 123"
-id="id12id12" last_name name="last_name" id="id12" value=" 123"
-id="id13id13" email name="email" id="id13" value=" 123"
-id="id14id14" phone name="phone" id="id14" value=" 123"
-id="id15id15" country name="country" id="id15" value=" Philippines" -->
+</html> -->

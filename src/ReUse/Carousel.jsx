@@ -1,12 +1,6 @@
 import "../css/Carousel.css";
 function Carousel(props) {
   const CarouID = "#" + props.CarouselID;
-  const stylingbox = {
-    border: "solid white",
-    background: "rgba(255,255,255,0.5)",
-    height: "0px",
-    borderRadius: "20px",
-  };
   return (
     <>
       <div
@@ -21,7 +15,12 @@ function Carousel(props) {
             data-bs-slide-to="0"
             className=""
             aria-label="Slide 1"
-            style={stylingbox}
+            style={{
+              border: "solid white",
+              background: "rgba(255,255,255,0.5)",
+              height: "0px",
+              borderRadius: "20px",
+            }}
           ></button>
           <button
             type="button"
@@ -29,7 +28,12 @@ function Carousel(props) {
             data-bs-slide-to="1"
             aria-label="Slide 2"
             className=""
-            style={stylingbox}
+            style={{
+              border: "solid white",
+              background: "rgba(255,255,255,0.5)",
+              height: "0px",
+              borderRadius: "20px",
+            }}
           ></button>
           <button
             type="button"
@@ -38,13 +42,20 @@ function Carousel(props) {
             aria-label="Slide 3"
             className="active"
             aria-current="true"
-            style={stylingbox}
+            style={{
+              border: "solid white",
+              background: "rgba(255,255,255,0.5)",
+              height: "0px",
+              borderRadius: "20px",
+            }}
           ></button>
         </div>
 
         <div className="carousel-inner">
           <div className="carousel-item" data-bs-interval="3000">
-            <img className="slide" src={props.SlideImg1} alt="carouseldata" />
+            <div>
+              <img className="slide1" src={props.SlideImg1} alt="carouseldata" />
+            </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title1}</h3>
               <p className="carouselfonts">{props.Body1}</p>
@@ -53,7 +64,9 @@ function Carousel(props) {
           </div>
 
           <div className="carousel-item" data-bs-interval="3000">
-            <img className="slide" src={props.SlideImg2} alt="carouseldata" />
+            <div>
+              <img className="slide2" src={props.SlideImg2} alt="carouseldata" />
+            </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title2}</h3>
               <p className="carouselfonts">{props.Body2}</p>
@@ -62,7 +75,9 @@ function Carousel(props) {
           </div>
 
           <div className="carousel-item active" data-bs-interval="3000">
-            <img className="slide" src={props.SlideImg3} alt="carouseldata" />
+            <div>
+              <img className="slide3" src={props.SlideImg3} alt="carouseldata" />
+            </div>
             <div className="carousel-caption d-none d-md-block">
               <h3 className="carouselHfonts">{props.Title3}</h3>
               <p className="carouselfonts">{props.Body3}</p>
