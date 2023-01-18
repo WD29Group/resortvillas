@@ -26,7 +26,7 @@ function ContentsHomeParallax() {
                 enjoyable and relaxing. Some of the hotels in El Nido also offer beachfront cottages, bungalows, and villas, 
                 providing a more private and intimate setting for travelers.
             "
-      Carousel2={<ContentResortsCarousel2 />}
+      // Carousel2={<ContentResortsCarousel2 />}
       Title3="Visit new places you've never been before"
       Body3=" 
                 El Nido is a popular tourist destination in the Palawan
