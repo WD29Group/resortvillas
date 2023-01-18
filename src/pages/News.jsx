@@ -10,7 +10,7 @@ function News() {
       <div className=" contaier-fluid">
         <img className="img-fluid" src="https://t4.ftcdn.net/jpg/02/65/26/83/360_F_265268314_LmykO3vrtzmh3TQbBdnxj9vUczqqJXCU.jpg" alt="" />
       </div>
-      <div className="main-news mt-5">
+      <div className="main-news">
         <div className="forbackground pt-5" id="breaking-news">
           <div className="container-xxl">
             <div class="row">
