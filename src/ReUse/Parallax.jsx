@@ -11,6 +11,8 @@ function Parallax(props) {
       <div className="style1">
         <h3 style={{ textAlign: "center" }}>{props.Title1}</h3>
         {props.Body1}
+        <br />
+        <br />
         {props.Carousel1}
       </div>
       <div className="bgimg-2">
