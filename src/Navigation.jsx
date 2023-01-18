@@ -58,39 +58,6 @@ function Navigation({ children }) {
             >
               Gallery
             </Link>
-            {/* <Link
-              to="/Services"
-              className={
-                window.location.href.includes("Services")
-                  ? "navButton selected nvbtn"
-                  : "navButton nvbtn"
-              }
-              onClick={() => setSelected("Services")}
-            >
-              Services
-            </Link> */}
-            {/* <Link
-              to="/Booking"
-              className={
-                window.location.href.includes("Booking")
-                  ? "navButton selected nvbtn"
-                  : "navButton nvbtn"
-              }
-              onClick={() => setSelected("Booking")}
-            >
-              Booking
-            </Link> */}
-            <Link
-              to="/News"
-              className={
-                window.location.href.includes("News")
-                  ? "navButton selected nvbtn"
-                  : "navButton nvbtn"
-              }
-              onClick={() => setSelected("News")}
-            >
-              News
-            </Link>
             <Link
               to="/Weather"
               className={
@@ -151,45 +118,6 @@ function Navigation({ children }) {
             onClick={() => setSelected("Gallery")}
           >
             Gallery
-          </Link>
-        </li>
-        {/* <li>
-          <Link
-            to="/Services"
-            className={
-              window.location.href.includes("Services")
-                ? "navButton selected nvbtn"
-                : "navButton nvbtn"
-            }
-            onClick={() => setSelected("Services")}
-          >
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/Booking"
-            className={
-              window.location.href.includes("Booking")
-                ? "navButton selected nvbtn"
-                : "navButton nvbtn"
-            }
-            onClick={() => setSelected("Booking")}
-          >
-            Booking
-          </Link>
-        </li> */}
-        <li>
-          <Link
-            to="/News"
-            className={
-              window.location.href.includes("News")
-                ? "navButton selected nvbtn"
-                : "navButton nvbtn"
-            }
-            onClick={() => setSelected("News")}
-          >
-            News
           </Link>
         </li>
         <li>

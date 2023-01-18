@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navigation from "./Navigation";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
-import News from "./pages/News";
 import Weather from "./pages/Weather";
 import Resorts from "./pages/Resorts";
 import Admin from "./pages/Admin";
@@ -15,7 +14,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/News" element={<News />} />
           <Route path="/Weather" element={<Weather />} />
           <Route path="/Resorts" element={<Resorts />} />
           <Route path="/Admin-panel" element={<Admin />} />
