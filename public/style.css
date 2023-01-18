@@ -130,13 +130,21 @@ body {
     background: rgba(255, 222, 89, 0.8);
 }
 
+.bookingpic {
+    background: 100%;
+}
+
 img {
+    max-width: 250px;
     width: 250px;
     height: 200px;
     margin: 25px 0 0 0;
     border-radius: 9px;
     box-shadow: 2x 2x 2x rgba(0, 0, 0, 1);
     box-shadow: -2px -2px -5px rgba(0, 0, 0, 0.541);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
 }
 
 @media (max-width: 450px) {

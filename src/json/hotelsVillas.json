@@ -1,8 +1,8 @@
 {
   "hotels": [
     {
-      "id":1,
-      "mapId" : "map001",
+      "id": 1,
+      "mapId": "map001",
       "thumbnailUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/a1/ed/34/breath-taking-view-from.jpg?w=300&h=-1&s=1",
       "title": "El Nido Waterfront Hotel",
       "content": "El Nido Waterfront Hotel puts the best of El Nido at your fingertips, making your stay both relaxing and enjoyable.",
@@ -15,13 +15,13 @@
         "👔 Laundry service",
         "🛁 Hot tub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31313.547212752193!2d119.355173638554!3d11.173311648948298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b6551f04512a5b%3A0xc5a6117f2879bba6!2sEl%20Nido%20Waterfront%20Resort!5e0!3m2!1sen!2sph!4v1673060011858!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31313.547212752193!2d119.355173638554!3d11.173311648948298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b6551f04512a5b%3A0xc5a6117f2879bba6!2sEl%20Nido%20Waterfront%20Resort!5e0!3m2!1sen!2sph!4v1673060011858!5m2!1sen!2sph",
       "price": 5500,
-      "ratings":7.0
+      "ratings": 7.0
     },
     {
-      "id":12,
-      "mapId" : "map002",
+      "id": 12,
+      "mapId": "map002",
       "thumbnailUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/de/b6/47/photo4jpg.jpg?w=1200&h=-1&s=1",
       "title": "El Nido Sea Shell Hotel",
       "content": "Designed by travelers, for travelers. This is the premier hostel at the heart of bustling El Nido town composed of Instagrammable interiors, rooms for steady relaxation.",
@@ -36,13 +36,13 @@
         "❄ Air conditioning",
         "🚕 Car hire"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.1871182932005!2d119.39096458434229!3d11.1737772836115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65512e386c2d7%3A0xb798cb266e17cf1c!2sEl%20Nido%20Sea%20Shell%20Hotel!5e0!3m2!1sen!2sph!4v1673060224265!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.1871182932005!2d119.39096458434229!3d11.1737772836115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65512e386c2d7%3A0xb798cb266e17cf1c!2sEl%20Nido%20Sea%20Shell%20Hotel!5e0!3m2!1sen!2sph!4v1673060224265!5m2!1sen!2sph",
       "price": 7500,
-      "ratings":9.0
+      "ratings": 9.0
     },
     {
-      "id":13,
-      "mapId" : "map003",
+      "id": 13,
+      "mapId": "map003",
       "thumbnailUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/c2/b7/dd/suite-room.jpg?w=1100&h=-1&s=1",
       "title": "El Nido Sea Shell Hotel",
       "content": "We are El Nido Seashell Hotel, an up and coming luxury experience in the lucrative island destination known to most as El Nido, Palawan.",
@@ -55,13 +55,13 @@
         "❄ Air conditioning",
         "🛁 Bidet"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.1871182932005!2d119.39096458434229!3d11.1737772836115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65512e386c2d7%3A0xb798cb266e17cf1c!2sEl%20Nido%20Sea%20Shell%20Hotel!5e0!3m2!1sen!2sph!4v1673060224265!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.1871182932005!2d119.39096458434229!3d11.1737772836115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65512e386c2d7%3A0xb798cb266e17cf1c!2sEl%20Nido%20Sea%20Shell%20Hotel!5e0!3m2!1sen!2sph!4v1673060224265!5m2!1sen!2sph",
       "price": 3500,
-      "ratings":9.0
+      "ratings": 9.0
     },
     {
-      "id":2,
-      "mapId" : "map004",
+      "id": 2,
+      "mapId": "map004",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/208986735.webp?k=65fd68111e18a008a43606f432ecd596467e204517eb2d3ae76ff54dc0eb74bc&o=",
       "title": "Cuna Hotel",
       "content": "Set in El Nido within 8 km of Big Lagoon, Cuna Hotel features an outdoor swimming pool, a shared lounge, and a restaurant and bar on-site. At the hotel.",
@@ -76,13 +76,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.0442778121912!2d119.39112547715324!3d11.181078931734962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655ca7be4b579%3A0x22a0c1548a619918!2sCuna%20Hotel!5e0!3m2!1sen!2sph!4v1673067913727!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.0442778121912!2d119.39112547715324!3d11.181078931734962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655ca7be4b579%3A0x22a0c1548a619918!2sCuna%20Hotel!5e0!3m2!1sen!2sph!4v1673067913727!5m2!1sen!2sph",
       "price": 3500,
       "ratings": 3.0
     },
     {
       "id": 3,
-      "mapId" : "map005",
+      "mapId": "map005",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/387762008.webp?k=67879731b91253569fe3100c35a876cda38773a4b860cddcf51d92b1016464b8&o=",
       "title": "S Resort El Nido",
       "content": "S Resort El Nido is situated in El Nido, within 70 m of El Nido Beach and less than 1 km of Caalan Beach. The property is around 9.1 km from Big Lagoon El Nido.",
@@ -97,13 +97,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.054127699587!2d119.38793642858494!3d11.179619923785173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655afe46670b5%3A0x3cf92c6f1e6ef228!2sS%20Resort%20El%20Nido!5e0!3m2!1sen!2sph!4v1673067997158!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.054127699587!2d119.38793642858494!3d11.179619923785173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655afe46670b5%3A0x3cf92c6f1e6ef228!2sS%20Resort%20El%20Nido!5e0!3m2!1sen!2sph!4v1673067997158!5m2!1sen!2sph",
       "price": 3600,
       "ratings": 4.0
     },
     {
       "id": 4,
-      "mapId" : "map006",
+      "mapId": "map006",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/364269761.webp?k=10f0abb17c66159af3274fe43f0dd211750da67e01eaa9dc9b2a24bfe40f2178&o=",
       "title": "Rosanna's Pension",
       "content": "Featuring free WiFi, Rosanna's Pension offers accommodation in El Nido. Rooms come with a TV. Some units have a seating area where you can relax.",
@@ -118,13 +118,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d978.5203128924169!2d119.39130481168542!3d11.18161983807016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b6553e2c38d3bf%3A0x8409c419d13c202b!2sC.%20Hama%2C%20Barangay%20Buena%20Suerte%2C%20El%20Nido%2C%20Palawan!5e0!3m2!1sen!2sph!4v1673069043295!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d978.5203128924169!2d119.39130481168542!3d11.18161983807016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b6553e2c38d3bf%3A0x8409c419d13c202b!2sC.%20Hama%2C%20Barangay%20Buena%20Suerte%2C%20El%20Nido%2C%20Palawan!5e0!3m2!1sen!2sph!4v1673069043295!5m2!1sen!2sph",
       "price": 3700,
       "ratings": 5.0
     },
     {
       "id": 5,
-      "mapId" : "map007",
+      "mapId": "map007",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/225847367.webp?k=11684eb2f4bc5f378d97c546ca4e0d6b1f44a917cf41db5340e3f3c64631bd4e&o=",
       "title": "South Anchorage Inn",
       "content": "Situated in El Nido and with El Nido Beach reachable within 100 metres, South Anchorage Inn features concierge services, non-smoking rooms, a shared lounge, free WiFi throughout the property and a terrace.",
@@ -139,13 +139,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.056524105554!2d119.38859236297304!3d11.179264929329754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655e22646d91b%3A0x202b5ed6b933d1d7!2sSouth%20Anchorage%20Inn!5e0!3m2!1sen!2sph!4v1673068161371!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.056524105554!2d119.38859236297304!3d11.179264929329754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655e22646d91b%3A0x202b5ed6b933d1d7!2sSouth%20Anchorage%20Inn!5e0!3m2!1sen!2sph!4v1673068161371!5m2!1sen!2sph",
       "price": 3800,
       "ratings": 5.0
     },
     {
       "id": 6,
-       "mapId" : "map008",
+      "mapId": "map008",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/162054748.webp?k=d5c10235a65d143dbb847df395fc5824422e3bc13b01caa10394e78e4527a4a9&o=",
       "title": "Sea Cocoon Hotel",
       "content": "Boasting an outdoor swimming pool, shared lounge and views of pool, Sea Cocoon Hotel is situated in El Nido, 100 m from El Nido Beach. The property is located 800 m from Caalan Beach.",
@@ -157,13 +157,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.0496444288558!2d119.38957203855921!3d11.180284028556695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65515bda0d595%3A0xb84ebfce632fd742!2sSea%20Cocoon%20Hotel!5e0!3m2!1sen!2sph!4v1673068232221!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.0496444288558!2d119.38957203855921!3d11.180284028556695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65515bda0d595%3A0xb84ebfce632fd742!2sSea%20Cocoon%20Hotel!5e0!3m2!1sen!2sph!4v1673068232221!5m2!1sen!2sph",
       "price": 3900,
       "ratings": 5.0
     },
     {
       "id": 7,
-      "mapId" : "map009",
+      "mapId": "map009",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/151145570.webp?k=cf0042df31560a2569e649a98ff8ef75988216e5c4dcd94146b9ac2ad08f6c4c&o=",
       "title": "Lagùn Hotel",
       "content": "Situated in El Nido, Lagùn Hotel features an outdoor swimming pool and a terrace. Located around 8 km from Big Lagoon El Nido, the hotel is also 8 km away from Small Lagoon El Nido.",
@@ -178,13 +178,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7828.338185382506!2d119.38787955100081!3d11.17511299511167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655139a17d0c9%3A0xa1b7de69ed36506e!2sLag%C3%B9n%20Hotel%20El%20Nido!5e0!3m2!1sen!2sph!4v1673068302904!5m2!1sen!2sph" ,
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7828.338185382506!2d119.38787955100081!3d11.17511299511167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655139a17d0c9%3A0xa1b7de69ed36506e!2sLag%C3%B9n%20Hotel%20El%20Nido!5e0!3m2!1sen!2sph!4v1673068302904!5m2!1sen!2sph",
       "price": 4000,
       "ratings": 5.0
     },
     {
       "id": 8,
-      "mapId" : "map010",
+      "mapId": "map010",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/163979601.webp?k=72f911ce323391bc1702bd9aafec88fea38c478b421ac9d1fc397d28968f5ef5&o=",
       "title": "Maligaya Beach Bungalows",
       "content": "Situated on the beachfront in El Nido and boasting a garden, Maligaya Beach Bungalows has free WiFi throughout the property. The property is around a few steps from Corong Corong Beach.",
@@ -199,13 +199,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.273899060267!2d119.39385597504179!3d11.167344551861502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655dcd27bbae3%3A0x559801a490d96d83!2sMaligaya%20Beach%20Bungalows!5e0!3m2!1sen!2sph!4v1673068341877!5m2!1sen!2sph" ,
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.273899060267!2d119.39385597504179!3d11.167344551861502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b655dcd27bbae3%3A0x559801a490d96d83!2sMaligaya%20Beach%20Bungalows!5e0!3m2!1sen!2sph!4v1673068341877!5m2!1sen!2sph",
       "price": 4100,
       "ratings": 5.0
     },
     {
       "id": 9,
-      "mapId" : "map011",
+      "mapId": "map011",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/400692126.webp?k=a25aac82b9dccec361380c4fd5d52b73d9d24cc110996acd11db4f45236cb40e&o=",
       "title": "One El Nido Suite",
       "content": "Rooms are air-conditioned and equipped with a flat-screen TV, safety deposit box and wardrobe. Private bathrooms are fitted with a shower and bidet. For your comfort, you will find slippers, free toiletries and a hairdryer.",
@@ -220,13 +220,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.2250155578736!2d119.39188227504197!3d11.170968551792413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b6556d5256078d%3A0x1a712c036040b819!2sOne%20Elnido%20Suite!5e0!3m2!1sen!2sph!4v1673068421775!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.2250155578736!2d119.39188227504197!3d11.170968551792413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b6556d5256078d%3A0x1a712c036040b819!2sOne%20Elnido%20Suite!5e0!3m2!1sen!2sph!4v1673068421775!5m2!1sen!2sph",
       "price": 4200,
       "ratings": 5.0
     },
     {
-      "id":10,
-      "mapId" : "map012",
+      "id": 10,
+      "mapId": "map012",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/405041437.webp?k=e629c937658b1eae26fcd3921122b9d5f2d01a2e825cbfc3496521a3a1c6f868&o=",
       "title": "Jai-cob’s Suites",
       "content": "Located in Coron, one kilometer from Dicanituan Beach, Jai-cob’s Suites has accommodations with a restaurant, free private parking, a garden and a terrace. Located around 5.3 km from Kayangan Lake, the hotel with free WiFi.",
@@ -241,13 +241,13 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.6636494278196!2d120.20366556954912!3d11.998385011071274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ba1dd35833433b%3A0xbb1ff41c9839481c!2s12%20Real%20St%2C%20Coron%20Town%20Proper%2C%20Coron%2C%205316%20Palawan!5e0!3m2!1sen!2sph!4v1673068912362!5m2!1sen!2sph",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.6636494278196!2d120.20366556954912!3d11.998385011071274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ba1dd35833433b%3A0xbb1ff41c9839481c!2s12%20Real%20St%2C%20Coron%20Town%20Proper%2C%20Coron%2C%205316%20Palawan!5e0!3m2!1sen!2sph!4v1673068912362!5m2!1sen!2sph",
       "price": 4250,
       "ratings": 6.0
     },
     {
-      "id":11,
-      "mapId" : "map013",
+      "id": 11,
+      "mapId": "map013",
       "thumbnailUrl": "https://cf.bstatic.com/xdata/images/hotel/square200/388661621.webp?k=92f80ee9a6de5348122735c3c6d1d63f76346b7e6fedc271fc7ea2a3279afebb&o=",
       "title": "Swiftlets Inn",
       "content": "Located in the Town Proper of El Nido, 8 km from Big Lagoon and 13 km from Matinloc Shrine, Swiftlets Inn features limestone views of Palawan. The rooms at the Swiftlets Inn are air-conditioned and has a private bathroom with free toiletries.",
@@ -262,7 +262,7 @@
         "❄ Air conditioning",
         "🛁 Bathtub"
       ],
-      "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.1658083329553!2d119.3887976750419!3d11.175356351708713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65513997b71c7%3A0xf1a0b5c546d60863!2sSwiftlets%20Inn!5e0!3m2!1sen!2sph!4v1673068514139!5m2!1sen!2sph" ,
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.1658083329553!2d119.3887976750419!3d11.175356351708713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65513997b71c7%3A0xf1a0b5c546d60863!2sSwiftlets%20Inn!5e0!3m2!1sen!2sph!4v1673068514139!5m2!1sen!2sph",
       "price": 4250,
       "ratings": 7.0
     }

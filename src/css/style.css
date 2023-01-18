@@ -20,6 +20,7 @@
   /* --BigTextcolor: rgba(255, 255, 255, 0.8); */
   --BigTextcolor: rgba(255, 222, 89, 0.8);
   --fontfam: 'Nothing You Could Do', cursive;
+  --newsBgcolor: rgba(255, 255, 255, 1);
 }
 
 body,
@@ -780,70 +781,53 @@ li {
 .img-fluid {
   object-fit: cover;
   width: 100%;
+  background: var(--newsBgcolor);
+}
+
+.img-fluid {
+  object-fit: cover;
+  width: 100%;
+  background: var(--newsBgcolor);
 }
 
 .effect-news {
-  /* object-fit: cover; */
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(3px);
-  transition: bl;
-  border-radius: 12px;
-  color: black;
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
-  font-weight: 700;
-}
-
-.sideNews {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(3px);
-  border-radius: 12px;
-  color: black;
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
-  font-weight: 700;
-  margin: 12px;
+  object-fit: cover;
+  background: var(--newsBgcolor);
 }
 
 .three-cards {
   width: 100%;
   height: 20vh;
-  /* background: green; */
-  border-radius: 12px;
+  background: var(--newsBgcolor);
 }
 
 .banner-news {
   object-fit: cover;
   width: 100%;
   height: 20vh;
-  /* background: yellow; */
-  border-radius: 12px;
+  background: var(--newsBgcolor);
 }
 
 .recent-cards {
   width: 100%;
   height: 30vh;
-  /* background: pink; */
-  border-radius: 12px;
+  background: var(--newsBgcolor);
 }
 
 .main-pict {
   width: 100%;
   height: 65vh;
-  /* background: red; */
-  border-radius: 12px;
+  background: var(--newsBgcolor);
 }
 
 #breaking-news {
-  background: url('../img/bkg4.webp');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/002/230/823/large_2x/abstract-blur-and-defocused-hotel-and-resort-background-free-photo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: fixed;
-  top: 0;
-  z-index: 0;
-  float: right;
-  width: 100%;
-  height: 100%;
+
 }
+
 
 
 /* CARDS STYLES START*/

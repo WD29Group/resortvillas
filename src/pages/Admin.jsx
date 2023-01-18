@@ -13,9 +13,7 @@ function Admin(props) {
   const handleemailChange = (e) => {
     setemail(e.target.value);
   };
-
   //read
-    
   useEffect(() => {
     onValue(ref(db), (snapshot) => {
       setemails([]);
@@ -28,7 +26,6 @@ function Admin(props) {
       }
     });
   }, []);
-
   //write
   const writeToDatabase = () => {
     const uuid = uid();
