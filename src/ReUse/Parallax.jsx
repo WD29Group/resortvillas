@@ -19,7 +19,8 @@ function Parallax(props) {
             className="borders"
             style={{
               backgroundColor: "transparent",
-              fontSize: "35px",
+              fontSize: "45px",
+              fontWeight: "1000",
               color: "#f7f7f7",
               textShadow: "2px 2px 2px rgba(0, 0, 0, 0.75)",
             }}
@@ -42,8 +43,9 @@ function Parallax(props) {
             className="borders"
             style={{
               backgroundColor: "transparent",
-              fontSize: "35px",
+              fontSize: "45px",
               color: "#f7f7f7",
+              fontWeight: "1000",
               textShadow: "2px 2px 2px rgba(0, 0, 0, 0.75)",
             }}
           >
@@ -73,7 +75,7 @@ function Parallax(props) {
                     need to do is to have fun, and enjoy your vacation.
                   </h2 ><br />
                   <h1>Resort Villas<br />
-                  at your service</h1> 
+                  at your service!</h1> 
                 </div>
                 <br />
               </div>

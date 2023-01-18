@@ -5,7 +5,7 @@ function ContentsHomeParallax() {
   return (
     <Parallax
       Title="Resort Villas"
-      Title1="El Nido's Finest Resort"
+      Title1="In Partnership with El Nido's Most Finest Hotels and Resort"
       Body1=' 
                 Nestled within a secluded forest and overlooking the crystal-clear waters of Bacuit Bay,
                 Paraiso is a luxurious retreat that offers an unparalleled escape into the natural beauty of El Nido.

@@ -34,14 +34,13 @@
   text-align: center;
   color: #000;
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.75);
-  font-weight: bold;
 }
 
 .caption span.borders {
   color: #fff;
   padding: 18px;
-  font-size: 3em;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
+  font-size: 5em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.781);
   font-family: var(--fontfam);
   letter-spacing: 7px;
   border-radius: 10px;
@@ -53,6 +52,7 @@
   text-align: center;
   padding: 30px 30px;
   text-align: justify;
+  font-size: 1.4em;
 }
 
 .style2 {
@@ -61,6 +61,7 @@
   text-align: center;
   padding: 30px 30px;
   text-align: justify;
+  font-size: 1.4em;
 }
 
 .style3 {
@@ -69,14 +70,23 @@
   text-align: center;
   padding: 30px 30px;
   text-align: justify;
+  font-size: 1.4em;
 }
+
+/* .secondaryTitle {
+  background-color: transparent;
+  font-size: 2em;
+  color: #f7f7f7;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+
+} */
 
 @media (min-width: 901px) {
 
   .style1,
   .style2,
   .style3 {
-    padding: 70px 200px;
+    padding: 70px 100px;
   }
 }
 
@@ -86,6 +96,10 @@
   .style2,
   .style3 {
     padding: 70px 10px;
+  }
+
+  .caption span.borders {
+    font-size: 3.5em;
   }
 }
 
