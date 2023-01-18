@@ -8,7 +8,6 @@ import Resorts from "./pages/Resorts";
 import Admin from "./pages/Admin";
 import "./css/style.css";
 
-
 function App() {
   return (
     <BrowserRouter>

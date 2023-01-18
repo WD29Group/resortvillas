@@ -5,7 +5,6 @@ function Elnidovid2() {
   return (
     <>
       <video
-        // className="landingpg"
         style={{
           position: "fixed",
           minWidth: "100vw",

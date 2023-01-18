@@ -118,9 +118,3 @@ function Resorts() {
 }
 export default Resorts;
 
-
-                          // <input for="username" type="text" id="username" name="username" />
-                          // <input for="password" type="password" id="password" name="password" />
-                          // <input for="firstname" type="text" id="firstname" name="firstname" />
-                          // <input for="lastname" type="text" id="lastname" name="lastname" />
-                          // <input for="country" type="text" id="country" name="country" />

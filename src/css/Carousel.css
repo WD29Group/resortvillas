@@ -7,8 +7,6 @@
     background-color: rgba(0, 0, 0, 0.95);
     background-size: cover;
     transition: opacity 0.3s ease-in-out;
-    /* transition-duration: 1s; */
-    /* backdrop-filter: blur(20px); */
 }
 
 .carouselHfonts,
