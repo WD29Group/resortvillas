@@ -653,6 +653,12 @@ li {
 
 /* gallery */
 
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
 #Gbod {
   padding-top: 15vh;
   background: transparent;
@@ -837,7 +843,207 @@ li {
   float: right;
   width: 100%;
   height: 100%;
+}
 
 
+/* CARDS STYLES START*/
+.chat-support,
+.SVModalBorder,
+.Cardfrostedglass {
+  /* color: rgb(182, 182, 182); */
+  padding: 0;
+  border-radius: 20px;
+  border: solid 2px rgba(255, 255, 255, 0.15);
+  box-shadow: var(--boxshadow);
+  height: 400px;
+}
+
+.Cardtransp {
+  /* background-color: transparent; */
+  background: rgba(255, 255, 255, 0.35);
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  border-radius: 7px;
+}
+
+.SubscribedBtn,
+.SPbuttonFrosted,
+.buttonFrosted {
+  appearance: button;
+  background: rgba(255, 0, 0, 0.90);
+  color: yellow;
+  padding: 14px 0 14px 0;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.15);
+  /* box-shadow: var(--boxshadow); */
+  box-shadow: -1px -1px 1px #ffffff;
+  height: 35px;
+  width: 105px;
+  font-size: 17px;
+}
+
+.SubscribedBtn,
+.SPbuttonFrosted {
+  width: 150px;
+  background: rgba(255, 0, 0, 0.90);
+  color: yellow;
+  padding: 0 0 0 0;
+  margin: -10px 0 0 -6px;
+  border-radius: 0 0 20px 20px;
+}
+
+.SubscribedBtn {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 95);
+  color: rgba(255, 222, 89, 0.8);
+  width: 150px;
+  padding: 0 0 0 0;
+  margin: -10px 0 0 -6px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.SubscribedBtn:hover,
+.SPbuttonFrosted:hover,
+.buttonFrosted:hover {
+  color: rgb(0, 0, 0);
+  background: rgba(255, 222, 89, 0.8);
+  border-radius: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.15);
+  /* box-shadow: var(--boxshadow); */
+  box-shadow: -1px -1px 1px #ffffff;
+}
+
+.SPbuttonFrosted:hover {
+  background: rgba(255, 222, 89, 0.8);
+  border-radius: 10px;
+  border-radius: 0 0 20px 20px;
+  margin: -10px;
+}
+
+.buttonFrosted:active {
+  background: rgba(0, 0, 0, 0.116);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-weight: lighter;
+  margin: 0 12px 0 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+}
+
+hr {
+  margin: 5px -7px 2px -7px;
+}
+
+.unshow {
+  display: none;
+}
+
+.SpecialPromoStyling {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  position: fixed;
+  bottom: 100px;
+  right: 35px;
+  z-index: 3;
+  width: 150px;
+  height: 255px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 7px;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  box-shadow: 1px 4px 3px rgb(0, 0, 0);
+  backdrop-filter: blur(3px);
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, -2px, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 3px, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, -3px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 3px, 0);
+  }
+}
+
+/* ROOMS AREA  -  Raymar Vergara*/
+.box {
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn-seemore:hover {
+  background-color: #ffc107;
+  transition: 1.8;
+}
+
+.btn-booknow:hover {
+  opacity: 0.8;
+}
+
+#backgroundRooms {
+  background-color: #ffffc9;
+}
+
+.facilities {
+  font-size: 14px;
+  margin: -5px 10px -2px -10px;
+  padding: 10px 0 10px 0;
+}
+
+@media(max-width: 768px) {
+  .box {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
 }
+
+/* ROOMS AREA */
+
+.card {
+  max-width: 55em;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 32vh;
+  object-fit: cover;
+}
+
+.newPrice,
+.price {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.newPrice {
+  color: rgba(151, 0, 0, 0.9);
+}
+
+.oldPrice {
+  color: gray;
+  text-decoration: line-through;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+/* CARD STYLES END*/

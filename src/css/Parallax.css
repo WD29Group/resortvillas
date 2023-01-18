@@ -36,7 +36,7 @@
   color: #000;
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.75);
   font-weight: bold;
-} 
+}
 
 .caption span.borders {
   color: #fff;
@@ -48,40 +48,53 @@
   border-radius: 10px;
 }
 
-.style1{
+.style1 {
   color: #777;
-  background-color:white;
-  text-align:center;
-  padding:30px 30px;
-  text-align: justify;
-}
-.style2 {
-  color:#ddd;
-  background-color: rgba(0, 0, 0, 0.75);
-  text-align:center;
+  background-color: white;
+  text-align: center;
   padding: 30px 30px;
   text-align: justify;
 }
-.style3{
-  color:#ddd;
-  background-color:#282E34;
-  text-align:center;
-  padding:30px 30px;
+
+.style2 {
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  padding: 30px 30px;
+  text-align: justify;
+}
+
+.style3 {
+  color: #ddd;
+  background-color: #282E34;
+  text-align: center;
+  padding: 30px 30px;
   text-align: justify;
 }
 
 @media (min-width: 901px) {
+
   .style1,
   .style2,
-  .style3{
+  .style3 {
     padding: 70px 200px;
   }
 }
 
 @media (max-width: 500px) {
+
   .style1,
   .style2,
-  .style3{
+  .style3 {
     padding: 70px 10px;
   }
+}
+
+.hilightedTExt {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px 20px 20px;
+  margin: 300px 0 -3px 0;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  text-shadow: 1px 1px 2px rgba(255, 238, 0, 0.493);
 }

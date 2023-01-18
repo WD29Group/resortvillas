@@ -38,7 +38,7 @@ function Gallery() {
     
   ];
 
-  for (let i = 1; i <= 50; i++) {
+  for (let i = 1; i <= 53; i++) {
     const image = imgs[`img${i}`];
     images.push(image);
   }

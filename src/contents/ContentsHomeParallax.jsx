@@ -38,14 +38,13 @@ function ContentsHomeParallax() {
                 offer comfortable accommodations, delicious meals, and a range of
                 facilities and services to make your stay enjoyable and relaxing.
             "
-      Carousel3=""
+      Carousel3="
+              With so many resorts and hotels here in El Nido Palawan, Resort
+              Villas will help you choose
+              exactly what you need that fits your styles, budget and length of stay. 
+              All you only need to do is have fun, and enjoy your vacation.
+              "
     />
   );
 }
 export default ContentsHomeParallax;
-// " With so many resorts and hotels here in El Nido Palawan, Resorts Villas will help you choose
-//               exactly what you need that fits your styles, budget, and length of stay. With our
-//               security service, we will be responsible for your transportation and safety when
-//               changing locations, our tour guide will accompany you during your tours. With our
-//               service, you only need is to enjoy your vacation and have fun!
-//             "

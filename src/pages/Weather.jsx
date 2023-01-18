@@ -76,13 +76,11 @@ function Weather() {
                 </center>
               </div>
             </div>
-            <div className="weatherbod col-md-8">
+            <div className="weatherbod col-md-8 hidden-mobile">
                 <h1 className="text-center p-3 myFontFam myFontStrong display-5">El Nido Palawan</h1>
-              <div className="text-center fw-bold pb-3 h2"> 7 Day Forecast</div>
+              <div className="text-center fw-bold h2"> 7 Day Forecast</div>
               <hr />
-              <span className>
                 <Wforecast />
-              </span>
               <br />
               <span className="ps-5"></span>
             </div>

@@ -62,8 +62,22 @@ function Parallax(props) {
       <div className="bgimg-1">
         <div className="caption">
           <span className="borders">
-            Resort Villas <br />
-            at your service
+            <div style={{marginBottom: "-800px"}}></div>
+            <div>
+              <br />
+                <div className="hilightedTExt">
+                  <h2>
+                    With so many resorts and hotels here in El Nido Palawan,
+                    Resort Villas will help you choose exactly what you need 
+                    that fits your styles, budget and length of stay. All you
+                    need to do is to have fun, and enjoy your vacation.
+                  </h2 ><br />
+                  <h1>Resort Villas<br />
+                  at your service</h1> 
+                </div>
+                <br />
+              </div>
+            <br />
           </span>
         </div>
       </div>
