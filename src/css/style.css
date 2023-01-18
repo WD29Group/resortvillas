@@ -721,43 +721,43 @@ li {
 .img-fluid {
   object-fit: cover;
   width: 100%;
-  /* background: var(--newsBgcolor); */
+  background: var(--newsBgcolor);
 }
 
 .img-fluid {
   object-fit: cover;
   width: 100%;
-  /* background: var(--newsBgcolor); */
+  background: var(--newsBgcolor);
 }
 
 .effect-news {
   object-fit: cover;
-  /* background: var(--newsBgcolor); */
+  background: var(--newsBgcolor);
 }
 
 .three-cards {
   width: 100%;
   height: 20vh;
-  /* background: var(--newsBgcolor); */
+  background: var(--newsBgcolor);
 }
 
 .banner-news {
   object-fit: cover;
   width: 100%;
   height: 20vh;
-  /* background: var(--newsBgcolor); */
+  background: var(--newsBgcolor);
 }
 
 .recent-cards {
   width: 100%;
   height: 30vh;
-  /* background: var(--newsBgcolor); */
+  background: var(--newsBgcolor);
 }
 
 .main-pict {
   width: 100%;
   height: 65vh;
-  /* background: var(--newsBgcolor); */
+  background: var(--newsBgcolor);
 }
 
 #breaking-news {
