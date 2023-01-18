@@ -21,7 +21,7 @@ function News() {
                     <div className="mt-2 p-2">
                       <h2>{newsUpdate.title}</h2>
                       <p>{newsUpdate.date}</p>
-                      <h6>{newsUpdate.content}<a className="text-decoration-underline text-primary"  rel="noreferrer" href={"https://www.travelbubble.elnidoresorts.com/"} target="_blank">see more, </a></h6>
+                      <h6>{newsUpdate.content}<a className="text-decoration-underline text-primary"  rel="noreferrer" href={"https://starcinema.abs-cbn.com/2022/4/30/photos/photos-14-celebrities-spotted-in-el-nido-72570#/"} target="_blank">see more, </a></h6>
                     </div>
                   </div>
                 </div>
