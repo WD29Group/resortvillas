@@ -13,14 +13,14 @@
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <style>
-
-    body{
-        margin:0;
+    body {
+        margin: 0;
         background: gray;
         width: 100%;
         z-index: -2;
     }
-    .logo{
+
+    .logo {
         background: url("logo.png");
         text-align: center;
         font-size: 2em;
@@ -34,7 +34,7 @@
         font-family: var(--fontfam);
         margin-top: 25px;
     }
-    
+
     .forminput {
         font-size: 14px;
         color: rgba(66, 66, 66, 0.822);
@@ -43,14 +43,14 @@
     }
 
     .forminput1 {
-        border-bottom: 1px rgb(117, 117, 117) dotted; 
+        border-bottom: 1px rgb(117, 117, 117) dotted;
         border-top: none;
         border-left: none;
         border-right: none;
     }
 
     .forminput2 {
-        border-bottom: 1px rgb(117, 117, 117) dotted; 
+        border-bottom: 1px rgb(117, 117, 117) dotted;
         border-top: none;
         border-left: none;
         border-right: none;
@@ -60,7 +60,7 @@
     }
 
     .forminput3 {
-        border-bottom: 1px rgb(117, 117, 117) dotted; 
+        border-bottom: 1px rgb(117, 117, 117) dotted;
         border-top: none;
         border-left: none;
         border-right: none;
@@ -70,9 +70,9 @@
     }
 
 
-    .formlabels1{
+    .formlabels1 {
         font-size: 15px;
-        border-bottom: 1px rgba(128, 128, 128, 0.5) dotted; 
+        border-bottom: 1px rgba(128, 128, 128, 0.5) dotted;
         border-top: none;
         border-left: none;
         border-right: none;
@@ -80,9 +80,9 @@
 
     }
 
-    .formlabels2{
+    .formlabels2 {
         font-size: 15px;
-        border-bottom: 1px rgba(128, 128, 128, 0.5) dotted; 
+        border-bottom: 1px rgba(128, 128, 128, 0.5) dotted;
         border-top: none;
         border-left: none;
         border-right: none;
@@ -90,7 +90,8 @@
         margin: 10px 0 10px 0;
         background: rgba(128, 128, 128, 0.25);
     }
-    .formlabels3{
+
+    .formlabels3 {
         font-size: 14px;
         border-top: none;
         border-left: none;
@@ -99,18 +100,20 @@
         margin: 10px 0 10px 0;
     }
 
-    .mainMargin{
+    .mainMargin {
         max-width: 500px;
         min-width: 300px;
         margin: auto;
         padding: 25px;
     }
-    .pageArea{
+
+    .pageArea {
         background: white;
         border-radius: 15px;
         box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
     }
-    .printNotice{
+
+    .printNotice {
         font-size: small;
         font-weight: 0;
         border-radius: 5px;
@@ -124,30 +127,36 @@
         color: beige;
         min-width: 300px;
     }
-    .reservationtxt{
+
+    .reservationtxt {
         align-items: flex-end;
         font-weight: 250;
     }
-    #referenceStamp{
+
+    #referenceStamp {
         width: 135px;
         font-weight: bold;
         border-radius: 5px;
         border: 1px solid black;
     }
-    .smallHR{
+
+    .smallHR {
         padding: 3px;
         margin: 2px;
         background-color: rgba(0, 0, 0, 0.25);
     }
-    .smallerHR{
+
+    .smallerHR {
         padding: 2px;
         margin: 2px;
         background-color: rgba(0, 0, 0, 0.25);
     }
-    .smallestHR{
+
+    .smallestHR {
         padding: 1px;
         margin: 0;
     }
+
     .backtoresortsBtn {
         text-decoration: none;
         font-size: 1em;
@@ -168,7 +177,7 @@
         background: rgba(255, 222, 89, 0.8);
         color: rgba(0, 0, 0, 0.733);
     }
-    
+
     .formbutton {
         z-index: 10;
         display: block;
@@ -188,7 +197,7 @@
         background: rgba(255, 222, 89, 0.8);
     }
 
-    
+
     .formbutton2 {
         z-index: 10;
         padding: 7px 17px 7px 17px;
@@ -223,20 +232,21 @@
         background-size: cover;
     }
 </style>
+
 <body>
     <div class="landingpg"></div>
     <a class="backtoresortsBtn" href="Resorts">🢀 Back to Resort Villas</a>
     <button class="printBtn formbutton" onclick="printElement('print_this')">Print</button>
-        <div class="row">
-            <p align="justify" class="printNotice">
-                &emsp;&emsp;Please print a copy of this page as your reference.
-        
-                Thank you for your request. This booking is not yet confirmed. We will contact you shortly.
-                We will sent an email notification to your email as you stated below. If the email does not
-                arrive in your inbox after two to three ours, please check it has not been put into your
-                spam or trash folder.
-            </p>
-        </div>
+    <div class="row">
+        <p align="justify" class="printNotice">
+            &emsp;&emsp;Please print a copy of this page as your reference.
+
+            Thank you for your request. This booking is not yet confirmed. We will contact you shortly.
+            We will sent an email notification to your email as you stated below. If the email does not
+            arrive in your inbox after two to three ours, please check it has not been put into your
+            spam or trash folder.
+        </p>
+    </div>
     <div id="print_this">
         <div class="container">
             <div class="row">
@@ -244,25 +254,26 @@
                     <div class="logo">Resort Villas</div>
                     <h3 class="text-center">Reservation Request</h3>
                     <p align="justify" class="reservationtxt">
-                        &emsp;Thank you for choosing Lihim Resorts! We have received your booking request. We would like to complete
+                        &emsp;Thank you for choosing Resort Villas! We have received your booking request. We would like
+                        to complete
                         your resevation
-                        by asking you to complete pre-payment for your stay at Lihim Resorts!
+                        by asking you to complete pre-payment for your stay at Resort Villas!
                     </p>
                     <h5>Please Check Your Details</h5>
-                <script>
-                    function putRef() {
-                        var thisReference = document.getElementById("id3").value;
-                        var datecreated = document.getElementById("id4").value;
-                        document.getElementById("refnumber").value =   "Referece no#  :" + thisReference;
-                        document.getElementById("datecreated").value = "Date Inquired : " + datecreated;
-                    }
-                </script>
+                    <script>
+                        function putRef() {
+                            var thisReference = document.getElementById("id3").value;
+                            var datecreated = document.getElementById("id4").value;
+                            document.getElementById("refnumber").value = "Referece no#  :" + thisReference;
+                            document.getElementById("datecreated").value = "Date Inquired : " + datecreated;
+                        }
+                    </script>
                     <form action="">
                         <hr class="smallestHR">
                         <input id="refnumber" readonly class="forminput3"></input><br>
                         <input id="datecreated" readonly class="forminput3"></input>
                         <table>
-                        <hr class="smallerHR">
+                            <hr class="smallerHR">
                             <script>
                                 let x = 0;
                                 let y = 'id';
@@ -283,19 +294,21 @@
                                     }
                                     y = 'id';
                                 })
-                                    putRef();
+                                putRef();
                             </script>
                         </table>
                         <br>
                         <hr class="smallerHR">
                         <center>
-                            <button id="sendconfirmationBtn" class="formbutton2 mx-auto" formaction="https://formspree.io/f/moqzvvoj"
-                                formmethod="POST" onclick="disableThisButton()">Click if all details are correct</button>
+                            <button id="sendconfirmationBtn" class="formbutton2 mx-auto"
+                                formaction="https://formspree.io/f/moqzvvoj" formmethod="POST"
+                                onclick="disableThisButton()">Click if all details are correct</button>
                         </center>
                     </form>
                     <hr class="smallerHR"><br>
                     <p align="justify">
-                        &emsp;&emsp;To complete your reservation, we request a bank transfer for the amount above. Kindly e-mail us when
+                        &emsp;&emsp;To complete your reservation, we request a bank transfer for the amount above.
+                        Kindly e-mail us when
                         this is
                         complete.
                         We will hold this reservation for 48 hours while waiting for completion of payment.
@@ -306,15 +319,15 @@
                     <table>
                         <tr>
                             <td class="formlabels3">Bank Name</td>
-                            <td class="formlabels3">   :Union Bank
+                            <td class="formlabels3"> :Union Bank
                                 <hr class="smallestHR">
                             </td>
                         </tr>
                         <tr>
                             <td class="formlabels3"> Account Name</td>
                             <td class="formlabels3"><b> :Resort Villas</b>
-                                    <hr class="smallestHR">
-                                </td>
+                                <hr class="smallestHR">
+                            </td>
                         </tr>
                         <tr>
                             <td class="formlabels3">Account Number</td>
@@ -324,7 +337,7 @@
                         </tr>
                         <tr>
                             <td class="formlabels3">Bank Address</td>
-                            <td class="formlabels3">   :Makati Avenue, Corner Durban St. Makati City
+                            <td class="formlabels3"> :Makati Avenue, Corner Durban St. Makati City
                                 <hr class="smallestHR">
                             </td>
                         </tr>
@@ -337,16 +350,18 @@
                     </table>
                     <hr class="smallHR">
                     <br>
-                    &emsp;For faster confirmation of your reservation, please send us back a scan or photo of your deposit receipt. We
+                    &emsp;For faster confirmation of your reservation, please send us back a scan or photo of your
+                    deposit receipt. We
                     will
                     send
                     you your confirmed resort voucher and reservation receipt for your stay in Palawan. <br><br>
-                
-                    &emsp;Lihim Resorts has flexible and easy cancellation policy with free rebooking or full refunds! We know how
+
+                    &emsp;Resort Villas has flexible and easy cancellation policy with free rebooking or full refunds!
+                    We know how
                     travel is,
                     and
-                    we want to make sure our guests can book at Lihim Resorts with confidence!
-                
+                    we want to make sure our guests can book at Resort Villas with confidence!
+
                     <hr>
                     <h2 class="text-center">Thanks again from the team @Resort Villas!</h2>
                     <br>
@@ -375,6 +390,7 @@
         }
     </script>
 </body>
+
 </html>
 
 <!-- id="id0id0" Hotel name="Hotel" id="id0" value=" El Nido Sea Shell Hotel"
